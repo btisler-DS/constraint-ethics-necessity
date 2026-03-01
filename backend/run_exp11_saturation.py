@@ -111,6 +111,7 @@ def _run_one(spec: dict) -> dict:
         query_cost=spec["query_cost"],
         respond_cost=RESPOND_COST,
         output_dir=spec["output_dir"],
+        device=spec.get("device", "cpu"),
     )
     engine = SimulationEngine(config=cfg)
     engine.run()
@@ -228,6 +229,10 @@ def run_campaign(conditions: list[str], seeds: list[int], workers: int,
     results = []
     t0   = time.time()
     done = 0
+    import torch as _torch
+    _n_gpus = _torch.cuda.device_count() if _torch.cuda.is_available() else 0
+    for _i, _j in enumerate(jobs):
+        _j["device"] = f"cuda:{_i % _n_gpus}" if _n_gpus > 0 else "cpu"
     with ProcessPoolExecutor(max_workers=workers) as pool:
         futures = {pool.submit(_run_one, j): j for j in jobs}
         for fut in as_completed(futures):

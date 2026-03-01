@@ -19,7 +19,8 @@ def compute_reinforce_loss(agent: BaseAgent, gamma: float = 0.99) -> torch.Tenso
     instead of summing into a Python int.
     """
     if not agent.log_probs or not agent.rewards:
-        return torch.tensor(0.0, requires_grad=True)
+        device = next(agent.parameters()).device
+        return torch.tensor(0.0, requires_grad=True, device=device)
 
     # Compute discounted returns
     returns = []
@@ -28,7 +29,8 @@ def compute_reinforce_loss(agent: BaseAgent, gamma: float = 0.99) -> torch.Tenso
         G = r + gamma * G
         returns.insert(0, G)
 
-    returns_t = torch.tensor(returns, dtype=torch.float32)
+    device = agent.log_probs[0].device
+    returns_t = torch.tensor(returns, dtype=torch.float32, device=device)
 
     # Normalize returns for stability
     if len(returns_t) > 1:

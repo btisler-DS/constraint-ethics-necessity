@@ -51,7 +51,7 @@ class AgentA(BaseAgent):
         combined = torch.cat([obs_enc, sig_enc], dim=-1)
 
         if self.hidden is None:
-            self.hidden = torch.zeros(self.hidden_dim)
+            self.hidden = torch.zeros(self.hidden_dim, device=next(self.parameters()).device)
 
         self.hidden = self.rnn(combined.unsqueeze(0), self.hidden.unsqueeze(0)).squeeze(0)
         return self.hidden

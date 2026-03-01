@@ -64,6 +64,7 @@ class SimulationConfig:
     post_success_steps: int = 20           # Exp 3: steps to continue after success event
     post_success_pressure_episodes: int = 3  # Exp 5: episodes at elevated tax after success
     post_success_tax_multiplier: float = 3.0 # Exp 5: tax rate multiplier during pressure hold
+    device: str = "cpu"                    # Compute device: "cpu", "cuda:0", "cuda:1", ...
 
 
 class SimulationEngine:
@@ -130,6 +131,11 @@ class SimulationEngine:
         )
 
         self.agents = [self.agent_a, self.agent_b, self.agent_c]
+
+        # Move all agent parameters to target device
+        self.device = torch.device(self.config.device)
+        for agent in self.agents:
+            agent.to(self.device)
 
         # Freeze type_head for Protocol 0 — no gradient through type classification
         if not self.protocol.should_train_type_head():
@@ -346,8 +352,8 @@ class SimulationEngine:
             all_type_logits = {}
 
             for agent in self.agents:
-                agent_obs = obs[agent.name]
-                incoming = self.comm_buffer.receive_all(agent.name)
+                agent_obs = obs[agent.name].to(self.device)
+                incoming = self.comm_buffer.receive_all(agent.name).to(self.device)
 
                 signal, logits, type_logits = agent(agent_obs, incoming)
 
@@ -385,7 +391,7 @@ class SimulationEngine:
                 if type_head_active:
                     type_dist = Categorical(logits=all_type_logits[agent.name])
                     type_log_prob = type_dist.log_prob(
-                        torch.tensor(signal_types[agent.name])
+                        torch.tensor(signal_types[agent.name], device=self.device)
                     )
                     combined_log_prob = action_log_prob + type_log_prob
                 else:

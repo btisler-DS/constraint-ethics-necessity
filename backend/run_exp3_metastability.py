@@ -89,7 +89,7 @@ ENTROPY_STREAK         = 5
 # ── Square-wave engine ─────────────────────────────────────────────────────────
 
 def _run_square_wave(seed: int, output_dir: str, query_cost_high: float,
-                     query_cost_low: float, wave_period: int) -> dict:
+                     query_cost_low: float, wave_period: int, device: str = "cpu") -> dict:
     """Run one seed with a square-wave query cost schedule."""
     from simulation.engine import SimulationEngine, SimulationConfig
 
@@ -105,6 +105,7 @@ def _run_square_wave(seed: int, output_dir: str, query_cost_high: float,
         query_cost=query_cost_high,   # initial phase = HIGH
         respond_cost=RESPOND_COST,
         output_dir=output_dir,
+        device=device,
     )
 
     engine = SimulationEngine(config=config)
@@ -130,7 +131,7 @@ def _run_square_wave(seed: int, output_dir: str, query_cost_high: float,
     return _analyze_run(engine.epoch_metrics, phase_log, wave_period, seed)
 
 
-def _run_constant(seed: int, output_dir: str, query_cost: float) -> dict:
+def _run_constant(seed: int, output_dir: str, query_cost: float, device: str = "cpu") -> dict:
     """Run one seed with constant query cost."""
     from simulation.engine import SimulationEngine, SimulationConfig
 
@@ -143,6 +144,7 @@ def _run_constant(seed: int, output_dir: str, query_cost: float) -> dict:
         query_cost=query_cost,
         respond_cost=RESPOND_COST,
         output_dir=output_dir,
+        device=device,
     )
     engine = SimulationEngine(config=config)
     engine.run()
@@ -256,17 +258,20 @@ def _worker(spec: dict) -> dict:
     seed   = spec["seed"]
     outdir = spec["output_dir"]
 
+    device = spec.get("device", "cpu")
     if cond["mode"] == "square_wave":
         result = _run_square_wave(
             seed=seed, output_dir=outdir,
             query_cost_high=cond["query_cost_high"],
             query_cost_low=cond["query_cost_low"],
             wave_period=cond["wave_period"],
+            device=device,
         )
     else:
         result = _run_constant(
             seed=seed, output_dir=outdir,
             query_cost=cond["query_cost"],
+            device=device,
         )
 
     result["condition"] = spec["condition"]
@@ -308,6 +313,10 @@ def run_campaign(conditions: list[str], seeds: list[int], workers: int,
     results = []
     t0   = time.time()
     done = 0
+    import torch as _torch
+    _n_gpus = _torch.cuda.device_count() if _torch.cuda.is_available() else 0
+    for _i, _j in enumerate(jobs):
+        _j["device"] = f"cuda:{_i % _n_gpus}" if _n_gpus > 0 else "cpu"
     with ProcessPoolExecutor(max_workers=workers) as pool:
         futures = {pool.submit(_worker, j): j for j in jobs}
         for fut in as_completed(futures):
