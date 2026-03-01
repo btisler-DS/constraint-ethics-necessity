@@ -1,0 +1,42 @@
+{
+  "experiment": "1",
+  "description": "Tax sweep: critical threshold mapping",
+  "generated": "2026-03-01T11:46:24.890613",
+  "n_seeds": 15,
+  "rates": {
+    "0.00": {
+      "n": 15,
+      "n_crys": 0,
+      "rate": 0.0
+    },
+    "1.20": {
+      "n": 15,
+      "n_crys": 11,
+      "rate": 0.7333
+    },
+    "1.50": {
+      "n": 15,
+      "n_crys": 14,
+      "rate": 0.9333
+    },
+    "3.00": {
+      "n": 15,
+      "n_crys": 14,
+      "rate": 0.9333
+    },
+    "5.00": {
+      "n": 15,
+      "n_crys": 15,
+      "rate": 1.0
+    }
+  },
+  "logistic_fit": {
+    "a": -2.5553,
+    "b": 2.8035,
+    "log_likelihood": -20.0663,
+    "critical_q": 0.9114,
+    "transition_band_low": 0.1277,
+    "transition_band_high": 1.6952,
+    "transition_width": 1.5675
+  }
+}
