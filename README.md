@@ -65,9 +65,19 @@ npm run dev
 
 **240 / 1,185 runs complete (20.3%)** — campaign in progress.
 
-P2 rerun: FAILED (exit 1 after 236 min, 0/45 runs produced; needs diagnosis).
-Counter-wave discrimination: **H2 (phase-reset) supported** — DECLARE spikes persist
-in no-bonus condition, rebound timing unaffected by pressure hold.
+| Investigation | Status |
+|---|---|
+| Counter-wave discrimination | **CLOSED — H2 (phase-reset) supported** |
+| P2 rerun (cost-sensitivity) | **OPEN — root cause identified** |
+
+**Counter-wave**: DECLARE spikes at full-survival episodes are boundary artifacts (episode
+termination trigger), not reward artifacts (H1 weak) and not pragmatic speech acts (H3 weak).
+Closes the Run 11 open question. See `docs/results-marl.md`.
+
+**P2 rerun root cause**: `run_p2_rerun.py` calls `import torch` inside `main()`. The
+orchestrator used `python` → Python 3.14 (no torch). Fix: invoke with
+`C:/Users/btisl/miniconda3/python.exe`. Do not relaunch the 45-run campaign until a
+2-seed smoke test (`--seeds 0 1 --workers 1`) completes cleanly.
 
 See `data/harvest_status.json` for full experiment queue status.
 
