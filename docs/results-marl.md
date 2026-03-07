@@ -3,7 +3,7 @@
 
 **Preregistration**: `docs/preregistration.md` (locked, DOI: 10.5281/zenodo.18738379)
 **Data**: `data/` (campaign runs, p2_rerun, counter_wave, p4_substrate, p5_rerun)
-**Last updated**: 2026-03-05
+**Last updated**: 2026-03-07
 
 ---
 
@@ -14,7 +14,7 @@ emergence) and Protocol 0 (baseline). Five preregistered propositions (P1–P5) 
 across 75 confirmatory runs (5 conditions × 15 seeds × 500 epochs). Post-confirmatory
 investigations address unresolved questions arising from the pilot and confirmatory data.
 
-**Campaign status**: 240 / 1,185 runs complete (20.3%). P2 rerun broken (see P2 section).
+**All five MARL confirmatory propositions now resolved.** P2 rerun completed 2026-03-07.
 
 ---
 
@@ -37,22 +37,23 @@ protocol) in crystallised seeds. Crystallisation epoch ranges from mid-training 
 **Prediction**: Pearson r(query_cost, query_rate) < −0.70, p < 0.01 (one-tailed),
 across conditions spanning query_cost ∈ {1.2, 1.5, 3.0, 5.0}.
 
-**Result: PENDING RERUN — script failure; 0 confirmatory runs produced.**
+**Result: CONFIRMED.** (rerun completed 2026-03-07)
 
-The original P2 result (from the build-report campaign) used manifests that predate the
-`per_agent_types` field in the engine. A rerun (`run_p2_rerun.py`) was written to collect
-actual per-agent query rates with the current engine. The rerun script failed twice in the
-orchestrator (exit code 1, 236 min, 0 runs). The `p2_summary.json` currently in
-`data/p2_rerun/` contains only 17 data points (n=15 baseline from P4-v2 + n=2 partial
-low-pressure), giving r=−0.37, p=0.14. This is not a valid P2 result — it is a data
-artifact from a failed harvest.
+| Condition | query_cost | n | mean_Q | sd_Q |
+|---|---|---|---|---|
+| baseline | 1.5 | 15 | 0.1706 | 0.0938 |
+| low_pressure | 1.2 | 15 | 0.2856 | 0.1343 |
+| high_pressure | 3.0 | 15 | 0.0413 | 0.0345 |
+| extreme | 5.0 | 15 | 0.0142 | 0.0152 |
 
-**Root cause identified (2026-03-05)**: `run_p2_rerun.py` calls `import torch` at the top
-of the `main()` function. The orchestrator invokes `python` which resolves to Python 3.14
-(system default, no torch). The correct interpreter is `C:/Users/btisl/miniconda3/python.exe`
-(torch 2.6.0+cu124). The fix is to invoke the script with the miniconda interpreter.
+Pearson r = −0.7047, p(one-tail) = 2×10⁻¹⁰, n = 60. Clears both thresholds (r < −0.70,
+p < 0.01). The dose-response is monotone: query rate declines from 0.286 at q=1.2 to
+0.014 at q=5.0. The effect is large and unambiguous.
 
-P2 is not confirmed or falsified. Status remains pending until a clean rerun completes.
+**History**: The original campaign manifests predated the `per_agent_types` engine field;
+type_entropy was used as a proxy, giving r=−0.686 (missed −0.70 by 0.014). Two failed
+rerun attempts used the wrong Python interpreter (Python 3.14, no torch); root cause
+identified 2026-03-05, fixed by invoking with `C:/Users/btisl/miniconda3/python.exe`.
 
 ---
 
@@ -161,7 +162,7 @@ corrective action needed on the theory; this closes the counter-wave open questi
 | Proposition | Result |
 |---|---|
 | P1 — Interrogative emergence | **CONFIRMED** |
-| P2 — Cost-sensitivity | **PENDING RERUN** (script broken; 0 confirmatory runs) |
+| P2 — Cost-sensitivity | **CONFIRMED** (r=−0.7047, p=2×10⁻¹⁰, n=60) |
 | P3 — Temporal coupling / hysteresis | **CONFIRMED** |
 | P4 — Substrate independence | **CONFIRMED** |
 | P5 — Coordination advantage | **NOT CONFIRMED** (underpowered, d=0.28) |
@@ -185,6 +186,6 @@ corrective action needed on the theory; this closes the counter-wave open questi
 | Investigation | Verdict |
 |---|---|
 | Counter-wave discrimination (H1/H2/H3) | **H2 (phase-reset) supported — closed** |
-| P2 rerun (cost-sensitivity with per_agent_types) | **OPEN** — script broken, root cause identified |
+| P2 rerun (cost-sensitivity with per_agent_types) | **CONFIRMED** — r=−0.7047, p=2×10⁻¹⁰, closed 2026-03-07 |
 | P5 rerun (coordination advantage, revised metric) | **OPEN** — design decision pending |
 | Exp A formal analysis (logistic fit) | **OPEN** — data collected, analysis pending |

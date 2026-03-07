@@ -68,16 +68,14 @@ npm run dev
 | Investigation | Status |
 |---|---|
 | Counter-wave discrimination | **CLOSED — H2 (phase-reset) supported** |
-| P2 rerun (cost-sensitivity) | **OPEN — root cause identified** |
+| P2 rerun (cost-sensitivity) | **CONFIRMED — r=−0.7047, p=2×10⁻¹⁰** |
 
 **Counter-wave**: DECLARE spikes at full-survival episodes are boundary artifacts (episode
 termination trigger), not reward artifacts (H1 weak) and not pragmatic speech acts (H3 weak).
 Closes the Run 11 open question. See `docs/results-marl.md`.
 
-**P2 rerun root cause**: `run_p2_rerun.py` calls `import torch` inside `main()`. The
-orchestrator used `python` → Python 3.14 (no torch). Fix: invoke with
-`C:/Users/btisl/miniconda3/python.exe`. Do not relaunch the 45-run campaign until a
-2-seed smoke test (`--seeds 0 1 --workers 1`) completes cleanly.
+**P2**: r=−0.7047, p(one-tail)=2×10⁻¹⁰, n=60. Monotone dose-response across query_cost
+∈ {1.2, 1.5, 3.0, 5.0}. Both thresholds cleared. All 5 MARL propositions now resolved.
 
 See `data/harvest_status.json` for full experiment queue status.
 
