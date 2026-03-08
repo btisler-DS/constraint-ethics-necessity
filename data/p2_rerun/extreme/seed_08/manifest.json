@@ -1,0 +1,102 @@
+{
+  "protocol": 1,
+  "seed": 8,
+  "declare_cost": 1.0,
+  "query_cost": 5.0,
+  "respond_cost": 0.3,
+  "epochs_total": 500,
+  "final_metrics": {
+    "survival_rate": 0.0,
+    "target_reached_rate": 0.0,
+    "energy_roi": 0.0,
+    "type_entropy": 0.7983031424019911,
+    "qrc": 0.991869918699187,
+    "per_agent_types": {
+      "A": {
+        "DECLARE": 0.2681,
+        "QUERY": 0.0121,
+        "RESPOND": 0.7198
+      },
+      "B": {
+        "DECLARE": 0.6724,
+        "QUERY": 0.0978,
+        "RESPOND": 0.2298
+      },
+      "C": {
+        "DECLARE": 0.0796,
+        "QUERY": 0.0171,
+        "RESPOND": 0.9032
+      }
+    }
+  },
+  "crystallization_epoch": 152,
+  "per_agent_crystallization": {
+    "A": 21,
+    "B": null,
+    "C": 80
+  },
+  "phase_transitions": [
+    {
+      "epoch": 395,
+      "entropy_before": 0.8154,
+      "entropy_after": 0.7463,
+      "delta": 0.0691
+    },
+    {
+      "epoch": 398,
+      "entropy_before": 0.7876,
+      "entropy_after": 0.7088,
+      "delta": 0.0788
+    },
+    {
+      "epoch": 415,
+      "entropy_before": 0.7751,
+      "entropy_after": 0.7248,
+      "delta": 0.0503
+    },
+    {
+      "epoch": 474,
+      "entropy_before": 0.8237,
+      "entropy_after": 0.7696,
+      "delta": 0.0541
+    },
+    {
+      "epoch": 478,
+      "entropy_before": 0.8379,
+      "entropy_after": 0.7752,
+      "delta": 0.0627
+    },
+    {
+      "epoch": 482,
+      "entropy_before": 0.8781,
+      "entropy_after": 0.8035,
+      "delta": 0.0746
+    },
+    {
+      "epoch": 493,
+      "entropy_before": 0.8522,
+      "entropy_after": 0.7907,
+      "delta": 0.0615
+    }
+  ],
+  "performance_stats": {
+    "avg_survival_rate": 0.2368,
+    "avg_target_rate": 0.2368,
+    "max_survival_rate": 1.0,
+    "max_target_rate": 1.0
+  },
+  "counter_wave_data": {
+    "counter_wave_mode": 0,
+    "n_full_survival_epochs": 4,
+    "n_counter_wave_events": 0,
+    "declare_rate_at_success": 0.2565,
+    "declare_rate_baseline": 0.2515,
+    "full_survival_epochs": [
+      20,
+      40,
+      72,
+      424
+    ],
+    "events": []
+  }
+}

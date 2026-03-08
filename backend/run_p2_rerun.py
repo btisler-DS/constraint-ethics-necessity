@@ -279,10 +279,9 @@ def main() -> None:
         done_n = 0
         t_camp = time.time()
 
-        import torch as _torch
-        _n_gpus = _torch.cuda.device_count() if _torch.cuda.is_available() else 0
-        for _i, _s in enumerate(specs):
-            _s["device"] = f"cuda:{_i % _n_gpus}" if _n_gpus > 0 else "cpu"
+        # Force CPU: CUDA multi-process spawning deadlocks on Windows with dual GPUs
+        for _s in specs:
+            _s["device"] = "cpu"
         with ProcessPoolExecutor(max_workers=workers) as pool:
             futures = {pool.submit(run_one, s): s for s in specs}
             for future in as_completed(futures):
