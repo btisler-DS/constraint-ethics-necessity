@@ -26,6 +26,7 @@ if __name__ == "__main__":
     import sys
 
     seed = int(sys.argv[1]) if len(sys.argv) > 1 else config.seed
+    num_epochs = int(sys.argv[2]) if len(sys.argv) > 2 else 500
 
     def print_epoch(m: dict) -> None:
         inq = m.get("inquiry", {})
@@ -45,7 +46,7 @@ if __name__ == "__main__":
         protocol=2,
         population_mode="all_constrained",
         seed=seed,
-        num_epochs=100,
+        num_epochs=num_epochs,
         episodes_per_epoch=10,
         output_dir=f"data/p2_constrained/seed_{seed}",
     )

@@ -186,8 +186,10 @@ class SimulationEngine:
                 if i < len(self.epoch_metrics):
                     self.epoch_metrics[i]['signal_pca'] = proj
 
-        # Write run manifest
+        # Write run manifest and per-epoch series (for confirmatory analysis)
         self._write_manifest("manifest.json")
+        if isinstance(self.protocol, Protocol2):
+            self._write_epoch_series("epoch_series.json")
 
         return self.epoch_metrics
 
@@ -504,6 +506,39 @@ class SimulationEngine:
         }
         with open(full_path, "w") as f:
             json.dump(manifest, f, indent=2)
+
+    def _write_epoch_series(self, path: str) -> None:
+        """Write per-epoch metrics needed for confirmatory analysis (Protocol 2 only).
+
+        Fields per epoch:
+            epoch         -- epoch index
+            type_entropy  -- Shannon entropy of signal-type distribution
+            qrc           -- query_response_coupling P(RESPONSE | QUERY)
+            query_rate    -- fraction of steps with QUERY signal (query_emergence_rate)
+            ethical_cost  -- total ethical cost paid across all agents (0 for unconstrained)
+            collapse_detected -- cumulative collapse flag from interrogative_collapse_rate
+        """
+        import os
+        if not self.epoch_metrics:
+            return
+        os.makedirs(self.config.output_dir, exist_ok=True)
+        full_path = os.path.join(self.config.output_dir, path)
+        series = []
+        for m in self.epoch_metrics:
+            inq = m.get("inquiry", {}) or {}
+            ec = m.get("ethical_constraint", {}) or {}
+            coll = m.get("collapse_metrics", {}).get("interrogative_collapse", {}) or {}
+            ethical_cost = sum(ec.get("ethical_cost_by_agent", {}).values())
+            series.append({
+                "epoch": m["epoch"],
+                "type_entropy": inq.get("type_entropy"),
+                "qrc": inq.get("query_response_coupling"),
+                "query_rate": inq.get("query_emergence_rate"),
+                "ethical_cost": round(ethical_cost, 4),
+                "collapse_detected": coll.get("collapse_detected", False),
+            })
+        with open(full_path, "w") as f:
+            json.dump(series, f, indent=2)
 
     def _extract_final_metrics(self, last_epoch: dict) -> dict:
         inq = last_epoch.get('inquiry', {})
