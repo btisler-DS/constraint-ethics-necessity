@@ -1,4 +1,5 @@
-.PHONY: dev dev-backend dev-frontend test build up down clean
+.PHONY: dev dev-backend dev-frontend test build up down clean \
+        sim-p2-constrained sim-p2-unconstrained
 
 dev-backend:
 	cd backend && uvicorn app.main:app --reload --port 8000
@@ -12,8 +13,13 @@ dev:
 test:
 	cd backend && python -m pytest tests/ -v
 
-sim:
-	cd backend && python -m simulation.engine --seed 42 --epochs 20
+sim-p2-constrained:
+	cd backend && python run_p2_all_constrained.py
+
+sim-p2-unconstrained:
+	cd backend && python run_p2_all_unconstrained.py
+
+# Future extension (deferred): sim-p2-two-pop — mixed constrained/unconstrained population
 
 build:
 	docker compose build

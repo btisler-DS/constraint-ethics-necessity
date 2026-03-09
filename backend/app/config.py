@@ -12,7 +12,7 @@ _DATA_DIR = _PROJECT_ROOT / "data"
 
 
 class Settings(BaseSettings):
-    app_name: str = "Project Synapse"
+    app_name: str = "Constraint Ethics Necessity"
     debug: bool = False
     database_url: str = f"sqlite:///{(_DATA_DIR / 'synapse.db').as_posix()}"
     data_dir: str = str(_DATA_DIR)

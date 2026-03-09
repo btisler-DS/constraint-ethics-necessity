@@ -30,7 +30,8 @@ from .metrics.transfer_entropy import compute_all_pairs_te
 from .metrics.zipf_analysis import compute_zipf_per_agent
 from .metrics.energy_roi import compute_energy_roi
 from .metrics.pca_snapshot import collect_signal_samples, fit_pca_and_project
-from .protocols import create_protocol
+from .protocols import create_protocol, Protocol2
+from .metrics.collapse_metrics import interrogative_collapse_rate, exploitation_loop_detection
 from .utils.seeding import set_all_seeds
 
 
@@ -52,10 +53,12 @@ class SimulationConfig:
     gamma: float = 0.99
     communication_tax_rate: float = 0.01
     survival_bonus: float = 0.1
-    protocol: int = 1      # 0=Baseline, 1=Interrogative Emergence
+    protocol: int = 1      # 0=Baseline, 1=Interrogative Emergence, 2=Ethical Constraints
     declare_cost: float = 1.0   # DECLARE signal cost multiplier (Protocol 1)
     query_cost: float = 1.5     # QUERY signal cost multiplier (Protocol 1)
     respond_cost: float = 0.8   # RESPOND signal cost multiplier (Protocol 1)
+    # Protocol 2: Ethical Constraints — fixed constants, two conditions only
+    population_mode: str = "all_unconstrained"  # "all_unconstrained" | "all_constrained"
     output_dir: str = "."       # Directory for manifest and report output
     training_frozen: bool = False          # If True, skip optimizer step (phase 2 of hysteresis)
     ablate_agent_c_type_head: bool = False # Experiment 6: freeze Agent C type_head only
@@ -89,6 +92,7 @@ class SimulationEngine:
             declare_cost=self.config.declare_cost,
             query_cost=self.config.query_cost,
             respond_cost=self.config.respond_cost,
+            population_mode=self.config.population_mode,
         )
 
         # Environment
@@ -195,7 +199,10 @@ class SimulationEngine:
         epoch_steps = 0
         epoch_energy_spent = 0.0
 
-        # Current temperature (Protocol 1: Gumbel-Softmax annealing; Protocol 0: unused)
+        # Reset per-epoch protocol state (no-op for P0/P1; used by P2)
+        self.protocol.reset_epoch()
+
+        # Current temperature (Protocol 1/2: Gumbel-Softmax annealing; Protocol 0: unused)
         tau = self.protocol.get_tau(epoch)
 
         for agent in self.agents:
@@ -210,6 +217,9 @@ class SimulationEngine:
                 effective_tax = self.config.communication_tax_rate * self.config.post_success_tax_multiplier
             else:
                 effective_tax = self.config.communication_tax_rate
+
+            # Reset per-episode protocol state (no-op for P0/P1; used by P2)
+            self.protocol.reset_episode()
 
             type_history_start = len(self.comm_buffer.type_history)
             record_trajectory = (episode == self.config.episodes_per_epoch - 1)
@@ -309,7 +319,24 @@ class SimulationEngine:
             "tau": tau,
             "episode_summaries": episode_summaries,  # per-episode type breakdown
         }
-        metrics.update(extras)  # merges 'inquiry' dict for P1, nothing for P0
+        metrics.update(extras)  # merges 'inquiry' for P1/P2, 'ethical_constraint' for P2, nothing for P0
+
+        # Protocol 2: compute collapse metrics using accumulated query-rate series
+        if isinstance(self.protocol, Protocol2):
+            query_rates = list(self.protocol._epoch_query_rates)  # updated by compute_epoch_extras
+            collapse_result = interrogative_collapse_rate(query_rates)
+            # Exploitation loop detection uses per-step type history encoded as target_selections
+            # Approximate: encode signal-type sequence as 'target selection' proxy
+            type_flat = [
+                t
+                for step in type_history
+                for t in step.values()
+            ]
+            loop_result = exploitation_loop_detection(type_flat)
+            metrics["collapse_metrics"] = {
+                "interrogative_collapse": collapse_result,
+                "exploitation_loop": loop_result,
+            }
 
         return metrics
 
@@ -465,6 +492,7 @@ class SimulationEngine:
         manifest = {
             "protocol": self.config.protocol,
             "seed": self.config.seed,
+            "population_mode": self.config.population_mode if self.config.protocol == 2 else None,
             "declare_cost": self.config.declare_cost,
             "query_cost": self.config.query_cost,
             "respond_cost": self.config.respond_cost,
@@ -494,7 +522,7 @@ class SimulationEngine:
 
     def _find_crystallization_epoch(self, epochs: list[dict]) -> int | None:
         """First epoch in a streak of 5 consecutive epochs with type_entropy < 0.95."""
-        if self.config.protocol != 1:
+        if self.config.protocol == 0:
             return None
         streak_start = None
         streak_count = 0
@@ -528,7 +556,7 @@ class SimulationEngine:
         """
         import math
 
-        if self.config.protocol != 1:
+        if self.config.protocol == 0:
             return {"A": None, "B": None, "C": None}
 
         THRESHOLD = 1.2  # bits
@@ -607,7 +635,7 @@ class SimulationEngine:
           - declare_rate_at_success: mean DECLARE rate in full-survival episodes
           - declare_rate_baseline: mean DECLARE rate in non-success episodes
         """
-        if self.config.protocol != 1:
+        if self.config.protocol == 0:
             return {}
 
         full_survival_epochs = []
@@ -711,8 +739,11 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--epochs", type=int, default=20)
     parser.add_argument("--episodes", type=int, default=5)
-    parser.add_argument("--protocol", type=int, default=1, choices=[0, 1],
-                        help="0=Baseline (Run 10 behaviour), 1=Interrogative Emergence")
+    parser.add_argument("--protocol", type=int, default=1, choices=[0, 1, 2],
+                        help="0=Baseline, 1=Interrogative Emergence, 2=Ethical Constraints")
+    parser.add_argument("--population-mode", type=str, default="all_unconstrained",
+                        choices=["all_unconstrained", "all_constrained"],
+                        help="Protocol 2 condition (default: all_unconstrained)")
     parser.add_argument("--declare-cost", type=float, default=1.0,
                         help="DECLARE signal cost multiplier (Protocol 1)")
     parser.add_argument("--query-cost", type=float, default=1.5,
@@ -750,6 +781,7 @@ if __name__ == "__main__":
         declare_cost=args.declare_cost,
         query_cost=args.query_cost,
         respond_cost=args.respond_cost,
+        population_mode=args.population_mode,
         output_dir=args.output_dir,
         ablate_agent_c_type_head=args.ablate_agent_c,
         counter_wave_mode=args.counter_wave_mode,

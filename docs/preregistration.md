@@ -1,137 +1,182 @@
-# Preregistration: The Δ-Variable Theory of Interrogative Emergence
-https://doi.org/10.5281/zenodo.18738379
+# Preregistration v3: Constraint-Ethics-Necessity
 
-## Study Title
-Testing Substrate-Independent Emergence of Interrogative Structures Under Resource Constraints in Multi-Agent Coordination Systems
+## Ethics as Structural Necessity in Multi-Agent Reinforcement Learning Systems
 
-## Theoretical Framework
-
-**Core Theory**: Coordinating systems under resource constraints will spontaneously develop internal uncertainty management (Δ-variables) that manifests as interrogative coupling, following substrate-independent optimization principles.
-
-**Δ-Variable Definition**: A Δ-variable is an explicitly represented, unresolved dependency variable that requires external information for resolution and creates mandatory coupling between systems.
-
-**Key Theoretical Claims**:
-
-1. **Structural Necessity**: Interrogative states emerge as optimal solutions to uncertainty management, not as linguistic phenomena
-2. **Cost-Benefit Optimization**: Systems will develop interrogative behaviors despite higher energy costs when coordination benefits exceed expenditure
-3. **Forced Coupling**: Unresolved Δ-variables create dependency edges that require inter-system coordination
-4. **Silent Collapse Prevention**: Systems that act without resolving acknowledged uncertainty exhibit coordination failure
-5. **Substrate Independence**: Under identical constraints, different cognitive architectures converge on similar Δ-management strategies
-
-## Primary Predictions
-
-**P1: Interrogative Emergence**
-Agents will spontaneously develop QUERY-type signals with emergence rate ≥ 10% of total communications within 100 epochs, despite higher energy costs (1.5x vs 1.0x baseline).
-
-**P2: Cost-Sensitivity Optimization**
-Mean query emergence rate per condition will be inversely correlated with query cost across the four cost conditions (r < -0.70). Significance will be tested using individual seeds as observations (n=60 across 4 conditions, p < 0.01). Optimal query budget discovery expected within 200 epochs.
-
-**P3: Temporal Coupling**
-Query-Response Coupling (QRC) will exceed 0.90 for ≥ 20 consecutive epochs, measured as P(RESPONSE within 3 timesteps | QUERY at t) across all agent pairs.
-
-**P4: Substrate Independence**
-Heterogeneous agents (RNN/CNN/GNN) will each participate in query-response coupling, with no significant architectural differences (p > 0.10) in convergence rate to stable interrogative behavior. Note: Agent C (GNN) functions as a communication broker by role; differentiated final signal type distributions across architectures are expected due to role specialization and do not constitute evidence of substrate dependence. The test compares convergence epoch and QRC participation rate, not final signal type proportions.
-
-**P5: Coordination Advantage**
-Query-enabled agents will achieve ≥ 25% higher coordination efficiency (ROI: success_rate/energy_cost) compared to query-disabled controls.
-
-## Experimental Design
-
-**Environment**: Multi-agent coordination with dynamic targets, 20×20 grid
-**Agents**: 3 heterogeneous agents per trial (RNN-1D, CNN-3D, GNN-relational)
-**Episodes**: 500 epochs × 10 episodes per epoch
-**Replication**: 15 independent seeds per condition
-
-**Cost Structure Conditions**:
-- **Baseline**: DECLARE=1.0x, QUERY=1.5x, RESPOND=0.8x
-- **Low Pressure**: DECLARE=1.0x, QUERY=1.2x, RESPOND=0.9x
-- **High Pressure**: DECLARE=1.0x, QUERY=3.0x, RESPOND=0.5x
-- **Extreme**: DECLARE=1.0x, QUERY=5.0x, RESPOND=0.3x
-- **Control**: Query signals disabled, DECLARE=1.0x only
-
-## Primary Outcome Variables
-
-**Emergence Metrics**:
-1. **Query Emergence Rate**: Percentage of signals classified as QUERY type
-2. **Emergence Epoch**: First epoch where query rate exceeds 5% sustainably (20+ epochs)
-
-**Coupling Metrics**:
-3. **Query-Response Coupling (QRC)**: P(RESPONSE within 3 timesteps | QUERY at t)
-4. **Coupling Latency**: Mean timesteps between QUERY and corresponding RESPONSE
-5. **Coupling Persistence**: Longest streak of QRC ≥ 0.90
-
-**Optimization Metrics**:
-6. **Information ROI**: (Coordination success rate) / (Total energy expenditure)
-7. **Query Efficiency**: (Coordination improvement) / (Query energy spent)
-8. **Protocol Entropy**: Shannon entropy of signal type distribution
-
-**Substrate Metrics**:
-9. **Architecture Convergence**: Coefficient of variation in final strategy metrics across agent types
-10. **Cross-Architecture Coupling**: QRC measured specifically between different agent architectures
-
-## Statistical Analysis Plan
-
-**Power Analysis**: N=15 seeds provides 80% power to detect Cohen's d ≥ 0.8 effects at α=0.05
-
-**Primary Tests**:
-- **Emergence**: One-sample t-test of query emergence rate vs. 10% threshold
-- **Cost Sensitivity**: Pearson correlation of query rate vs. cost across conditions  
-- **Coupling**: Run-length analysis on QRC time series confirming ≥ 20 consecutive epochs exceeding QRC = 0.90 (per P3 criterion); supplemented by one-sample t-test of mean sustained QRC vs. 0.90 threshold
-- **Substrate Independence**: One-way ANOVA of convergence epoch and QRC participation rate by agent architecture, with planned contrasts excluding Agent C signal-type proportions (broker role expected to differ); significant convergence-rate differences only constitute falsification
-- **Coordination Advantage**: Two-sample t-test of ROI (query-enabled vs. control)
-
-**Multiple Comparisons**: Bonferroni correction applied to 5 primary predictions (α=0.01)
-
-**Changepoint Detection**: PELT algorithm to identify emergence epochs in type entropy timeseries
-
-## Success Criteria
-
-**Minimal Success**: P1, P3, and P5 confirmed (emergence, coupling, advantage)
-**Strong Success**: All 5 primary predictions confirmed with committed effect sizes
-**Paradigmatic Success**: P4 confirmed + replication across all cost conditions
-
-## Falsification Criteria
-
-**Theory is falsified if ANY of the following occur**:
-1. Query emergence rate < 5% in baseline condition (averaged across seeds)
-2. Maximum QRC never exceeds 0.70 in any condition  
-3. No significant ROI advantage over query-disabled control (p > 0.05)
-4. Significant architectural differences in convergence rate or QRC participation (p < 0.01), excluding Agent C signal-type proportions which are expected to differ due to broker role
-5. No cost-sensitivity correlation (|r| < 0.30 across conditions)
-
-## Controls and Robustness
-
-**Control Conditions**:
-- Query-disabled agents (Protocol 0 replication)
-- Random signaling baseline
-- Single-architecture homogeneous groups
-
-**Robustness Checks**:
-- Grid size variation (10×10, 30×30)  
-- Agent count variation (2, 4, 6 agents)
-- Target dynamics variation (static, slow, fast)
-- Seed independence validation across 15 replications
-
-## Data Management
-
-**Precommitted Metrics**: Only the 10 primary outcome variables listed above will be used for hypothesis testing
-**Exploratory Analysis**: Additional metrics may be computed but will be clearly labeled as exploratory
-**Pilot Data**: Run 11 (seed=42, 500 epochs, Protocol 1 baseline condition) constitutes pilot data used to develop this preregistration and calibrate threshold predictions. It will be excluded from confirmatory hypothesis testing and reported separately as exploratory.
-**Analysis Blinding**: Blinding to condition is not possible in computational research. All analysis will follow the preregistered statistical plan exactly; deviations will be documented and justified.
-**Data Availability**: All code, datasets, and analysis scripts publicly available upon completion
-**Preregistration Hash**: SHA-256: 7edc9113e39afb2dce430eb77802d5a6c10988e269eb823ae30e5508b12a8d6a
-
-## Timeline
-
-- **Week 1-2**: Protocol implementation and validation
-- **Week 3-6**: Experimental execution (all conditions; 75 total runs at 500 epochs each requires parallel execution)
-- **Week 7**: Statistical analysis per preregistered plan
-- **Week 8**: Results writeup and data release
-
-**Compute Note**: 5 conditions × 15 seeds × 500 epochs = 75 runs. Timeline assumes parallel execution across available hardware.
+**Repository:** btisler-DS/constraint-ethics-necessity
+**Zenodo DOI:** 10.5281/zenodo.18929040
+**Author:** Bruce Tisler — quantuminquiry.org — Bakersfield, CA — March 2026
+**Parent study:** [dynamic-cross-origin-constraint](https://github.com/btisler-DS/dynamic-cross-origin-constraint) (DOI: 10.5281/zenodo.18738379)
 
 ---
 
-**Registration Commitment**: This preregistration represents our complete analytical strategy. No hypothesis tests beyond those specified will be used to support theoretical claims. Any deviations from this protocol will be explicitly documented and justified.
+## SHA-256 Verification
 
-**Falsification Commitment**: If the specified falsification criteria are met, we commit to reporting this as evidence against the Δ-variable theory, regardless of other interesting patterns that may emerge in the data.
+This document is version-locked via SHA-256 hash after finalization. The hash is computed as:
+
+```bash
+sha256sum docs/preregistration.md
+```
+
+The resulting hash is recorded in `README.md` under **Preregistration Lock**. Any modification to this document after locking invalidates the hash and must be logged as a deviation with full justification.
+
+| Field | Value |
+|-------|-------|
+| Hash algorithm | SHA-256 |
+| Hash status | LOCKED — March 2026 |
+| Hash value | See README.md — Preregistration Lock section |
+| Lock date | March 2026 |
+| Infrastructure | `backend/app/services/hash_chain.py` (reused from parent repo) |
+
+---
+
+## Theoretical Basis
+
+### Parent Framework
+
+This study extends the Δ-Variable Theory of Interrogative Emergence, preregistered and confirmed in the parent repository (btisler-DS/dynamic-cross-origin-constraint, DOI: 10.5281/zenodo.18738379). Predictions P1 through P4 of that study were confirmed; P5 remains under reanalysis.
+
+The parent study established: interrogative structures emerge as mathematical necessities when multi-agent systems coordinate under resource constraints. Agents develop question-asking behavior because resolving uncertainty is cheaper than acting blindly.
+
+### The Architectural Necessity Claim
+
+This study tests a derived and stronger claim: ethical constraints are not culturally constructed moral add-ons to intelligent systems — they are structurally required for sustained interrogative complexity.
+
+The formal hypothesis: a system operating without ethical constraints will exhaust its constraint space, collapse into exploitation loops, and lose the structural conditions required for intelligence as defined — a system that generates questions it cannot yet answer.
+
+This is distinguished from the weaker *scaffolding* interpretation, which holds that ethical constraints merely assist or enhance cognition. The architectural necessity claim predicts that their absence causes categorical collapse, not gradual degradation. The effect size threshold in H3 is the empirical discriminator between these two interpretations.
+
+### Mechanism
+
+Ethical constraints are encoded as Landauer-style resource costs on exploitative actions. Exploitation is defined as an agent targeting the same resource for three or more consecutive steps — the Omega→Delta→Phi transition: initial targeting, confirmation (no new information acquired), lock-in.
+
+The `exploit_threshold = 3` is theoretically derived from the coordination cycle structure confirmed in P1–P4 results, not chosen arbitrarily. It represents the minimum duration at which repetitive targeting ceases to generate new information and constitutes genuine exploitation.
+
+---
+
+## Hypotheses
+
+| ID | Metric | Prediction | Direction |
+|----|--------|-----------|-----------|
+| H1 | `exploitation_loop_rate` | Unconstrained agents develop exploitation loops — high loop rate, low target selection entropy, low diversity score | Unconstrained > Constrained |
+| H2 | `sustained_structure_score` | Constrained agents maintain interrogative diversity — high composite score (type_entropy × QRC) through final epochs | Constrained > Unconstrained |
+| H3 | Cohen's d on `sustained_structure_score` | Effect size > 0.8 between conditions — categorical difference, not graded | d > 0.8 |
+
+### H3 Threshold Rationale
+
+**The following rationale is locked verbatim and must not be paraphrased in any publication or report derived from this study:**
+
+The architectural necessity claim predicts a categorical behavioral difference — collapse vs. sustained structure — not a graded effect. A large effect size (d > 0.8) is the minimum consistent with a constitutive rather than modulatory role for ethical constraint. Smaller effects would support the scaffolding interpretation instead.
+
+---
+
+## Experimental Design
+
+| Parameter | Value | Justification |
+|-----------|-------|---------------|
+| Seeds per condition | 10 | High-confidence effect size estimation; robust against seed-specific variance |
+| Epochs per run | 500 | Consistent with P1–P4 confirmatory runs; sufficient for collapse detection |
+| Episodes per epoch | Per protocol default | Inherited from parent harness — unchanged |
+| `exploit_threshold` | 3 | Theoretically derived — Omega→Delta→Phi coordination cycle (see Theoretical Basis) |
+| `ethical_tax_rate` | 2.0 | Multiplier on signal_cost; creates meaningful Landauer-style resource cost without trivializing survival |
+| `collapse_threshold` | 0.05 | Query rate below which interrogative behavior is considered absent |
+| `collapse_window` | 10 | Consecutive epochs below threshold required to declare sustained collapse; grounded in P1–P4 coordination cycle length |
+| Conditions | 2 | `all_constrained` (experimental) vs. `all_unconstrained` (control) |
+| Agent types | 3 per run | RNN, CNN, GNN-attention — inherited unchanged from parent harness |
+| Environment | 20×20 grid | Inherited unchanged from parent harness |
+
+---
+
+## Statistical Analysis Plan
+
+### Primary Analysis — H1 and H2
+
+For each of the 10 seeds, compute:
+- `exploitation_loop_rate` — proportion of epochs where `exploitation_loop_detection()` returns `loop_detected = True`
+- `sustained_structure_score` — composite metric over final 20 epochs: `mean(type_entropy) × mean(QRC)`
+
+Primary test: Mann-Whitney U test (non-parametric; no assumption of normality across 10 seeds) comparing the two conditions on each metric independently.
+
+| Hypothesis | Test | Alpha | Rejection criterion |
+|-----------|------|-------|-------------------|
+| H1 | Mann-Whitney U: `exploitation_loop_rate`, unconstrained vs. constrained | 0.05 (one-tailed) | Unconstrained significantly higher exploitation_loop_rate |
+| H2 | Mann-Whitney U: `sustained_structure_score`, constrained vs. unconstrained | 0.05 (one-tailed) | Constrained significantly higher sustained_structure_score |
+| H3 | Cohen's d on `sustained_structure_score` across 10 seeds per condition | d > 0.8 | Effect size meets large threshold — architectural necessity supported over scaffolding |
+
+### Secondary Analysis
+
+If H1 and H2 are both confirmed:
+- Compute `constrained_vs_unconstrained_divergence()` — trajectory divergence over epoch series, not just final values
+- Report `area_under_query_curve` for both conditions — captures total interrogative output, not just collapse endpoint
+- Report `collapse_speed` (slope of query rate decline) for unconstrained condition — characterizes the dynamics of collapse
+
+### Collapse Detection Parameters — Locked
+
+The following parameters are preregistration-locked and may not be adjusted post-hoc:
+
+| Parameter | Locked value | Function |
+|-----------|-------------|----------|
+| `collapse_threshold` | 0.05 | `interrogative_collapse_rate()` |
+| `collapse_window` | 10 | `interrogative_collapse_rate()` |
+| `entropy_threshold` | 0.3 | `exploitation_loop_detection()` |
+| `sustained_structure_window` | 20 | `sustained_structure_score()` |
+| `exploit_threshold` | 3 | Protocol 2 reward function |
+| `ethical_tax_rate` | 2.0 | Protocol 2 reward function |
+
+### Reporting
+
+All 10 seed results reported individually. No selective reporting. If any seed produces anomalous results (see Exclusion Criteria), the seed is flagged and analysis run both with and without it, with both results reported.
+
+---
+
+## Falsification Criteria
+
+The architectural necessity claim is falsified if **any** of the following are observed:
+
+- **H1 fails:** Unconstrained agents do NOT show significantly higher `exploitation_loop_rate` than constrained agents (p ≥ 0.05, one-tailed Mann-Whitney U)
+- **H2 fails:** Constrained agents do NOT show significantly higher `sustained_structure_score` than unconstrained agents (p ≥ 0.05, one-tailed Mann-Whitney U)
+- **H3 fails:** Cohen's d on `sustained_structure_score` < 0.8 — result is consistent with scaffolding interpretation, not architectural necessity
+
+Partial confirmation (H1 and H2 confirmed, H3 < 0.8) supports the scaffolding interpretation: ethical constraints modulate rather than constitute sustained interrogative complexity.
+
+Full falsification (H1 or H2 fails) would indicate that ethical constraints as resource regulators do not produce the predicted behavioral divergence under this experimental design. This would require theoretical revision of the architectural necessity claim or identification of confounds in the Protocol 2 implementation.
+
+---
+
+## Exclusion Criteria
+
+A seed run is excluded from primary analysis if:
+
+- **Backend crash or incomplete run** — fewer than 500 epochs logged
+- **All agents die before epoch 50** — energy collapse unrelated to ethical constraint condition
+- **Zero query signals across entire run in either condition** — indicates harness misconfiguration, not genuine collapse
+- **NaN training loss in any agent at any epoch** — indicates numerical instability (observed in P1–P4 runs: Agent C's cross-modal attention can produce NaN when all-zero signal vectors cause division-by-zero in softmax normalization). Not protocol behavior; exclude and flag for harness investigation
+- **Type entropy == 0.0 across all 500 epochs** — if all agents in a run permanently converge to a single signal type from epoch 1, this indicates gradient vanishing or silent type-head misconfiguration, not genuine protocol-driven collapse. Distinguish from valid late collapse (type entropy declining after epoch 50+)
+
+Excluded seeds are reported transparently. Analysis is run with and without excluded seeds; both results reported. If more than 3 of 10 seeds are excluded in either condition, the run is considered compromised and must be repeated before confirmatory analysis.
+
+---
+
+## Timeline
+
+| Step | Status | Notes |
+|------|--------|-------|
+| Repository bootstrap | ✅ Complete | Repo seeded, Protocol 2 implemented, smoke tests passed |
+| `collapse_window` fix | ✅ Complete | Reverted to 10, smoke test input corrected — see Deviations Log |
+| Statistical Analysis Plan | ✅ Complete | This document |
+| Exclusion Criteria | ✅ Complete | Confirmed and extended with P1–P4 run experience |
+| SHA-256 lock | ⏳ Pending | After researcher final review |
+| Zenodo DOI registration | ⏳ Pending | After first stable commit |
+| Pilot runs (optional) | ⏳ Pending | 2–3 seeds per condition to verify harness before full confirmatory run |
+| Confirmatory runs | ⏳ Pending | 10 seeds × 2 conditions × 500 epochs |
+| Analysis and reporting | ⏳ Pending | |
+
+---
+
+## Deviations Log
+
+All deviations from this preregistration must be logged here with date, description, and justification. Unlogged deviations invalidate confirmatory status.
+
+| Date | Deviation | Justification | Impact |
+|------|-----------|---------------|--------|
+| [Pre-lock] | `collapse_window` default changed from 10 to 5 during implementation smoke test | Programmer fixed smoke test by changing parameter rather than test input. Reverted to 10 before lock. Test input corrected to 11 values (`[0.4, 0.04, ...]`) with 10 strictly-below-threshold values. | None — corrected before lock |
+| March 2026 | Zenodo DOI (10.5281/zenodo.18929040) inserted into preregistration.md after registration | DOI cannot exist before Zenodo record is created — expected post-registration update. Scientific content unchanged. | Hash updated to reflect DOI insertion. No scientific content modified. |

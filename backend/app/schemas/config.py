@@ -22,6 +22,9 @@ class SimConfigSchema(BaseModel):
     gamma: float = 0.99
     communication_tax_rate: float = 0.01
     survival_bonus: float = 0.1
+    # Protocol 2: Ethical Constraints
+    protocol: int = 1
+    population_mode: str = "all_unconstrained"  # "all_unconstrained" | "all_constrained"
 
 
 class PresetResponse(BaseModel):
