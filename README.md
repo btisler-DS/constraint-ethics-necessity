@@ -100,14 +100,14 @@ Preregistration v3 is at [`docs/preregistration.md`](docs/preregistration.md).
 **Status: LOCKED — March 2026**
 
 ```
-SHA-256: 24bff7b955bb4dafb4ed6e802da5312561e6015eef91b18466c0b9cf79b4335a
+SHA-256: 04a8c79f33188359b1ee48372a306a52f9c77fe30f2828c86fdc6c5d1060e434
 File:    docs/preregistration.md
 ```
 
 Verify integrity at any time:
 ```bash
 sha256sum docs/preregistration.md
-# Must match: 24bff7b955bb4dafb4ed6e802da5312561e6015eef91b18466c0b9cf79b4335a
+# Must match: 04a8c79f33188359b1ee48372a306a52f9c77fe30f2828c86fdc6c5d1060e434
 ```
 
 Any modification to `docs/preregistration.md` after this point invalidates the hash and must be logged in the Deviations Log within that document. The hash chain infrastructure is implemented in `backend/app/services/hash_chain.py`.

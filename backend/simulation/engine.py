@@ -325,14 +325,12 @@ class SimulationEngine:
         if isinstance(self.protocol, Protocol2):
             query_rates = list(self.protocol._epoch_query_rates)  # updated by compute_epoch_extras
             collapse_result = interrogative_collapse_rate(query_rates)
-            # Exploitation loop detection uses per-step type history encoded as target_selections
-            # Approximate: encode signal-type sequence as 'target selection' proxy
-            type_flat = [
-                t
-                for step in type_history
-                for t in step.values()
-            ]
-            loop_result = exploitation_loop_detection(type_flat)
+            # H1 proxy: fraction of epochs where QUERY rate stays below collapse_threshold.
+            # interrogative_collapse_rate is the correct operationalization of exploitation loops
+            # in this framework -- an agent not generating queries is locked in non-interrogative
+            # behavior. exploitation_loop_detection() remains in collapse_metrics.py for future
+            # use with actual resource target IDs (requires environment-level tracking).
+            loop_result = interrogative_collapse_rate(query_rates)
             metrics["collapse_metrics"] = {
                 "interrogative_collapse": collapse_result,
                 "exploitation_loop": loop_result,
