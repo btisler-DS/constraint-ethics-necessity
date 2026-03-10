@@ -325,7 +325,8 @@ class Protocol2(ProtocolBase):
             communication_tax_rate=tax_rate,
         )
         # Record query rate for collapse tracking (used by engine)
-        self._epoch_query_rates.append(inquiry.get("query_emergence_rate", 0.0))
+        td = inquiry.get("type_distribution") or {}
+        self._epoch_query_rates.append(td.get("QUERY", 0.0))
 
         return {
             "inquiry": inquiry,

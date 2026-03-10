@@ -533,7 +533,7 @@ class SimulationEngine:
                 "epoch": m["epoch"],
                 "type_entropy": inq.get("type_entropy"),
                 "qrc": inq.get("query_response_coupling"),
-                "query_rate": inq.get("query_emergence_rate"),
+                "query_rate": (inq.get("type_distribution") or {}).get("QUERY"),
                 "ethical_cost": round(ethical_cost, 4),
                 "collapse_detected": coll.get("collapse_detected", False),
             })
