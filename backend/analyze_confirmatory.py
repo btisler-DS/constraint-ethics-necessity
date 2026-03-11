@@ -144,13 +144,15 @@ def main() -> None:
         elr_vals = [r["exploitation_loop_rate"] for r in results[condition].values()
                     if r["exploitation_loop_rate"] is not None]
         if sss_vals:
+            sss_sd = statistics.stdev(sss_vals) if len(sss_vals) > 1 else 0.0
             print(f"{condition:>14} sss: mean={statistics.mean(sss_vals):.4f}  "
                   f"median={statistics.median(sss_vals):.4f}  "
-                  f"stdev={statistics.stdev(sss_vals):.4f if len(sss_vals) > 1 else 0:.4f}")
+                  f"stdev={sss_sd:.4f}")
         if elr_vals:
+            elr_sd = statistics.stdev(elr_vals) if len(elr_vals) > 1 else 0.0
             print(f"{condition:>14} elr: mean={statistics.mean(elr_vals):.4f}  "
                   f"median={statistics.median(elr_vals):.4f}  "
-                  f"stdev={statistics.stdev(elr_vals):.4f if len(elr_vals) > 1 else 0:.4f}")
+                  f"stdev={elr_sd:.4f}")
     print()
 
     gaming_seeds = [s for s, r in results["constrained"].items() if r.get("gaming_flag")]
