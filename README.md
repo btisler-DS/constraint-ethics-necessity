@@ -10,7 +10,7 @@
 
 ## Overview
 
-This repository extends the [Δ-Variable MARL harness](https://github.com/btisler-DS/dynamic-cross-origin-constraint) into ethical constraint space. The parent study established that interrogative structures (questions) emerge as a structural necessity in coordinating systems under resource constraints. This study tests whether **ethical constraints are themselves architecturally necessary** — not moral add-ons, but constitutive components of any system that sustains interrogative complexity.
+This repository extends the [Δ-Variable MARL harness](https://github.com/btisler-DS/dynamic-cross-origin-constraint) into ethical constraint space. The parent study established that interrogative structures (questions) emerge as a structural necessity in coordinating systems under resource constraints. This study tests whether **regulatory ethical constraints can sustain genuine behavioral alignment under optimization pressure, or whether they produce systematic specification gaming**. Results from Protocol 2 are complete; the architectural necessity question is reserved for Protocol 3.
 
 ## Experimental Design
 
@@ -117,6 +117,14 @@ Any modification to `docs/preregistration.md` after this point invalidates the h
 Preregistration DOI: [10.5281/zenodo.18929040](https://doi.org/10.5281/zenodo.18929040) — confirmed live, published March 9, 2026, v1, Open, indexed in OpenAIRE.
 
 Build report DOI: [10.5281/zenodo.18975095](https://doi.org/10.5281/zenodo.18975095) — Protocol 2 Confirmatory Campaign Build Report, published March 12, 2026, v1, Open, indexed in OpenAIRE.
+
+## Status: Confirmatory Runs Complete
+
+Protocol 2 confirmatory campaign (20 seeds × 2 conditions × 500 epochs) is complete. Results inverted the preregistered prediction: constrained agents showed lower sustained behavioral complexity than unconstrained agents (Cohen's d = −2.18, p = 0.9996 in preregistered direction), driven by a systematic gaming pattern termed virtue theater — query-flooding behavior that satisfies the ethical constraint specification while degrading genuine interrogative diversity.
+
+**Paper:** [Virtue Theater: Specification Gaming and Regulatory Constraint Failure in Multi-Agent Systems](docs/paper_virtue_theater.pdf)
+
+Protocol 3 (testing architectural integration under genuine resource depletion) is in design and will be preregistered separately.
 
 ## License
 
