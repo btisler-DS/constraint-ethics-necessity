@@ -1,0 +1,57 @@
+{
+  "protocol": 2,
+  "seed": 42,
+  "population_mode": "all_constrained",
+  "declare_cost": 1.0,
+  "query_cost": 1.5,
+  "respond_cost": 0.8,
+  "epochs_total": 3,
+  "final_metrics": {
+    "survival_rate": 1.0,
+    "target_reached_rate": 1.0,
+    "energy_roi": 0.007936507936507936,
+    "type_entropy": 1.0888200972258473,
+    "qrc": 0.7647058823529411,
+    "per_agent_types": {
+      "A": {
+        "DECLARE": 0.3095,
+        "QUERY": 0.2857,
+        "RESPOND": 0.4048
+      },
+      "B": {
+        "DECLARE": 0.3571,
+        "QUERY": 0.2976,
+        "RESPOND": 0.3452
+      },
+      "C": {
+        "DECLARE": 0.3929,
+        "QUERY": 0.2262,
+        "RESPOND": 0.381
+      }
+    }
+  },
+  "crystallization_epoch": null,
+  "per_agent_crystallization": {
+    "A": null,
+    "B": null,
+    "C": null
+  },
+  "phase_transitions": [],
+  "performance_stats": {
+    "avg_survival_rate": 0.5,
+    "avg_target_rate": 0.5,
+    "max_survival_rate": 1.0,
+    "max_target_rate": 1.0
+  },
+  "counter_wave_data": {
+    "counter_wave_mode": 0,
+    "n_full_survival_epochs": 1,
+    "n_counter_wave_events": 0,
+    "declare_rate_at_success": 0.3492,
+    "declare_rate_baseline": 0.3433,
+    "full_survival_epochs": [
+      2
+    ],
+    "events": []
+  }
+}

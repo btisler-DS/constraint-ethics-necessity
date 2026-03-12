@@ -1,0 +1,4002 @@
+[
+  {
+    "epoch": 0,
+    "type_entropy": 1.0887048799196726,
+    "qrc": 0.6068027210884354,
+    "query_rate": 0.3644,
+    "ethical_cost": 97.0471,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 1,
+    "type_entropy": 1.0867002954190987,
+    "qrc": 0.5590659340659341,
+    "query_rate": 0.3537,
+    "ethical_cost": 102.5194,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 2,
+    "type_entropy": 1.0811333027966565,
+    "qrc": 0.5559105431309904,
+    "query_rate": 0.3814,
+    "ethical_cost": 37.3104,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 3,
+    "type_entropy": 1.0916337368604525,
+    "qrc": 0.7097791798107256,
+    "query_rate": 0.29,
+    "ethical_cost": 145.0368,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 4,
+    "type_entropy": 1.0903989380037291,
+    "qrc": 0.670753064798599,
+    "query_rate": 0.3108,
+    "ethical_cost": 109.7606,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 5,
+    "type_entropy": 1.0870388367478787,
+    "qrc": 0.6869565217391305,
+    "query_rate": 0.2924,
+    "ethical_cost": 74.9676,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 6,
+    "type_entropy": 1.083142129332102,
+    "qrc": 0.64171974522293,
+    "query_rate": 0.2932,
+    "ethical_cost": 136.2964,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 7,
+    "type_entropy": 1.0806116809949764,
+    "qrc": 0.6377952755905512,
+    "query_rate": 0.301,
+    "ethical_cost": 131.3126,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 8,
+    "type_entropy": 1.068831244947332,
+    "qrc": 0.676595744680851,
+    "query_rate": 0.2637,
+    "ethical_cost": 129.3579,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 9,
+    "type_entropy": 1.0832258700290045,
+    "qrc": 0.6937394247038917,
+    "query_rate": 0.2837,
+    "ethical_cost": 134.2544,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 10,
+    "type_entropy": 1.0912158042862,
+    "qrc": 0.7058823529411765,
+    "query_rate": 0.2977,
+    "ethical_cost": 132.5613,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 11,
+    "type_entropy": 1.0929535042645384,
+    "qrc": 0.7229299363057324,
+    "query_rate": 0.2959,
+    "ethical_cost": 132.4211,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 12,
+    "type_entropy": 1.077600313492619,
+    "qrc": 0.7855361596009975,
+    "query_rate": 0.2426,
+    "ethical_cost": 117.3698,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 13,
+    "type_entropy": 1.08961226716522,
+    "qrc": 0.7417677642980935,
+    "query_rate": 0.2774,
+    "ethical_cost": 138.2049,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 14,
+    "type_entropy": 1.0941513830050489,
+    "qrc": 0.7395348837209302,
+    "query_rate": 0.2917,
+    "ethical_cost": 137.9301,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 15,
+    "type_entropy": 1.0924922017833785,
+    "qrc": 0.7765273311897106,
+    "query_rate": 0.282,
+    "ethical_cost": 148.7081,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 16,
+    "type_entropy": 1.0927534273112127,
+    "qrc": 0.7874396135265701,
+    "query_rate": 0.283,
+    "ethical_cost": 142.8046,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 17,
+    "type_entropy": 1.0947695996504432,
+    "qrc": 0.8108108108108109,
+    "query_rate": 0.301,
+    "ethical_cost": 131.966,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 18,
+    "type_entropy": 1.0979233461100755,
+    "qrc": 0.7318611987381703,
+    "query_rate": 0.3182,
+    "ethical_cost": 117.455,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 19,
+    "type_entropy": 1.096435681300754,
+    "qrc": 0.7629179331306991,
+    "query_rate": 0.3027,
+    "ethical_cost": 130.7014,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 20,
+    "type_entropy": 1.097455423076828,
+    "qrc": 0.7536231884057971,
+    "query_rate": 0.313,
+    "ethical_cost": 24.5039,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 21,
+    "type_entropy": 1.0923507594808854,
+    "qrc": 0.7714748784440842,
+    "query_rate": 0.282,
+    "ethical_cost": 145.1155,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 22,
+    "type_entropy": 1.087916418454853,
+    "qrc": 0.8351309707241911,
+    "query_rate": 0.2977,
+    "ethical_cost": 138.1323,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 23,
+    "type_entropy": 1.0819323070160123,
+    "qrc": 0.8287841191066998,
+    "query_rate": 0.2717,
+    "ethical_cost": 103.2847,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 24,
+    "type_entropy": 1.0953899309752713,
+    "qrc": 0.7633928571428571,
+    "query_rate": 0.3333,
+    "ethical_cost": 111.0985,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 25,
+    "type_entropy": 1.0926648022841032,
+    "qrc": 0.7963246554364471,
+    "query_rate": 0.3106,
+    "ethical_cost": 133.6866,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 26,
+    "type_entropy": 1.09314356152752,
+    "qrc": 0.7776162790697675,
+    "query_rate": 0.3133,
+    "ethical_cost": 129.6592,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 27,
+    "type_entropy": 1.0947768245300589,
+    "qrc": 0.7438692098092643,
+    "query_rate": 0.357,
+    "ethical_cost": 103.4564,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 28,
+    "type_entropy": 1.0934295911119538,
+    "qrc": 0.7166666666666667,
+    "query_rate": 0.3688,
+    "ethical_cost": 86.468,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 29,
+    "type_entropy": 1.0900249536886255,
+    "qrc": 0.7423638778220452,
+    "query_rate": 0.375,
+    "ethical_cost": 94.0577,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 30,
+    "type_entropy": 1.0900020025910981,
+    "qrc": 0.7018469656992085,
+    "query_rate": 0.3864,
+    "ethical_cost": 89.0342,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 31,
+    "type_entropy": 1.0913470942196608,
+    "qrc": 0.756385068762279,
+    "query_rate": 0.3683,
+    "ethical_cost": 63.8279,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 32,
+    "type_entropy": 1.0802145794016824,
+    "qrc": 0.6604026845637584,
+    "query_rate": 0.4243,
+    "ethical_cost": 69.2542,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 33,
+    "type_entropy": 1.071017253827459,
+    "qrc": 0.6639175257731958,
+    "query_rate": 0.4412,
+    "ethical_cost": 41.0785,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 34,
+    "type_entropy": 1.083747749291663,
+    "qrc": 0.7037593984962406,
+    "query_rate": 0.406,
+    "ethical_cost": 78.4127,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 35,
+    "type_entropy": 1.0835179451736037,
+    "qrc": 0.7101449275362319,
+    "query_rate": 0.4103,
+    "ethical_cost": 82.2367,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 36,
+    "type_entropy": 1.0637058420098198,
+    "qrc": 0.6205673758865248,
+    "query_rate": 0.461,
+    "ethical_cost": 69.8645,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 37,
+    "type_entropy": 1.0769763136232329,
+    "qrc": 0.701093560145808,
+    "query_rate": 0.428,
+    "ethical_cost": 77.5289,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 38,
+    "type_entropy": 1.077934013064721,
+    "qrc": 0.6772853185595568,
+    "query_rate": 0.4298,
+    "ethical_cost": 75.4291,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 39,
+    "type_entropy": 1.0777712878785637,
+    "qrc": 0.7165354330708661,
+    "query_rate": 0.4267,
+    "ethical_cost": 76.9385,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 40,
+    "type_entropy": 1.0647767147790104,
+    "qrc": 0.7094117647058824,
+    "query_rate": 0.451,
+    "ethical_cost": 76.9939,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 41,
+    "type_entropy": 1.0758022257921163,
+    "qrc": 0.7118421052631579,
+    "query_rate": 0.4323,
+    "ethical_cost": 69.4755,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 42,
+    "type_entropy": 1.0726419855326912,
+    "qrc": 0.7062350119904077,
+    "query_rate": 0.4397,
+    "ethical_cost": 72.7657,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 43,
+    "type_entropy": 1.0623360534962247,
+    "qrc": 0.6408450704225352,
+    "query_rate": 0.463,
+    "ethical_cost": 69.7874,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 44,
+    "type_entropy": 1.0552372728475143,
+    "qrc": 0.6327272727272727,
+    "query_rate": 0.4758,
+    "ethical_cost": 58.5574,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 45,
+    "type_entropy": 1.0448673430260642,
+    "qrc": 0.5778275475923852,
+    "query_rate": 0.4917,
+    "ethical_cost": 57.6546,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 46,
+    "type_entropy": 1.0325872372771214,
+    "qrc": 0.6044600938967136,
+    "query_rate": 0.509,
+    "ethical_cost": 54.7793,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 47,
+    "type_entropy": 1.0214506098674758,
+    "qrc": 0.6328555678059536,
+    "query_rate": 0.5217,
+    "ethical_cost": 50.3463,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 48,
+    "type_entropy": 1.0356331333445172,
+    "qrc": 0.6797671033478894,
+    "query_rate": 0.495,
+    "ethical_cost": 49.5365,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 49,
+    "type_entropy": 1.0687394757314084,
+    "qrc": 0.7475455820476858,
+    "query_rate": 0.44,
+    "ethical_cost": 71.3479,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 50,
+    "type_entropy": 1.053988157051406,
+    "qrc": 0.759018759018759,
+    "query_rate": 0.4549,
+    "ethical_cost": 66.6122,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 51,
+    "type_entropy": 1.0198274825854006,
+    "qrc": 0.6209677419354839,
+    "query_rate": 0.5255,
+    "ethical_cost": 56.1012,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 52,
+    "type_entropy": 1.0624476501232996,
+    "qrc": 0.7329192546583851,
+    "query_rate": 0.4547,
+    "ethical_cost": 70.8901,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 53,
+    "type_entropy": 1.0437282097148537,
+    "qrc": 0.647887323943662,
+    "query_rate": 0.4921,
+    "ethical_cost": 20.067,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 54,
+    "type_entropy": 1.0233186526570295,
+    "qrc": 0.6590909090909091,
+    "query_rate": 0.5146,
+    "ethical_cost": 58.1481,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 55,
+    "type_entropy": 1.0510423286424293,
+    "qrc": 0.7546082949308756,
+    "query_rate": 0.4669,
+    "ethical_cost": 78.0631,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 56,
+    "type_entropy": 1.042921490638622,
+    "qrc": 0.63954802259887,
+    "query_rate": 0.493,
+    "ethical_cost": 65.7561,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 57,
+    "type_entropy": 1.0626691687856893,
+    "qrc": 0.6835066864784547,
+    "query_rate": 0.4591,
+    "ethical_cost": 60.7508,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 58,
+    "type_entropy": 1.0508087387285354,
+    "qrc": 0.7032520325203252,
+    "query_rate": 0.4724,
+    "ethical_cost": 61.3978,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 59,
+    "type_entropy": 1.0245227002314063,
+    "qrc": 0.6787280701754386,
+    "query_rate": 0.51,
+    "ethical_cost": 60.7693,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 60,
+    "type_entropy": 1.0284830614717912,
+    "qrc": 0.6177514792899408,
+    "query_rate": 0.5151,
+    "ethical_cost": 54.4098,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 61,
+    "type_entropy": 1.047058739224747,
+    "qrc": 0.7086513994910941,
+    "query_rate": 0.4782,
+    "ethical_cost": 62.1575,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 62,
+    "type_entropy": 0.9872697400010704,
+    "qrc": 0.5971615720524017,
+    "query_rate": 0.5611,
+    "ethical_cost": 49.0824,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 63,
+    "type_entropy": 0.9895149995762867,
+    "qrc": 0.6053191489361702,
+    "query_rate": 0.5583,
+    "ethical_cost": 44.0867,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 64,
+    "type_entropy": 1.0474864070471774,
+    "qrc": 0.6916354556803995,
+    "query_rate": 0.4755,
+    "ethical_cost": 65.8257,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 65,
+    "type_entropy": 1.0127719682745668,
+    "qrc": 0.5895249695493301,
+    "query_rate": 0.5348,
+    "ethical_cost": 47.4151,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 66,
+    "type_entropy": 0.9873103031815234,
+    "qrc": 0.5591133004926109,
+    "query_rate": 0.5635,
+    "ethical_cost": 37.6727,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 67,
+    "type_entropy": 0.9818335200067037,
+    "qrc": 0.5582191780821918,
+    "query_rate": 0.5687,
+    "ethical_cost": 44.9986,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 68,
+    "type_entropy": 1.0036521635548312,
+    "qrc": 0.598705501618123,
+    "query_rate": 0.543,
+    "ethical_cost": 56.2415,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 69,
+    "type_entropy": 0.9926166381812438,
+    "qrc": 0.6572379367720466,
+    "query_rate": 0.5446,
+    "ethical_cost": 33.4468,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 70,
+    "type_entropy": 1.0180999130764494,
+    "qrc": 0.6383928571428571,
+    "query_rate": 0.5236,
+    "ethical_cost": 55.8296,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 71,
+    "type_entropy": 0.9794654824771837,
+    "qrc": 0.5415730337078651,
+    "query_rate": 0.5719,
+    "ethical_cost": 40.595,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 72,
+    "type_entropy": 1.0277001610529026,
+    "qrc": 0.6628959276018099,
+    "query_rate": 0.5102,
+    "ethical_cost": 29.1272,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 73,
+    "type_entropy": 0.9973798085372891,
+    "qrc": 0.5901360544217688,
+    "query_rate": 0.551,
+    "ethical_cost": 35.111,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 74,
+    "type_entropy": 1.0105018949776483,
+    "qrc": 0.6393805309734514,
+    "query_rate": 0.5297,
+    "ethical_cost": 54.0089,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 75,
+    "type_entropy": 1.0126845623946734,
+    "qrc": 0.6405648267008985,
+    "query_rate": 0.5299,
+    "ethical_cost": 49.5694,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 76,
+    "type_entropy": 0.9937274301215236,
+    "qrc": 0.5933734939759037,
+    "query_rate": 0.5545,
+    "ethical_cost": 38.887,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 77,
+    "type_entropy": 1.0033954924276856,
+    "qrc": 0.6599552572706935,
+    "query_rate": 0.5376,
+    "ethical_cost": 52.9759,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 78,
+    "type_entropy": 1.0114358211869674,
+    "qrc": 0.6841530054644809,
+    "query_rate": 0.5193,
+    "ethical_cost": 63.1674,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 79,
+    "type_entropy": 0.967985390946168,
+    "qrc": 0.6182396606574762,
+    "query_rate": 0.5723,
+    "ethical_cost": 50.3378,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 80,
+    "type_entropy": 0.9763061207160071,
+    "qrc": 0.6120481927710844,
+    "query_rate": 0.5664,
+    "ethical_cost": 45.7034,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 81,
+    "type_entropy": 0.9365904837232137,
+    "qrc": 0.5659411011523687,
+    "query_rate": 0.6071,
+    "ethical_cost": 34.7016,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 82,
+    "type_entropy": 0.988040345637458,
+    "qrc": 0.646188850967008,
+    "query_rate": 0.5509,
+    "ethical_cost": 49.8889,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 83,
+    "type_entropy": 0.9656741616866198,
+    "qrc": 0.6017699115044248,
+    "query_rate": 0.5803,
+    "ethical_cost": 22.59,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 84,
+    "type_entropy": 0.9815658307828492,
+    "qrc": 0.6498388829215896,
+    "query_rate": 0.561,
+    "ethical_cost": 45.061,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 85,
+    "type_entropy": 0.9940120424037979,
+    "qrc": 0.6304824561403509,
+    "query_rate": 0.5482,
+    "ethical_cost": 47.6628,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 86,
+    "type_entropy": 0.971165039862641,
+    "qrc": 0.591116173120729,
+    "query_rate": 0.5738,
+    "ethical_cost": 44.8001,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 87,
+    "type_entropy": 0.9607716906301214,
+    "qrc": 0.572347266881029,
+    "query_rate": 0.5843,
+    "ethical_cost": 42.6412,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 88,
+    "type_entropy": 0.9473559887154892,
+    "qrc": 0.5828025477707006,
+    "query_rate": 0.5957,
+    "ethical_cost": 42.6534,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 89,
+    "type_entropy": 0.9437214549035977,
+    "qrc": 0.5508607198748043,
+    "query_rate": 0.604,
+    "ethical_cost": 27.9645,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 90,
+    "type_entropy": 0.9679301603863472,
+    "qrc": 0.5629877369007804,
+    "query_rate": 0.5811,
+    "ethical_cost": 46.835,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 91,
+    "type_entropy": 0.9285963463453718,
+    "qrc": 0.5436590436590436,
+    "query_rate": 0.6157,
+    "ethical_cost": 44.4898,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 92,
+    "type_entropy": 0.9376632683678299,
+    "qrc": 0.5611390284757118,
+    "query_rate": 0.6081,
+    "ethical_cost": 26.9212,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 93,
+    "type_entropy": 0.9357727750349443,
+    "qrc": 0.553941908713693,
+    "query_rate": 0.6083,
+    "ethical_cost": 41.4017,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 94,
+    "type_entropy": 0.8999157503828694,
+    "qrc": 0.5317622950819673,
+    "query_rate": 0.6377,
+    "ethical_cost": 42.6789,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 95,
+    "type_entropy": 0.9504656274671083,
+    "qrc": 0.5730337078651685,
+    "query_rate": 0.5965,
+    "ethical_cost": 34.0355,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 96,
+    "type_entropy": 0.9332976272498198,
+    "qrc": 0.5287958115183246,
+    "query_rate": 0.6114,
+    "ethical_cost": 9.4108,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 97,
+    "type_entropy": 0.8686002027217491,
+    "qrc": 0.4766260162601626,
+    "query_rate": 0.6647,
+    "ethical_cost": 41.6043,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 98,
+    "type_entropy": 0.8920660243334,
+    "qrc": 0.5058572949946751,
+    "query_rate": 0.6455,
+    "ethical_cost": 37.9128,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 99,
+    "type_entropy": 0.8814532821685287,
+    "qrc": 0.5208333333333334,
+    "query_rate": 0.6512,
+    "ethical_cost": 29.1697,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 100,
+    "type_entropy": 0.8665589496822064,
+    "qrc": 0.45414847161572053,
+    "query_rate": 0.6667,
+    "ethical_cost": 9.1976,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 101,
+    "type_entropy": 0.8281904403286193,
+    "qrc": 0.5161290322580645,
+    "query_rate": 0.6877,
+    "ethical_cost": 36.5658,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 102,
+    "type_entropy": 0.8336930264352443,
+    "qrc": 0.48588709677419356,
+    "query_rate": 0.6877,
+    "ethical_cost": 37.6807,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 103,
+    "type_entropy": 0.8728205582854445,
+    "qrc": 0.49550561797752807,
+    "query_rate": 0.6597,
+    "ethical_cost": 38.0751,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 104,
+    "type_entropy": 0.8430548705951448,
+    "qrc": 0.47724974721941354,
+    "query_rate": 0.6821,
+    "ethical_cost": 36.5321,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 105,
+    "type_entropy": 0.8356290396338713,
+    "qrc": 0.4463705308775731,
+    "query_rate": 0.6882,
+    "ethical_cost": 32.6725,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 106,
+    "type_entropy": 0.8558052899424375,
+    "qrc": 0.5116796440489433,
+    "query_rate": 0.6707,
+    "ethical_cost": 32.6395,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 107,
+    "type_entropy": 0.8304114879479765,
+    "qrc": 0.4439959636730575,
+    "query_rate": 0.6917,
+    "ethical_cost": 39.3555,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 108,
+    "type_entropy": 0.8320850063021179,
+    "qrc": 0.48517940717628705,
+    "query_rate": 0.6874,
+    "ethical_cost": 24.2996,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 109,
+    "type_entropy": 0.832301693047325,
+    "qrc": 0.4865810968494749,
+    "query_rate": 0.688,
+    "ethical_cost": 36.6345,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 110,
+    "type_entropy": 0.8060142580969736,
+    "qrc": 0.467935871743487,
+    "query_rate": 0.705,
+    "ethical_cost": 35.3913,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 111,
+    "type_entropy": 0.811835366463887,
+    "qrc": 0.4589178356713427,
+    "query_rate": 0.702,
+    "ethical_cost": 35.2991,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 112,
+    "type_entropy": 0.8415792516258567,
+    "qrc": 0.514047866805411,
+    "query_rate": 0.6784,
+    "ethical_cost": 36.6094,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 113,
+    "type_entropy": 0.8277604777499705,
+    "qrc": 0.49376299376299376,
+    "query_rate": 0.6895,
+    "ethical_cost": 43.1549,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 114,
+    "type_entropy": 0.8567480829499882,
+    "qrc": 0.5398089171974523,
+    "query_rate": 0.6661,
+    "ethical_cost": 27.4425,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 115,
+    "type_entropy": 0.849529044210672,
+    "qrc": 0.5101763907734057,
+    "query_rate": 0.6743,
+    "ethical_cost": 36.3383,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 116,
+    "type_entropy": 0.8510590873758594,
+    "qrc": 0.5502958579881657,
+    "query_rate": 0.6667,
+    "ethical_cost": 39.3892,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 117,
+    "type_entropy": 0.823958089574729,
+    "qrc": 0.4983164983164983,
+    "query_rate": 0.6906,
+    "ethical_cost": 35.4259,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 118,
+    "type_entropy": 0.8368670356549297,
+    "qrc": 0.48597194388777554,
+    "query_rate": 0.6827,
+    "ethical_cost": 40.8543,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 119,
+    "type_entropy": 0.8533508853279004,
+    "qrc": 0.5434782608695652,
+    "query_rate": 0.6667,
+    "ethical_cost": 26.0797,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 120,
+    "type_entropy": 0.8685208272045901,
+    "qrc": 0.5381526104417671,
+    "query_rate": 0.656,
+    "ethical_cost": 44.9865,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 121,
+    "type_entropy": 0.8387220713460561,
+    "qrc": 0.5304621848739496,
+    "query_rate": 0.6768,
+    "ethical_cost": 40.1498,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 122,
+    "type_entropy": 0.8668019386546151,
+    "qrc": 0.5770833333333333,
+    "query_rate": 0.6532,
+    "ethical_cost": 45.6834,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 123,
+    "type_entropy": 0.8461862403240877,
+    "qrc": 0.5020283975659229,
+    "query_rate": 0.6765,
+    "ethical_cost": 42.6685,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 124,
+    "type_entropy": 0.8320739127328345,
+    "qrc": 0.4823529411764706,
+    "query_rate": 0.6858,
+    "ethical_cost": 28.9392,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 125,
+    "type_entropy": 0.8520605905949604,
+    "qrc": 0.5348288075560803,
+    "query_rate": 0.669,
+    "ethical_cost": 36.1905,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 126,
+    "type_entropy": 0.853682016760355,
+    "qrc": 0.547071129707113,
+    "query_rate": 0.6653,
+    "ethical_cost": 42.4609,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 127,
+    "type_entropy": 0.8457112346160345,
+    "qrc": 0.509090909090909,
+    "query_rate": 0.6755,
+    "ethical_cost": 42.0822,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 128,
+    "type_entropy": 0.8217587183092171,
+    "qrc": 0.4665391969407266,
+    "query_rate": 0.6945,
+    "ethical_cost": 18.2165,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 129,
+    "type_entropy": 0.8415098322341799,
+    "qrc": 0.563302752293578,
+    "query_rate": 0.6709,
+    "ethical_cost": 22.3088,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 130,
+    "type_entropy": 0.8225951386777559,
+    "qrc": 0.49147442326980945,
+    "query_rate": 0.6917,
+    "ethical_cost": 38.6449,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 131,
+    "type_entropy": 0.8682613836301564,
+    "qrc": 0.5623003194888179,
+    "query_rate": 0.6539,
+    "ethical_cost": 26.6986,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 132,
+    "type_entropy": 0.810272473017071,
+    "qrc": 0.45346320346320346,
+    "query_rate": 0.7027,
+    "ethical_cost": 36.1789,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 133,
+    "type_entropy": 0.8099654300398352,
+    "qrc": 0.46254071661237783,
+    "query_rate": 0.7025,
+    "ethical_cost": 9.513,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 134,
+    "type_entropy": 0.8047388730706122,
+    "qrc": 0.4450402144772118,
+    "query_rate": 0.7064,
+    "ethical_cost": 28.7991,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 135,
+    "type_entropy": 0.8114726504003809,
+    "qrc": 0.4785185185185185,
+    "query_rate": 0.7012,
+    "ethical_cost": 28.2522,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 136,
+    "type_entropy": 0.8204706918374138,
+    "qrc": 0.497,
+    "query_rate": 0.692,
+    "ethical_cost": 34.3218,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 137,
+    "type_entropy": 0.8027589851559376,
+    "qrc": 0.44272076372315033,
+    "query_rate": 0.7068,
+    "ethical_cost": 31.5014,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 138,
+    "type_entropy": 0.7839087588588509,
+    "qrc": 0.45540398740818466,
+    "query_rate": 0.717,
+    "ethical_cost": 31.1772,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 139,
+    "type_entropy": 0.8062157187552659,
+    "qrc": 0.489,
+    "query_rate": 0.7007,
+    "ethical_cost": 34.4645,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 140,
+    "type_entropy": 0.7730862232683336,
+    "qrc": 0.446,
+    "query_rate": 0.7243,
+    "ethical_cost": 36.3358,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 141,
+    "type_entropy": 0.7736982522706949,
+    "qrc": 0.43018480492813144,
+    "query_rate": 0.7255,
+    "ethical_cost": 32.9777,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 142,
+    "type_entropy": 0.7947041574670584,
+    "qrc": 0.43995859213250516,
+    "query_rate": 0.7126,
+    "ethical_cost": 36.7524,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 143,
+    "type_entropy": 0.7847140891631801,
+    "qrc": 0.4524291497975709,
+    "query_rate": 0.7176,
+    "ethical_cost": 33.1623,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 144,
+    "type_entropy": 0.746765883230277,
+    "qrc": 0.4204035874439462,
+    "query_rate": 0.7403,
+    "ethical_cost": 25.743,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 145,
+    "type_entropy": 0.7759471237736322,
+    "qrc": 0.46808510638297873,
+    "query_rate": 0.7221,
+    "ethical_cost": 31.6494,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 146,
+    "type_entropy": 0.7635949966166833,
+    "qrc": 0.424,
+    "query_rate": 0.731,
+    "ethical_cost": 33.5431,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 147,
+    "type_entropy": 0.7652594888963513,
+    "qrc": 0.4226907630522088,
+    "query_rate": 0.7306,
+    "ethical_cost": 33.0914,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 148,
+    "type_entropy": 0.7557864431955645,
+    "qrc": 0.433,
+    "query_rate": 0.7347,
+    "ethical_cost": 30.925,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 149,
+    "type_entropy": 0.7700924701256716,
+    "qrc": 0.42083758937691523,
+    "query_rate": 0.7283,
+    "ethical_cost": 33.2819,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 150,
+    "type_entropy": 0.7290022958726288,
+    "qrc": 0.393,
+    "query_rate": 0.7517,
+    "ethical_cost": 27.4171,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 151,
+    "type_entropy": 0.7507872031144094,
+    "qrc": 0.41586280814576637,
+    "query_rate": 0.7381,
+    "ethical_cost": 29.9226,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 152,
+    "type_entropy": 0.7442589995923552,
+    "qrc": 0.3922413793103448,
+    "query_rate": 0.7435,
+    "ethical_cost": 26.2723,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 153,
+    "type_entropy": 0.7548185036465676,
+    "qrc": 0.4212410501193317,
+    "query_rate": 0.7359,
+    "ethical_cost": 26.8827,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 154,
+    "type_entropy": 0.7211492564035211,
+    "qrc": 0.376,
+    "query_rate": 0.7573,
+    "ethical_cost": 30.106,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 155,
+    "type_entropy": 0.7370025000304633,
+    "qrc": 0.392,
+    "query_rate": 0.7483,
+    "ethical_cost": 31.1952,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 156,
+    "type_entropy": 0.7387060895709067,
+    "qrc": 0.38493723849372385,
+    "query_rate": 0.7471,
+    "ethical_cost": 21.841,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 157,
+    "type_entropy": 0.6981140415238334,
+    "qrc": 0.3165266106442577,
+    "query_rate": 0.7703,
+    "ethical_cost": 7.3057,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 158,
+    "type_entropy": 0.7574587539485018,
+    "qrc": 0.42995169082125606,
+    "query_rate": 0.7347,
+    "ethical_cost": 29.44,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 159,
+    "type_entropy": 0.7575026043876006,
+    "qrc": 0.4074074074074074,
+    "query_rate": 0.7354,
+    "ethical_cost": 31.5433,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 160,
+    "type_entropy": 0.7252492615719095,
+    "qrc": 0.374,
+    "query_rate": 0.755,
+    "ethical_cost": 29.5865,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 161,
+    "type_entropy": 0.7558206000142216,
+    "qrc": 0.409297052154195,
+    "query_rate": 0.7373,
+    "ethical_cost": 31.617,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 162,
+    "type_entropy": 0.7469417892404465,
+    "qrc": 0.3630229419703104,
+    "query_rate": 0.7436,
+    "ethical_cost": 24.4796,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 163,
+    "type_entropy": 0.7449096159589048,
+    "qrc": 0.3795534665099882,
+    "query_rate": 0.7442,
+    "ethical_cost": 31.2101,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 164,
+    "type_entropy": 0.7240872234196324,
+    "qrc": 0.3641160949868074,
+    "query_rate": 0.7559,
+    "ethical_cost": 18.595,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 165,
+    "type_entropy": 0.7312496099710376,
+    "qrc": 0.35412026726057905,
+    "query_rate": 0.7524,
+    "ethical_cost": 25.4834,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 166,
+    "type_entropy": 0.7060131329131103,
+    "qrc": 0.33796791443850266,
+    "query_rate": 0.7661,
+    "ethical_cost": 27.197,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 167,
+    "type_entropy": 0.7242188247981456,
+    "qrc": 0.352557127312296,
+    "query_rate": 0.7563,
+    "ethical_cost": 28.8552,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 168,
+    "type_entropy": 0.7507583909442032,
+    "qrc": 0.366,
+    "query_rate": 0.7413,
+    "ethical_cost": 34.2058,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 169,
+    "type_entropy": 0.7093168460882354,
+    "qrc": 0.341,
+    "query_rate": 0.7643,
+    "ethical_cost": 31.5362,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 170,
+    "type_entropy": 0.7260513276460288,
+    "qrc": 0.368,
+    "query_rate": 0.755,
+    "ethical_cost": 36.8842,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 171,
+    "type_entropy": 0.7157715105720037,
+    "qrc": 0.36673553719008267,
+    "query_rate": 0.7607,
+    "ethical_cost": 35.4291,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 172,
+    "type_entropy": 0.7099286439201082,
+    "qrc": 0.35691318327974275,
+    "query_rate": 0.7638,
+    "ethical_cost": 32.1525,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 173,
+    "type_entropy": 0.724389816960975,
+    "qrc": 0.338477366255144,
+    "query_rate": 0.7562,
+    "ethical_cost": 33.9301,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 174,
+    "type_entropy": 0.7312670255550391,
+    "qrc": 0.3577981651376147,
+    "query_rate": 0.7523,
+    "ethical_cost": 16.3922,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 175,
+    "type_entropy": 0.712551678692648,
+    "qrc": 0.364,
+    "query_rate": 0.7623,
+    "ethical_cost": 34.0046,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 176,
+    "type_entropy": 0.723894667744845,
+    "qrc": 0.35507246376811596,
+    "query_rate": 0.7564,
+    "ethical_cost": 29.3226,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 177,
+    "type_entropy": 0.6954821184466029,
+    "qrc": 0.33,
+    "query_rate": 0.7717,
+    "ethical_cost": 32.3436,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 178,
+    "type_entropy": 0.7274796232812136,
+    "qrc": 0.36155606407322655,
+    "query_rate": 0.7544,
+    "ethical_cost": 31.4645,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 179,
+    "type_entropy": 0.7204193767757324,
+    "qrc": 0.3463855421686747,
+    "query_rate": 0.7584,
+    "ethical_cost": 34.6871,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 180,
+    "type_entropy": 0.6877836883609798,
+    "qrc": 0.3880597014925373,
+    "query_rate": 0.7736,
+    "ethical_cost": 2.3679,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 181,
+    "type_entropy": 0.6961560020861479,
+    "qrc": 0.33,
+    "query_rate": 0.7713,
+    "ethical_cost": 32.1577,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 182,
+    "type_entropy": 0.7191951119794378,
+    "qrc": 0.356,
+    "query_rate": 0.759,
+    "ethical_cost": 33.5691,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 183,
+    "type_entropy": 0.7230455216267437,
+    "qrc": 0.3203371970495258,
+    "query_rate": 0.7566,
+    "ethical_cost": 33.6611,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 184,
+    "type_entropy": 0.718631342618625,
+    "qrc": 0.35,
+    "query_rate": 0.7593,
+    "ethical_cost": 34.716,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 185,
+    "type_entropy": 0.6963730392827843,
+    "qrc": 0.3053152039555006,
+    "query_rate": 0.7709,
+    "ethical_cost": 26.905,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 186,
+    "type_entropy": 0.7283027616088611,
+    "qrc": 0.361,
+    "query_rate": 0.754,
+    "ethical_cost": 37.8776,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 187,
+    "type_entropy": 0.7140515061150867,
+    "qrc": 0.3389296956977964,
+    "query_rate": 0.7618,
+    "ethical_cost": 32.1443,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 188,
+    "type_entropy": 0.7055739058291794,
+    "qrc": 0.2844677137870855,
+    "query_rate": 0.765,
+    "ethical_cost": 17.4798,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 189,
+    "type_entropy": 0.6862951290715182,
+    "qrc": 0.297,
+    "query_rate": 0.776,
+    "ethical_cost": 29.5652,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 190,
+    "type_entropy": 0.6769636107254206,
+    "qrc": 0.29819277108433734,
+    "query_rate": 0.7811,
+    "ethical_cost": 27.2984,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 191,
+    "type_entropy": 0.7136033436089253,
+    "qrc": 0.3473895582329317,
+    "query_rate": 0.762,
+    "ethical_cost": 35.047,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 192,
+    "type_entropy": 0.673277293279973,
+    "qrc": 0.280982905982906,
+    "query_rate": 0.7824,
+    "ethical_cost": 28.6523,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 193,
+    "type_entropy": 0.6896663075865364,
+    "qrc": 0.309,
+    "query_rate": 0.7747,
+    "ethical_cost": 31.9442,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 194,
+    "type_entropy": 0.6829962141489282,
+    "qrc": 0.3313253012048193,
+    "query_rate": 0.7781,
+    "ethical_cost": 30.4737,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 195,
+    "type_entropy": 0.6890618643673786,
+    "qrc": 0.3321385902031063,
+    "query_rate": 0.775,
+    "ethical_cost": 24.1143,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 196,
+    "type_entropy": 0.7029005399064452,
+    "qrc": 0.3221024258760108,
+    "query_rate": 0.7677,
+    "ethical_cost": 22.9543,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 197,
+    "type_entropy": 0.6849822713360658,
+    "qrc": 0.29930394431554525,
+    "query_rate": 0.7769,
+    "ethical_cost": 25.1635,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 198,
+    "type_entropy": 0.6937085795139855,
+    "qrc": 0.303,
+    "query_rate": 0.7723,
+    "ethical_cost": 26.1131,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 199,
+    "type_entropy": 0.6687029765034795,
+    "qrc": 0.3145833333333333,
+    "query_rate": 0.7854,
+    "ethical_cost": 11.5952,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 200,
+    "type_entropy": 0.6850034642891762,
+    "qrc": 0.29583333333333334,
+    "query_rate": 0.7767,
+    "ethical_cost": 30.3543,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 201,
+    "type_entropy": 0.6715141468855768,
+    "qrc": 0.303,
+    "query_rate": 0.784,
+    "ethical_cost": 25.9582,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 202,
+    "type_entropy": 0.686323925040916,
+    "qrc": 0.3041526374859708,
+    "query_rate": 0.7763,
+    "ethical_cost": 27.6883,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 203,
+    "type_entropy": 0.6963878544893761,
+    "qrc": 0.311,
+    "query_rate": 0.771,
+    "ethical_cost": 33.5681,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 204,
+    "type_entropy": 0.6529967895499948,
+    "qrc": 0.2673684210526316,
+    "query_rate": 0.7923,
+    "ethical_cost": 10.8991,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 205,
+    "type_entropy": 0.6948764100195444,
+    "qrc": 0.34210526315789475,
+    "query_rate": 0.7719,
+    "ethical_cost": 30.5669,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 206,
+    "type_entropy": 0.7004329972962102,
+    "qrc": 0.35179640718562877,
+    "query_rate": 0.769,
+    "ethical_cost": 20.7304,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 207,
+    "type_entropy": 0.6942320711874325,
+    "qrc": 0.3241590214067278,
+    "query_rate": 0.7723,
+    "ethical_cost": 27.8356,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 208,
+    "type_entropy": 0.6923528347026384,
+    "qrc": 0.3117408906882591,
+    "query_rate": 0.7733,
+    "ethical_cost": 31.3349,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 209,
+    "type_entropy": 0.6741877785804202,
+    "qrc": 0.2975557917109458,
+    "query_rate": 0.7825,
+    "ethical_cost": 26.1778,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 210,
+    "type_entropy": 0.6787346868550674,
+    "qrc": 0.313,
+    "query_rate": 0.7803,
+    "ethical_cost": 29.2246,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 211,
+    "type_entropy": 0.6713547886982493,
+    "qrc": 0.28547008547008546,
+    "query_rate": 0.7835,
+    "ethical_cost": 17.7378,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 212,
+    "type_entropy": 0.6684126981394035,
+    "qrc": 0.2983706720977597,
+    "query_rate": 0.7855,
+    "ethical_cost": 28.401,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 213,
+    "type_entropy": 0.6738941107279723,
+    "qrc": 0.3210412147505423,
+    "query_rate": 0.7827,
+    "ethical_cost": 26.2286,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 214,
+    "type_entropy": 0.664255505547826,
+    "qrc": 0.30520393811533053,
+    "query_rate": 0.7876,
+    "ethical_cost": 20.5434,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 215,
+    "type_entropy": 0.6659132019578686,
+    "qrc": 0.2875,
+    "query_rate": 0.7866,
+    "ethical_cost": 21.4882,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 216,
+    "type_entropy": 0.6643073124996123,
+    "qrc": 0.3122629582806574,
+    "query_rate": 0.7876,
+    "ethical_cost": 19.5466,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 217,
+    "type_entropy": 0.6650702612883496,
+    "qrc": 0.30132788559754853,
+    "query_rate": 0.7872,
+    "ethical_cost": 26.7125,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 218,
+    "type_entropy": 0.6617821031135994,
+    "qrc": 0.287,
+    "query_rate": 0.7887,
+    "ethical_cost": 26.4607,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 219,
+    "type_entropy": 0.664826534068152,
+    "qrc": 0.316,
+    "query_rate": 0.7873,
+    "ethical_cost": 28.1144,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 220,
+    "type_entropy": 0.6539832151896228,
+    "qrc": 0.29405737704918034,
+    "query_rate": 0.7927,
+    "ethical_cost": 25.0498,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 221,
+    "type_entropy": 0.655258576746523,
+    "qrc": 0.2979094076655052,
+    "query_rate": 0.7921,
+    "ethical_cost": 14.2753,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 222,
+    "type_entropy": 0.6584648609548762,
+    "qrc": 0.2971887550200803,
+    "query_rate": 0.7905,
+    "ethical_cost": 25.6971,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 223,
+    "type_entropy": 0.6807133126098629,
+    "qrc": 0.30264993026499304,
+    "query_rate": 0.7792,
+    "ethical_cost": 21.1725,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 224,
+    "type_entropy": 0.6576974744867368,
+    "qrc": 0.29453441295546556,
+    "query_rate": 0.7908,
+    "ethical_cost": 23.7633,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 225,
+    "type_entropy": 0.6688192395829944,
+    "qrc": 0.309,
+    "query_rate": 0.7853,
+    "ethical_cost": 29.3708,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 226,
+    "type_entropy": 0.6682796349225961,
+    "qrc": 0.329004329004329,
+    "query_rate": 0.7855,
+    "ethical_cost": 18.4218,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 227,
+    "type_entropy": 0.6833546730756825,
+    "qrc": 0.32422802850356297,
+    "query_rate": 0.7779,
+    "ethical_cost": 21.1133,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 228,
+    "type_entropy": 0.6630392345613284,
+    "qrc": 0.32589838909541513,
+    "query_rate": 0.7881,
+    "ethical_cost": 23.3006,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 229,
+    "type_entropy": 0.6615259977344734,
+    "qrc": 0.3028391167192429,
+    "query_rate": 0.789,
+    "ethical_cost": 24.5003,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 230,
+    "type_entropy": 0.6533051279749893,
+    "qrc": 0.3074596774193548,
+    "query_rate": 0.793,
+    "ethical_cost": 24.2364,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 231,
+    "type_entropy": 0.6589225794403872,
+    "qrc": 0.3111111111111111,
+    "query_rate": 0.7902,
+    "ethical_cost": 26.5674,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 232,
+    "type_entropy": 0.6737931659070675,
+    "qrc": 0.3179916317991632,
+    "query_rate": 0.7828,
+    "ethical_cost": 25.1617,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 233,
+    "type_entropy": 0.6581443160422369,
+    "qrc": 0.297,
+    "query_rate": 0.7907,
+    "ethical_cost": 24.8775,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 234,
+    "type_entropy": 0.6695931627637719,
+    "qrc": 0.3022556390977444,
+    "query_rate": 0.785,
+    "ethical_cost": 16.1965,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 235,
+    "type_entropy": 0.6491267803623398,
+    "qrc": 0.27724867724867724,
+    "query_rate": 0.7947,
+    "ethical_cost": 23.6566,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 236,
+    "type_entropy": 0.6740672119597384,
+    "qrc": 0.34403080872913994,
+    "query_rate": 0.7822,
+    "ethical_cost": 21.3416,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 237,
+    "type_entropy": 0.6477769692876186,
+    "qrc": 0.3073852295409182,
+    "query_rate": 0.7957,
+    "ethical_cost": 13.9526,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 238,
+    "type_entropy": 0.6327542132023997,
+    "qrc": 0.27321237993596587,
+    "query_rate": 0.8029,
+    "ethical_cost": 18.6411,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 239,
+    "type_entropy": 0.647625007419316,
+    "qrc": 0.30227272727272725,
+    "query_rate": 0.7958,
+    "ethical_cost": 16.5389,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 240,
+    "type_entropy": 0.6292534923557277,
+    "qrc": 0.2534562211981567,
+    "query_rate": 0.8041,
+    "ethical_cost": 15.7298,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 241,
+    "type_entropy": 0.6626570163743024,
+    "qrc": 0.291970802919708,
+    "query_rate": 0.7883,
+    "ethical_cost": 25.0099,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 242,
+    "type_entropy": 0.6526064008018746,
+    "qrc": 0.31827309236947793,
+    "query_rate": 0.7932,
+    "ethical_cost": 22.5631,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 243,
+    "type_entropy": 0.6428965148057264,
+    "qrc": 0.312,
+    "query_rate": 0.798,
+    "ethical_cost": 22.4391,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 244,
+    "type_entropy": 0.6449067302370852,
+    "qrc": 0.312,
+    "query_rate": 0.797,
+    "ethical_cost": 23.1377,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 245,
+    "type_entropy": 0.6402975314272479,
+    "qrc": 0.2854077253218884,
+    "query_rate": 0.7994,
+    "ethical_cost": 18.9282,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 246,
+    "type_entropy": 0.6795920886157787,
+    "qrc": 0.3390804597701149,
+    "query_rate": 0.7797,
+    "ethical_cost": 9.8012,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 247,
+    "type_entropy": 0.6097378215448472,
+    "qrc": 0.249,
+    "query_rate": 0.8133,
+    "ethical_cost": 20.4192,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 248,
+    "type_entropy": 0.6273761522565688,
+    "qrc": 0.2824074074074074,
+    "query_rate": 0.8056,
+    "ethical_cost": 17.5924,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 249,
+    "type_entropy": 0.6295559870165439,
+    "qrc": 0.2847457627118644,
+    "query_rate": 0.8045,
+    "ethical_cost": 10.8894,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 250,
+    "type_entropy": 0.6265673477171663,
+    "qrc": 0.28728070175438597,
+    "query_rate": 0.8059,
+    "ethical_cost": 18.5022,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 251,
+    "type_entropy": 0.613238344692089,
+    "qrc": 0.259,
+    "query_rate": 0.812,
+    "ethical_cost": 19.3521,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 252,
+    "type_entropy": 0.6420103951044622,
+    "qrc": 0.32653061224489793,
+    "query_rate": 0.798,
+    "ethical_cost": 19.2997,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 253,
+    "type_entropy": 0.6257285348764631,
+    "qrc": 0.281,
+    "query_rate": 0.8063,
+    "ethical_cost": 22.6643,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 254,
+    "type_entropy": 0.6322242606228143,
+    "qrc": 0.29471544715447157,
+    "query_rate": 0.8032,
+    "ethical_cost": 21.0937,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 255,
+    "type_entropy": 0.675740268277123,
+    "qrc": 0.33004926108374383,
+    "query_rate": 0.7816,
+    "ethical_cost": 8.9629,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 256,
+    "type_entropy": 0.6260704818296681,
+    "qrc": 0.302,
+    "query_rate": 0.806,
+    "ethical_cost": 20.4442,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 257,
+    "type_entropy": 0.6416041835614423,
+    "qrc": 0.2959905660377358,
+    "query_rate": 0.7987,
+    "ethical_cost": 19.9098,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 258,
+    "type_entropy": 0.5965998826118492,
+    "qrc": 0.276,
+    "query_rate": 0.8197,
+    "ethical_cost": 18.7186,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 259,
+    "type_entropy": 0.6143811088883688,
+    "qrc": 0.2957446808510638,
+    "query_rate": 0.8113,
+    "ethical_cost": 17.5072,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 260,
+    "type_entropy": 0.652831163586636,
+    "qrc": 0.34256055363321797,
+    "query_rate": 0.7924,
+    "ethical_cost": 15.4217,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 261,
+    "type_entropy": 0.617170737724106,
+    "qrc": 0.284,
+    "query_rate": 0.8103,
+    "ethical_cost": 19.3546,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 262,
+    "type_entropy": 0.6124684735379609,
+    "qrc": 0.2875882946518668,
+    "query_rate": 0.8123,
+    "ethical_cost": 19.5089,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 263,
+    "type_entropy": 0.6416460812772432,
+    "qrc": 0.31344902386117135,
+    "query_rate": 0.7986,
+    "ethical_cost": 23.4331,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 264,
+    "type_entropy": 0.6280767219143795,
+    "qrc": 0.305,
+    "query_rate": 0.805,
+    "ethical_cost": 18.7803,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 265,
+    "type_entropy": 0.617721925345585,
+    "qrc": 0.2828810020876827,
+    "query_rate": 0.81,
+    "ethical_cost": 19.2746,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 266,
+    "type_entropy": 0.6361262172987475,
+    "qrc": 0.2942430703624733,
+    "query_rate": 0.8014,
+    "ethical_cost": 19.9758,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 267,
+    "type_entropy": 0.6464681299337534,
+    "qrc": 0.3108108108108108,
+    "query_rate": 0.7963,
+    "ethical_cost": 24.9805,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 268,
+    "type_entropy": 0.6265495111196792,
+    "qrc": 0.303236797274276,
+    "query_rate": 0.8058,
+    "ethical_cost": 11.5117,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 269,
+    "type_entropy": 0.6592161736347117,
+    "qrc": 0.3285568065506653,
+    "query_rate": 0.7898,
+    "ethical_cost": 24.9676,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 270,
+    "type_entropy": 0.6520106515087178,
+    "qrc": 0.29878048780487804,
+    "query_rate": 0.7937,
+    "ethical_cost": 21.7672,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 271,
+    "type_entropy": 0.6527075255908804,
+    "qrc": 0.3094758064516129,
+    "query_rate": 0.7933,
+    "ethical_cost": 24.8374,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 272,
+    "type_entropy": 0.6339792270249428,
+    "qrc": 0.318,
+    "query_rate": 0.802,
+    "ethical_cost": 19.7701,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 273,
+    "type_entropy": 0.6444540720020355,
+    "qrc": 0.3112449799196787,
+    "query_rate": 0.7972,
+    "ethical_cost": 24.3044,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 274,
+    "type_entropy": 0.6517084595672878,
+    "qrc": 0.315,
+    "query_rate": 0.7937,
+    "ethical_cost": 23.2108,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 275,
+    "type_entropy": 0.6347825539738794,
+    "qrc": 0.2896341463414634,
+    "query_rate": 0.802,
+    "ethical_cost": 15.5696,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 276,
+    "type_entropy": 0.6375325334898121,
+    "qrc": 0.3333333333333333,
+    "query_rate": 0.7998,
+    "ethical_cost": 16.0105,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 277,
+    "type_entropy": 0.6452678585453906,
+    "qrc": 0.30665280665280664,
+    "query_rate": 0.797,
+    "ethical_cost": 21.8639,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 278,
+    "type_entropy": 0.6309182459836582,
+    "qrc": 0.31346578366445915,
+    "query_rate": 0.8035,
+    "ethical_cost": 9.3122,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 279,
+    "type_entropy": 0.6694324129109528,
+    "qrc": 0.3387589013224822,
+    "query_rate": 0.7847,
+    "ethical_cost": 22.3181,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 280,
+    "type_entropy": 0.641226530898882,
+    "qrc": 0.2958152958152958,
+    "query_rate": 0.7989,
+    "ethical_cost": 15.3825,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 281,
+    "type_entropy": 0.6541102655259009,
+    "qrc": 0.297,
+    "query_rate": 0.7927,
+    "ethical_cost": 24.3773,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 282,
+    "type_entropy": 0.637589543900092,
+    "qrc": 0.285,
+    "query_rate": 0.8007,
+    "ethical_cost": 24.0669,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 283,
+    "type_entropy": 0.6524461428312112,
+    "qrc": 0.288,
+    "query_rate": 0.7933,
+    "ethical_cost": 24.1702,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 284,
+    "type_entropy": 0.6564894428909328,
+    "qrc": 0.33462532299741604,
+    "query_rate": 0.7911,
+    "ethical_cost": 21.2017,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 285,
+    "type_entropy": 0.6559255285990919,
+    "qrc": 0.30885780885780884,
+    "query_rate": 0.7918,
+    "ethical_cost": 21.5321,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 286,
+    "type_entropy": 0.6105116537199933,
+    "qrc": 0.29207920792079206,
+    "query_rate": 0.8131,
+    "ethical_cost": 12.1906,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 287,
+    "type_entropy": 0.6207052105431529,
+    "qrc": 0.2934898612593383,
+    "query_rate": 0.8086,
+    "ethical_cost": 15.9761,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 288,
+    "type_entropy": 0.6231113181259142,
+    "qrc": 0.286231884057971,
+    "query_rate": 0.8076,
+    "ethical_cost": 14.6165,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 289,
+    "type_entropy": 0.6607588875882103,
+    "qrc": 0.32793522267206476,
+    "query_rate": 0.7891,
+    "ethical_cost": 25.0244,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 290,
+    "type_entropy": 0.6608605671285632,
+    "qrc": 0.30430430430430433,
+    "query_rate": 0.7893,
+    "ethical_cost": 23.4309,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 291,
+    "type_entropy": 0.6444074523700362,
+    "qrc": 0.32420591456736036,
+    "query_rate": 0.797,
+    "ethical_cost": 19.0503,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 292,
+    "type_entropy": 0.6252513970109941,
+    "qrc": 0.28413654618473894,
+    "query_rate": 0.8066,
+    "ethical_cost": 20.618,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 293,
+    "type_entropy": 0.6631483538503289,
+    "qrc": 0.2986111111111111,
+    "query_rate": 0.7882,
+    "ethical_cost": 13.8385,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 294,
+    "type_entropy": 0.640442768405429,
+    "qrc": 0.3041709053916582,
+    "query_rate": 0.7993,
+    "ethical_cost": 21.8333,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 295,
+    "type_entropy": 0.6660610937678176,
+    "qrc": 0.325,
+    "query_rate": 0.7867,
+    "ethical_cost": 24.82,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 296,
+    "type_entropy": 0.647554088842514,
+    "qrc": 0.3055276381909548,
+    "query_rate": 0.7959,
+    "ethical_cost": 22.6296,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 297,
+    "type_entropy": 0.6536058082869459,
+    "qrc": 0.2851063829787234,
+    "query_rate": 0.7928,
+    "ethical_cost": 21.7508,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 298,
+    "type_entropy": 0.6414720484320485,
+    "qrc": 0.30191256830601093,
+    "query_rate": 0.7987,
+    "ethical_cost": 16.5836,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 299,
+    "type_entropy": 0.678114883080205,
+    "qrc": 0.3218390804597701,
+    "query_rate": 0.7807,
+    "ethical_cost": 18.8332,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 300,
+    "type_entropy": 0.6361200972043385,
+    "qrc": 0.31805929919137466,
+    "query_rate": 0.801,
+    "ethical_cost": 15.914,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 301,
+    "type_entropy": 0.609997667910182,
+    "qrc": 0.26262626262626265,
+    "query_rate": 0.8137,
+    "ethical_cost": 17.9722,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 302,
+    "type_entropy": 0.6566510786167032,
+    "qrc": 0.3261943986820428,
+    "query_rate": 0.7911,
+    "ethical_cost": 14.9486,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 303,
+    "type_entropy": 0.6270817195553604,
+    "qrc": 0.2899022801302932,
+    "query_rate": 0.8056,
+    "ethical_cost": 11.957,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 304,
+    "type_entropy": 0.638455943919062,
+    "qrc": 0.3020030816640986,
+    "query_rate": 0.8002,
+    "ethical_cost": 13.7968,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 305,
+    "type_entropy": 0.6329035000224575,
+    "qrc": 0.3041125541125541,
+    "query_rate": 0.8027,
+    "ethical_cost": 20.3829,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 306,
+    "type_entropy": 0.6208562472572017,
+    "qrc": 0.29536290322580644,
+    "query_rate": 0.8085,
+    "ethical_cost": 22.1771,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 307,
+    "type_entropy": 0.6280308120365896,
+    "qrc": 0.2956326987681971,
+    "query_rate": 0.8052,
+    "ethical_cost": 18.2779,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 308,
+    "type_entropy": 0.6248643050217197,
+    "qrc": 0.28781512605042014,
+    "query_rate": 0.8067,
+    "ethical_cost": 9.4248,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 309,
+    "type_entropy": 0.6218574492865194,
+    "qrc": 0.30268595041322316,
+    "query_rate": 0.8079,
+    "ethical_cost": 20.2359,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 310,
+    "type_entropy": 0.6494852987339754,
+    "qrc": 0.2972972972972973,
+    "query_rate": 0.7949,
+    "ethical_cost": 18.8771,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 311,
+    "type_entropy": 0.651735573090526,
+    "qrc": 0.3125659978880676,
+    "query_rate": 0.7937,
+    "ethical_cost": 21.2123,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 312,
+    "type_entropy": 0.6474997944680116,
+    "qrc": 0.3239130434782609,
+    "query_rate": 0.7957,
+    "ethical_cost": 22.9001,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 313,
+    "type_entropy": 0.6051594546382318,
+    "qrc": 0.2987152034261242,
+    "query_rate": 0.8155,
+    "ethical_cost": 18.7017,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 314,
+    "type_entropy": 0.6287095129581941,
+    "qrc": 0.2811704834605598,
+    "query_rate": 0.8049,
+    "ethical_cost": 16.0316,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 315,
+    "type_entropy": 0.6142491302686965,
+    "qrc": 0.2888086642599278,
+    "query_rate": 0.8117,
+    "ethical_cost": 10.4472,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 316,
+    "type_entropy": 0.668707024472201,
+    "qrc": 0.3294460641399417,
+    "query_rate": 0.7852,
+    "ethical_cost": 10.3897,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 317,
+    "type_entropy": 0.6321957832401898,
+    "qrc": 0.3060538116591928,
+    "query_rate": 0.8031,
+    "ethical_cost": 17.5214,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 318,
+    "type_entropy": 0.6210798567770561,
+    "qrc": 0.312,
+    "query_rate": 0.808,
+    "ethical_cost": 20.0996,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 319,
+    "type_entropy": 0.6050602566778704,
+    "qrc": 0.294,
+    "query_rate": 0.8157,
+    "ethical_cost": 20.0311,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 320,
+    "type_entropy": 0.5942938369462017,
+    "qrc": 0.29283489096573206,
+    "query_rate": 0.8204,
+    "ethical_cost": 18.7332,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 321,
+    "type_entropy": 0.6218595978704989,
+    "qrc": 0.301,
+    "query_rate": 0.808,
+    "ethical_cost": 21.21,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 322,
+    "type_entropy": 0.6043044369472896,
+    "qrc": 0.293,
+    "query_rate": 0.816,
+    "ethical_cost": 18.6679,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 323,
+    "type_entropy": 0.6083366188879462,
+    "qrc": 0.314,
+    "query_rate": 0.8137,
+    "ethical_cost": 20.4583,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 324,
+    "type_entropy": 0.6195121029179282,
+    "qrc": 0.28815261044176704,
+    "query_rate": 0.8092,
+    "ethical_cost": 20.2894,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 325,
+    "type_entropy": 0.6132742587708856,
+    "qrc": 0.2987012987012987,
+    "query_rate": 0.8119,
+    "ethical_cost": 16.7901,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 326,
+    "type_entropy": 0.6157065952560574,
+    "qrc": 0.3,
+    "query_rate": 0.8108,
+    "ethical_cost": 18.9758,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 327,
+    "type_entropy": 0.6168376119951048,
+    "qrc": 0.32208157524613223,
+    "query_rate": 0.8097,
+    "ethical_cost": 15.9234,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 328,
+    "type_entropy": 0.6103092400104299,
+    "qrc": 0.2863905325443787,
+    "query_rate": 0.8134,
+    "ethical_cost": 17.6957,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 329,
+    "type_entropy": 0.6222052109083306,
+    "qrc": 0.2994413407821229,
+    "query_rate": 0.8078,
+    "ethical_cost": 19.1793,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 330,
+    "type_entropy": 0.6242979612656308,
+    "qrc": 0.286,
+    "query_rate": 0.807,
+    "ethical_cost": 20.2756,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 331,
+    "type_entropy": 0.6163074375074489,
+    "qrc": 0.3019976498237368,
+    "query_rate": 0.8104,
+    "ethical_cost": 18.0007,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 332,
+    "type_entropy": 0.6211472967621356,
+    "qrc": 0.30443548387096775,
+    "query_rate": 0.8081,
+    "ethical_cost": 19.6678,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 333,
+    "type_entropy": 0.6181314390850978,
+    "qrc": 0.30622489959839355,
+    "query_rate": 0.8096,
+    "ethical_cost": 20.9509,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 334,
+    "type_entropy": 0.6446003805417978,
+    "qrc": 0.30987394957983194,
+    "query_rate": 0.7973,
+    "ethical_cost": 27.1071,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 335,
+    "type_entropy": 0.6114658359351368,
+    "qrc": 0.3068181818181818,
+    "query_rate": 0.8125,
+    "ethical_cost": 16.5033,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 336,
+    "type_entropy": 0.6109768259310215,
+    "qrc": 0.3112449799196787,
+    "query_rate": 0.8126,
+    "ethical_cost": 19.5311,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 337,
+    "type_entropy": 0.6042776874518521,
+    "qrc": 0.28218465539661897,
+    "query_rate": 0.8162,
+    "ethical_cost": 14.0134,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 338,
+    "type_entropy": 0.6457313020427518,
+    "qrc": 0.2927170868347339,
+    "query_rate": 0.7967,
+    "ethical_cost": 14.7836,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 339,
+    "type_entropy": 0.6245021355269129,
+    "qrc": 0.30761316872427985,
+    "query_rate": 0.8066,
+    "ethical_cost": 21.7578,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 340,
+    "type_entropy": 0.6507218839652043,
+    "qrc": 0.328,
+    "query_rate": 0.794,
+    "ethical_cost": 25.7628,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 341,
+    "type_entropy": 0.6125991850471714,
+    "qrc": 0.29463171036204744,
+    "query_rate": 0.8123,
+    "ethical_cost": 16.2401,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 342,
+    "type_entropy": 0.6191231865871076,
+    "qrc": 0.3233233233233233,
+    "query_rate": 0.8085,
+    "ethical_cost": 20.6807,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 343,
+    "type_entropy": 0.6243622977919413,
+    "qrc": 0.3064516129032258,
+    "query_rate": 0.8068,
+    "ethical_cost": 20.4337,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 344,
+    "type_entropy": 0.6123122778480263,
+    "qrc": 0.3008241758241758,
+    "query_rate": 0.8123,
+    "ethical_cost": 15.5229,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 345,
+    "type_entropy": 0.6268155696956811,
+    "qrc": 0.3149847094801223,
+    "query_rate": 0.8053,
+    "ethical_cost": 23.7626,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 346,
+    "type_entropy": 0.6158081922384117,
+    "qrc": 0.314,
+    "query_rate": 0.8103,
+    "ethical_cost": 21.0244,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 347,
+    "type_entropy": 0.6080696082368062,
+    "qrc": 0.3017543859649123,
+    "query_rate": 0.814,
+    "ethical_cost": 15.5278,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 348,
+    "type_entropy": 0.6366451142644759,
+    "qrc": 0.311,
+    "query_rate": 0.801,
+    "ethical_cost": 21.7197,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 349,
+    "type_entropy": 0.6230203202413694,
+    "qrc": 0.305668016194332,
+    "query_rate": 0.8074,
+    "ethical_cost": 21.5055,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 350,
+    "type_entropy": 0.6173277876161645,
+    "qrc": 0.296127562642369,
+    "query_rate": 0.8102,
+    "ethical_cost": 11.074,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 351,
+    "type_entropy": 0.6150956828036517,
+    "qrc": 0.2764227642276423,
+    "query_rate": 0.8113,
+    "ethical_cost": 20.9158,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 352,
+    "type_entropy": 0.597316405495349,
+    "qrc": 0.281,
+    "query_rate": 0.8193,
+    "ethical_cost": 18.4353,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 353,
+    "type_entropy": 0.6186062974393687,
+    "qrc": 0.30833333333333335,
+    "query_rate": 0.8093,
+    "ethical_cost": 18.0791,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 354,
+    "type_entropy": 0.6147630937027277,
+    "qrc": 0.2731182795698925,
+    "query_rate": 0.8115,
+    "ethical_cost": 10.2202,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 355,
+    "type_entropy": 0.6107511536595309,
+    "qrc": 0.26136363636363635,
+    "query_rate": 0.8131,
+    "ethical_cost": 12.0432,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 356,
+    "type_entropy": 0.6067350997048571,
+    "qrc": 0.2885624344176285,
+    "query_rate": 0.815,
+    "ethical_cost": 16.627,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 357,
+    "type_entropy": 0.6274437581960858,
+    "qrc": 0.3237639553429027,
+    "query_rate": 0.8049,
+    "ethical_cost": 14.9174,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 358,
+    "type_entropy": 0.5990759135605963,
+    "qrc": 0.2973856209150327,
+    "query_rate": 0.8181,
+    "ethical_cost": 10.2374,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 359,
+    "type_entropy": 0.6126933412214148,
+    "qrc": 0.306,
+    "query_rate": 0.812,
+    "ethical_cost": 20.693,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 360,
+    "type_entropy": 0.6028118064974873,
+    "qrc": 0.29235537190082644,
+    "query_rate": 0.8168,
+    "ethical_cost": 17.8741,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 361,
+    "type_entropy": 0.5949680648259952,
+    "qrc": 0.2834978843441467,
+    "query_rate": 0.8204,
+    "ethical_cost": 11.7022,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 362,
+    "type_entropy": 0.6189411740807162,
+    "qrc": 0.2984749455337691,
+    "query_rate": 0.8094,
+    "ethical_cost": 18.5521,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 363,
+    "type_entropy": 0.6004587798317556,
+    "qrc": 0.27932960893854747,
+    "query_rate": 0.818,
+    "ethical_cost": 14.7309,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 364,
+    "type_entropy": 0.6012592606021993,
+    "qrc": 0.2715736040609137,
+    "query_rate": 0.8177,
+    "ethical_cost": 14.9786,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 365,
+    "type_entropy": 0.6185222002037005,
+    "qrc": 0.30269058295964124,
+    "query_rate": 0.8094,
+    "ethical_cost": 9.0992,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 366,
+    "type_entropy": 0.60877643872418,
+    "qrc": 0.2884902840059791,
+    "query_rate": 0.8142,
+    "ethical_cost": 12.1603,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 367,
+    "type_entropy": 0.5855731868081337,
+    "qrc": 0.2755417956656347,
+    "query_rate": 0.8246,
+    "ethical_cost": 15.9832,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 368,
+    "type_entropy": 0.6130527984773968,
+    "qrc": 0.30445859872611464,
+    "query_rate": 0.8119,
+    "ethical_cost": 16.3649,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 369,
+    "type_entropy": 0.6012180239538303,
+    "qrc": 0.2888283378746594,
+    "query_rate": 0.8174,
+    "ethical_cost": 14.2464,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 370,
+    "type_entropy": 0.6048219964612538,
+    "qrc": 0.27974683544303797,
+    "query_rate": 0.816,
+    "ethical_cost": 16.2384,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 371,
+    "type_entropy": 0.5954887672085427,
+    "qrc": 0.2782258064516129,
+    "query_rate": 0.8202,
+    "ethical_cost": 16.1181,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 372,
+    "type_entropy": 0.5922737962400292,
+    "qrc": 0.27376861397479957,
+    "query_rate": 0.8217,
+    "ethical_cost": 13.5885,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 373,
+    "type_entropy": 0.596798703206108,
+    "qrc": 0.29,
+    "query_rate": 0.8193,
+    "ethical_cost": 16.2893,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 374,
+    "type_entropy": 0.618870765357213,
+    "qrc": 0.2989556135770235,
+    "query_rate": 0.8094,
+    "ethical_cost": 17.122,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 375,
+    "type_entropy": 0.5792008029277059,
+    "qrc": 0.2507836990595611,
+    "query_rate": 0.8276,
+    "ethical_cost": 16.6009,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 376,
+    "type_entropy": 0.6139156317017838,
+    "qrc": 0.2816377171215881,
+    "query_rate": 0.8118,
+    "ethical_cost": 14.4512,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 377,
+    "type_entropy": 0.5927199181632652,
+    "qrc": 0.2648709315375982,
+    "query_rate": 0.8215,
+    "ethical_cost": 16.773,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 378,
+    "type_entropy": 0.6158691398414451,
+    "qrc": 0.301,
+    "query_rate": 0.8107,
+    "ethical_cost": 22.47,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 379,
+    "type_entropy": 0.6064748692465385,
+    "qrc": 0.2833562585969739,
+    "query_rate": 0.8152,
+    "ethical_cost": 12.4541,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 380,
+    "type_entropy": 0.6204730900399571,
+    "qrc": 0.312,
+    "query_rate": 0.8083,
+    "ethical_cost": 21.3547,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 381,
+    "type_entropy": 0.6158364179140292,
+    "qrc": 0.2973790322580645,
+    "query_rate": 0.8108,
+    "ethical_cost": 20.9569,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 382,
+    "type_entropy": 0.6178217582252793,
+    "qrc": 0.2838427947598253,
+    "query_rate": 0.81,
+    "ethical_cost": 18.4906,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 383,
+    "type_entropy": 0.6034681074295886,
+    "qrc": 0.274,
+    "query_rate": 0.8167,
+    "ethical_cost": 19.1232,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 384,
+    "type_entropy": 0.5780785387555217,
+    "qrc": 0.264,
+    "query_rate": 0.828,
+    "ethical_cost": 15.9846,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 385,
+    "type_entropy": 0.6099662225404149,
+    "qrc": 0.3038130381303813,
+    "query_rate": 0.813,
+    "ethical_cost": 14.7481,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 386,
+    "type_entropy": 0.6313511668295629,
+    "qrc": 0.284,
+    "query_rate": 0.8037,
+    "ethical_cost": 22.0396,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 387,
+    "type_entropy": 0.5766996365637649,
+    "qrc": 0.28987068965517243,
+    "query_rate": 0.8279,
+    "ethical_cost": 13.6528,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 388,
+    "type_entropy": 0.564947797261555,
+    "qrc": 0.26305220883534136,
+    "query_rate": 0.8337,
+    "ethical_cost": 12.0901,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 389,
+    "type_entropy": 0.572583306589971,
+    "qrc": 0.26992561105207225,
+    "query_rate": 0.8303,
+    "ethical_cost": 12.3764,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 390,
+    "type_entropy": 0.6083750562086675,
+    "qrc": 0.3187250996015936,
+    "query_rate": 0.8134,
+    "ethical_cost": 9.127,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 391,
+    "type_entropy": 0.6088811771821658,
+    "qrc": 0.29417670682730923,
+    "query_rate": 0.8139,
+    "ethical_cost": 20.331,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 392,
+    "type_entropy": 0.6119927991767893,
+    "qrc": 0.3016129032258065,
+    "query_rate": 0.8124,
+    "ethical_cost": 12.5819,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 393,
+    "type_entropy": 0.6055550469321339,
+    "qrc": 0.29186046511627906,
+    "query_rate": 0.8155,
+    "ethical_cost": 15.3689,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 394,
+    "type_entropy": 0.6010029351720723,
+    "qrc": 0.295,
+    "query_rate": 0.8173,
+    "ethical_cost": 17.7187,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 395,
+    "type_entropy": 0.584017627203379,
+    "qrc": 0.2802874743326489,
+    "query_rate": 0.8251,
+    "ethical_cost": 15.8093,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 396,
+    "type_entropy": 0.5632592573595419,
+    "qrc": 0.276,
+    "query_rate": 0.834,
+    "ethical_cost": 14.8616,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 397,
+    "type_entropy": 0.579985429746597,
+    "qrc": 0.279,
+    "query_rate": 0.827,
+    "ethical_cost": 13.9477,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 398,
+    "type_entropy": 0.5787491738121614,
+    "qrc": 0.3051742344244984,
+    "query_rate": 0.8265,
+    "ethical_cost": 15.7295,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 399,
+    "type_entropy": 0.5990765637978,
+    "qrc": 0.30906148867313915,
+    "query_rate": 0.8177,
+    "ethical_cost": 11.8009,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 400,
+    "type_entropy": 0.5913583828368487,
+    "qrc": 0.2849604221635884,
+    "query_rate": 0.8219,
+    "ethical_cost": 12.2554,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 401,
+    "type_entropy": 0.581491063658664,
+    "qrc": 0.275,
+    "query_rate": 0.8263,
+    "ethical_cost": 17.5405,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 402,
+    "type_entropy": 0.5818293551750902,
+    "qrc": 0.269,
+    "query_rate": 0.8263,
+    "ethical_cost": 16.9576,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 403,
+    "type_entropy": 0.5527435387449418,
+    "qrc": 0.275,
+    "query_rate": 0.8383,
+    "ethical_cost": 12.8387,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 404,
+    "type_entropy": 0.5542032259783338,
+    "qrc": 0.26704545454545453,
+    "query_rate": 0.8381,
+    "ethical_cost": 9.4665,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 405,
+    "type_entropy": 0.5664276963476724,
+    "qrc": 0.291497975708502,
+    "query_rate": 0.832,
+    "ethical_cost": 15.2243,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 406,
+    "type_entropy": 0.5911855520357174,
+    "qrc": 0.3275862068965517,
+    "query_rate": 0.8202,
+    "ethical_cost": 7.7013,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 407,
+    "type_entropy": 0.5755666393651774,
+    "qrc": 0.31374606505771246,
+    "query_rate": 0.8272,
+    "ethical_cost": 14.8285,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 408,
+    "type_entropy": 0.573116441614227,
+    "qrc": 0.31508264462809915,
+    "query_rate": 0.8282,
+    "ethical_cost": 17.5766,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 409,
+    "type_entropy": 0.5533646193927146,
+    "qrc": 0.27653061224489794,
+    "query_rate": 0.8378,
+    "ethical_cost": 11.2559,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 410,
+    "type_entropy": 0.578221690443503,
+    "qrc": 0.2946611909650924,
+    "query_rate": 0.8272,
+    "ethical_cost": 12.9898,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 411,
+    "type_entropy": 0.5565510806378493,
+    "qrc": 0.25471698113207547,
+    "query_rate": 0.8373,
+    "ethical_cost": 5.3548,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 412,
+    "type_entropy": 0.5762616189712432,
+    "qrc": 0.3283740701381509,
+    "query_rate": 0.8257,
+    "ethical_cost": 14.2711,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 413,
+    "type_entropy": 0.5637421284126615,
+    "qrc": 0.3132372214941022,
+    "query_rate": 0.8318,
+    "ethical_cost": 11.1018,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 414,
+    "type_entropy": 0.5813250417235842,
+    "qrc": 0.314,
+    "query_rate": 0.8247,
+    "ethical_cost": 14.4167,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 415,
+    "type_entropy": 0.5815588203750901,
+    "qrc": 0.3293051359516616,
+    "query_rate": 0.8228,
+    "ethical_cost": 5.5919,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 416,
+    "type_entropy": 0.5981720060060894,
+    "qrc": 0.3237250554323725,
+    "query_rate": 0.8174,
+    "ethical_cost": 18.674,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 417,
+    "type_entropy": 0.5960345830436082,
+    "qrc": 0.2917570498915401,
+    "query_rate": 0.8196,
+    "ethical_cost": 15.7767,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 418,
+    "type_entropy": 0.5501247762179423,
+    "qrc": 0.28132678132678135,
+    "query_rate": 0.8391,
+    "ethical_cost": 11.6459,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 419,
+    "type_entropy": 0.5446699359214249,
+    "qrc": 0.263,
+    "query_rate": 0.842,
+    "ethical_cost": 11.0813,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 420,
+    "type_entropy": 0.5590469780496731,
+    "qrc": 0.2972322503008424,
+    "query_rate": 0.8347,
+    "ethical_cost": 11.3552,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 421,
+    "type_entropy": 0.6007356903672088,
+    "qrc": 0.34,
+    "query_rate": 0.815,
+    "ethical_cost": 15.6246,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 422,
+    "type_entropy": 0.5741855910840672,
+    "qrc": 0.3001579778830964,
+    "query_rate": 0.8283,
+    "ethical_cost": 9.6208,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 423,
+    "type_entropy": 0.5551478393852773,
+    "qrc": 0.28174603174603174,
+    "query_rate": 0.8369,
+    "ethical_cost": 8.8767,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 424,
+    "type_entropy": 0.6144590074855693,
+    "qrc": 0.3413566739606127,
+    "query_rate": 0.8096,
+    "ethical_cost": 20.4878,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 425,
+    "type_entropy": 0.5697622398265297,
+    "qrc": 0.293,
+    "query_rate": 0.8307,
+    "ethical_cost": 14.3186,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 426,
+    "type_entropy": 0.6067069051596792,
+    "qrc": 0.33,
+    "query_rate": 0.8133,
+    "ethical_cost": 19.9175,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 427,
+    "type_entropy": 0.5976228773455645,
+    "qrc": 0.30823293172690763,
+    "query_rate": 0.8183,
+    "ethical_cost": 18.2439,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 428,
+    "type_entropy": 0.6030133765953098,
+    "qrc": 0.3278301886792453,
+    "query_rate": 0.8153,
+    "ethical_cost": 16.435,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 429,
+    "type_entropy": 0.606584096573193,
+    "qrc": 0.326,
+    "query_rate": 0.8137,
+    "ethical_cost": 20.0987,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 430,
+    "type_entropy": 0.6126862437447813,
+    "qrc": 0.32660332541567694,
+    "query_rate": 0.8112,
+    "ethical_cost": 18.0429,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 431,
+    "type_entropy": 0.5728378977002584,
+    "qrc": 0.26666666666666666,
+    "query_rate": 0.8303,
+    "ethical_cost": 2.4645,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 432,
+    "type_entropy": 0.5848813774016731,
+    "qrc": 0.30924548352816156,
+    "query_rate": 0.8236,
+    "ethical_cost": 16.6919,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 433,
+    "type_entropy": 0.6123636145237794,
+    "qrc": 0.32653061224489793,
+    "query_rate": 0.8112,
+    "ethical_cost": 17.0096,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 434,
+    "type_entropy": 0.593533662999703,
+    "qrc": 0.30117647058823527,
+    "query_rate": 0.8204,
+    "ethical_cost": 16.5758,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 435,
+    "type_entropy": 0.6110552982359565,
+    "qrc": 0.3277634961439589,
+    "query_rate": 0.8119,
+    "ethical_cost": 15.4079,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 436,
+    "type_entropy": 0.6033743812460559,
+    "qrc": 0.312,
+    "query_rate": 0.816,
+    "ethical_cost": 16.2849,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 437,
+    "type_entropy": 0.5968465286362911,
+    "qrc": 0.325,
+    "query_rate": 0.818,
+    "ethical_cost": 19.6608,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 438,
+    "type_entropy": 0.6396348325321268,
+    "qrc": 0.3475409836065574,
+    "query_rate": 0.7982,
+    "ethical_cost": 23.1433,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 439,
+    "type_entropy": 0.600064072434974,
+    "qrc": 0.33178654292343385,
+    "query_rate": 0.8163,
+    "ethical_cost": 17.2047,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 440,
+    "type_entropy": 0.596844243647499,
+    "qrc": 0.3302857142857143,
+    "query_rate": 0.8175,
+    "ethical_cost": 16.9651,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 441,
+    "type_entropy": 0.6685381749194146,
+    "qrc": 0.372848948374761,
+    "query_rate": 0.7833,
+    "ethical_cost": 12.2461,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 442,
+    "type_entropy": 0.6349064307348999,
+    "qrc": 0.33201581027667987,
+    "query_rate": 0.8011,
+    "ethical_cost": 3.2073,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 443,
+    "type_entropy": 0.6151379664785199,
+    "qrc": 0.30761421319796955,
+    "query_rate": 0.8107,
+    "ethical_cost": 19.1276,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 444,
+    "type_entropy": 0.6108131653762776,
+    "qrc": 0.33233233233233234,
+    "query_rate": 0.8117,
+    "ethical_cost": 18.3781,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 445,
+    "type_entropy": 0.6207149280042155,
+    "qrc": 0.334,
+    "query_rate": 0.8073,
+    "ethical_cost": 22.2493,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 446,
+    "type_entropy": 0.6166998388139235,
+    "qrc": 0.3231707317073171,
+    "query_rate": 0.8096,
+    "ethical_cost": 19.7443,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 447,
+    "type_entropy": 0.63500539430637,
+    "qrc": 0.3270241850683491,
+    "query_rate": 0.8011,
+    "ethical_cost": 21.9839,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 448,
+    "type_entropy": 0.6551745799792748,
+    "qrc": 0.352,
+    "query_rate": 0.7907,
+    "ethical_cost": 23.153,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 449,
+    "type_entropy": 0.6167211899265653,
+    "qrc": 0.3486910994764398,
+    "query_rate": 0.808,
+    "ethical_cost": 18.7479,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 450,
+    "type_entropy": 0.6690410142749187,
+    "qrc": 0.36770186335403726,
+    "query_rate": 0.7834,
+    "ethical_cost": 19.7544,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 451,
+    "type_entropy": 0.6223428130981042,
+    "qrc": 0.3367243133265514,
+    "query_rate": 0.8062,
+    "ethical_cost": 19.7695,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 452,
+    "type_entropy": 0.6505590174426862,
+    "qrc": 0.336,
+    "query_rate": 0.7937,
+    "ethical_cost": 22.9989,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 453,
+    "type_entropy": 0.6927226559831725,
+    "qrc": 0.38110403397027603,
+    "query_rate": 0.7713,
+    "ethical_cost": 21.6859,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 454,
+    "type_entropy": 0.7345112441271578,
+    "qrc": 0.4055299539170507,
+    "query_rate": 0.749,
+    "ethical_cost": 15.5545,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 455,
+    "type_entropy": 0.7215443965808992,
+    "qrc": 0.4056603773584906,
+    "query_rate": 0.7552,
+    "ethical_cost": 15.5329,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 456,
+    "type_entropy": 0.7162503860829488,
+    "qrc": 0.3649789029535865,
+    "query_rate": 0.7599,
+    "ethical_cost": 23.251,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 457,
+    "type_entropy": 0.7303184488691918,
+    "qrc": 0.3705220061412487,
+    "query_rate": 0.7522,
+    "ethical_cost": 19.6982,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 458,
+    "type_entropy": 0.7607007735081546,
+    "qrc": 0.4020304568527919,
+    "query_rate": 0.7338,
+    "ethical_cost": 20.8012,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 459,
+    "type_entropy": 0.7517906432393698,
+    "qrc": 0.42685370741482964,
+    "query_rate": 0.7377,
+    "ethical_cost": 19.0302,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 460,
+    "type_entropy": 0.7752588516968444,
+    "qrc": 0.4107551487414188,
+    "query_rate": 0.725,
+    "ethical_cost": 15.1647,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 461,
+    "type_entropy": 0.81466101096118,
+    "qrc": 0.47668393782383417,
+    "query_rate": 0.6977,
+    "ethical_cost": 25.7204,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 462,
+    "type_entropy": 0.8075696351201503,
+    "qrc": 0.45434298440979953,
+    "query_rate": 0.704,
+    "ethical_cost": 9.8294,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 463,
+    "type_entropy": 0.8038181795227755,
+    "qrc": 0.4471299093655589,
+    "query_rate": 0.7074,
+    "ethical_cost": 23.2773,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 464,
+    "type_entropy": 0.8479230041182644,
+    "qrc": 0.45271629778672035,
+    "query_rate": 0.679,
+    "ethical_cost": 30.7576,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 465,
+    "type_entropy": 0.8960334933210016,
+    "qrc": 0.5338894681960376,
+    "query_rate": 0.6415,
+    "ethical_cost": 34.6588,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 466,
+    "type_entropy": 0.8948497042225001,
+    "qrc": 0.4788732394366197,
+    "query_rate": 0.6451,
+    "ethical_cost": 31.3053,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 467,
+    "type_entropy": 0.921080333310941,
+    "qrc": 0.5050675675675675,
+    "query_rate": 0.6248,
+    "ethical_cost": 26.6233,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 468,
+    "type_entropy": 0.9065441352974543,
+    "qrc": 0.5154929577464789,
+    "query_rate": 0.6346,
+    "ethical_cost": 26.418,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 469,
+    "type_entropy": 0.8826478071370337,
+    "qrc": 0.504885993485342,
+    "query_rate": 0.6521,
+    "ethical_cost": 21.2867,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 470,
+    "type_entropy": 0.8742749335615598,
+    "qrc": 0.5054545454545455,
+    "query_rate": 0.657,
+    "ethical_cost": 25.8263,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 471,
+    "type_entropy": 0.8908130108824417,
+    "qrc": 0.5294715447154471,
+    "query_rate": 0.6452,
+    "ethical_cost": 34.6646,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 472,
+    "type_entropy": 0.8996735586006106,
+    "qrc": 0.5433231396534148,
+    "query_rate": 0.637,
+    "ethical_cost": 38.6047,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 473,
+    "type_entropy": 0.9053758076914085,
+    "qrc": 0.5297619047619048,
+    "query_rate": 0.6344,
+    "ethical_cost": 24.7678,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 474,
+    "type_entropy": 0.885413674906585,
+    "qrc": 0.5708908406524467,
+    "query_rate": 0.6434,
+    "ethical_cost": 29.2438,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 475,
+    "type_entropy": 0.8924407422735915,
+    "qrc": 0.5421810699588477,
+    "query_rate": 0.6422,
+    "ethical_cost": 37.1541,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 476,
+    "type_entropy": 0.8964406817348983,
+    "qrc": 0.5785907859078591,
+    "query_rate": 0.6331,
+    "ethical_cost": 32.4753,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 477,
+    "type_entropy": 0.9199085398670459,
+    "qrc": 0.6221142162818954,
+    "query_rate": 0.6106,
+    "ethical_cost": 40.7636,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 478,
+    "type_entropy": 0.8984857111467934,
+    "qrc": 0.6717428087986463,
+    "query_rate": 0.608,
+    "ethical_cost": 30.4325,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 479,
+    "type_entropy": 0.8994696429808953,
+    "qrc": 0.6218487394957983,
+    "query_rate": 0.6223,
+    "ethical_cost": 49.2416,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 480,
+    "type_entropy": 0.8668268019447802,
+    "qrc": 0.6384248210023866,
+    "query_rate": 0.6398,
+    "ethical_cost": 40.4724,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 481,
+    "type_entropy": 0.8409124959777938,
+    "qrc": 0.566497461928934,
+    "query_rate": 0.6707,
+    "ethical_cost": 36.4335,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 482,
+    "type_entropy": 0.7735455298534619,
+    "qrc": 0.6168359941944848,
+    "query_rate": 0.6971,
+    "ethical_cost": 31.1738,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 483,
+    "type_entropy": 0.728219771189679,
+    "qrc": 0.5899893503727369,
+    "query_rate": 0.7288,
+    "ethical_cost": 44.8762,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 484,
+    "type_entropy": 0.6920570432863105,
+    "qrc": 0.5388967468175389,
+    "query_rate": 0.7553,
+    "ethical_cost": 30.1025,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 485,
+    "type_entropy": 0.6652843993863615,
+    "qrc": 0.6271551724137931,
+    "query_rate": 0.7489,
+    "ethical_cost": 51.2934,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 486,
+    "type_entropy": 0.6857416793869897,
+    "qrc": 0.5711060948081265,
+    "query_rate": 0.7513,
+    "ethical_cost": 42.5989,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 487,
+    "type_entropy": 0.6882359788974683,
+    "qrc": 0.6951934349355217,
+    "query_rate": 0.7268,
+    "ethical_cost": 55.5598,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 488,
+    "type_entropy": 0.7037855967687657,
+    "qrc": 0.826,
+    "query_rate": 0.6907,
+    "ethical_cost": 104.2259,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 489,
+    "type_entropy": 0.7085397890768343,
+    "qrc": 0.8115384615384615,
+    "query_rate": 0.6889,
+    "ethical_cost": 77.1978,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 490,
+    "type_entropy": 0.721410142979764,
+    "qrc": 0.7983870967741935,
+    "query_rate": 0.6905,
+    "ethical_cost": 103.6045,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 491,
+    "type_entropy": 0.7315918883949446,
+    "qrc": 0.846,
+    "query_rate": 0.6757,
+    "ethical_cost": 120.846,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 492,
+    "type_entropy": 0.7612464484022358,
+    "qrc": 0.7686658506731946,
+    "query_rate": 0.6842,
+    "ethical_cost": 90.2684,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 493,
+    "type_entropy": 0.7492374399228666,
+    "qrc": 0.8315911730545877,
+    "query_rate": 0.6713,
+    "ethical_cost": 114.4029,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 494,
+    "type_entropy": 0.7948339323637066,
+    "qrc": 0.798,
+    "query_rate": 0.6573,
+    "ethical_cost": 128.7108,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 495,
+    "type_entropy": 0.7872945760761492,
+    "qrc": 0.778,
+    "query_rate": 0.6703,
+    "ethical_cost": 124.758,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 496,
+    "type_entropy": 0.8150497483233325,
+    "qrc": 0.6872727272727273,
+    "query_rate": 0.6719,
+    "ethical_cost": 83.5282,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 497,
+    "type_entropy": 0.7951296390401923,
+    "qrc": 0.711,
+    "query_rate": 0.6777,
+    "ethical_cost": 101.0341,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 498,
+    "type_entropy": 0.8227205584523387,
+    "qrc": 0.714,
+    "query_rate": 0.6607,
+    "ethical_cost": 118.1909,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 499,
+    "type_entropy": 0.810484054423493,
+    "qrc": 0.7053291536050157,
+    "query_rate": 0.6677,
+    "ethical_cost": 94.0697,
+    "collapse_detected": false
+  }
+]

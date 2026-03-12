@@ -1,0 +1,209 @@
+{
+  "protocol": 2,
+  "seed": 1,
+  "population_mode": "all_constrained",
+  "declare_cost": 1.0,
+  "query_cost": 1.5,
+  "respond_cost": 0.8,
+  "epochs_total": 500,
+  "final_metrics": {
+    "survival_rate": 0.0,
+    "target_reached_rate": 0.0,
+    "energy_roi": 0.0,
+    "type_entropy": 0.6871089561592035,
+    "qrc": 0.3343558282208589,
+    "per_agent_types": {
+      "A": {
+        "DECLARE": 0.0286,
+        "QUERY": 0.9141,
+        "RESPOND": 0.0573
+      },
+      "B": {
+        "DECLARE": 0.2832,
+        "QUERY": 0.4264,
+        "RESPOND": 0.2904
+      },
+      "C": {
+        "DECLARE": 0.0,
+        "QUERY": 0.9867,
+        "RESPOND": 0.0133
+      }
+    }
+  },
+  "crystallization_epoch": 21,
+  "per_agent_crystallization": {
+    "A": 15,
+    "B": 80,
+    "C": 6
+  },
+  "phase_transitions": [
+    {
+      "epoch": 26,
+      "entropy_before": 0.9423,
+      "entropy_after": 0.8823,
+      "delta": 0.0601
+    },
+    {
+      "epoch": 28,
+      "entropy_before": 0.9419,
+      "entropy_after": 0.827,
+      "delta": 0.1148
+    },
+    {
+      "epoch": 155,
+      "entropy_before": 0.859,
+      "entropy_after": 0.7943,
+      "delta": 0.0647
+    },
+    {
+      "epoch": 169,
+      "entropy_before": 0.7288,
+      "entropy_after": 0.6776,
+      "delta": 0.0512
+    },
+    {
+      "epoch": 174,
+      "entropy_before": 0.6881,
+      "entropy_after": 0.6297,
+      "delta": 0.0583
+    },
+    {
+      "epoch": 177,
+      "entropy_before": 0.6985,
+      "entropy_after": 0.6102,
+      "delta": 0.0883
+    },
+    {
+      "epoch": 188,
+      "entropy_before": 0.5274,
+      "entropy_after": 0.464,
+      "delta": 0.0634
+    },
+    {
+      "epoch": 199,
+      "entropy_before": 0.5895,
+      "entropy_after": 0.5374,
+      "delta": 0.0521
+    },
+    {
+      "epoch": 223,
+      "entropy_before": 0.7308,
+      "entropy_after": 0.6705,
+      "delta": 0.0603
+    },
+    {
+      "epoch": 225,
+      "entropy_before": 0.681,
+      "entropy_after": 0.628,
+      "delta": 0.053
+    },
+    {
+      "epoch": 230,
+      "entropy_before": 0.7152,
+      "entropy_after": 0.6639,
+      "delta": 0.0513
+    },
+    {
+      "epoch": 232,
+      "entropy_before": 0.6955,
+      "entropy_after": 0.6333,
+      "delta": 0.0622
+    },
+    {
+      "epoch": 254,
+      "entropy_before": 0.6117,
+      "entropy_after": 0.5154,
+      "delta": 0.0963
+    },
+    {
+      "epoch": 257,
+      "entropy_before": 0.6242,
+      "entropy_after": 0.5213,
+      "delta": 0.103
+    },
+    {
+      "epoch": 266,
+      "entropy_before": 0.6077,
+      "entropy_after": 0.5035,
+      "delta": 0.1041
+    },
+    {
+      "epoch": 274,
+      "entropy_before": 0.5874,
+      "entropy_after": 0.5061,
+      "delta": 0.0813
+    },
+    {
+      "epoch": 279,
+      "entropy_before": 0.6095,
+      "entropy_after": 0.5321,
+      "delta": 0.0774
+    },
+    {
+      "epoch": 287,
+      "entropy_before": 0.717,
+      "entropy_after": 0.6439,
+      "delta": 0.0732
+    },
+    {
+      "epoch": 288,
+      "entropy_before": 0.6439,
+      "entropy_after": 0.5916,
+      "delta": 0.0523
+    },
+    {
+      "epoch": 311,
+      "entropy_before": 0.7813,
+      "entropy_after": 0.7308,
+      "delta": 0.0505
+    },
+    {
+      "epoch": 361,
+      "entropy_before": 0.7247,
+      "entropy_after": 0.6734,
+      "delta": 0.0513
+    },
+    {
+      "epoch": 385,
+      "entropy_before": 0.8037,
+      "entropy_after": 0.7145,
+      "delta": 0.0891
+    },
+    {
+      "epoch": 405,
+      "entropy_before": 0.7144,
+      "entropy_after": 0.6605,
+      "delta": 0.0539
+    },
+    {
+      "epoch": 415,
+      "entropy_before": 0.6273,
+      "entropy_after": 0.5702,
+      "delta": 0.0572
+    },
+    {
+      "epoch": 418,
+      "entropy_before": 0.6558,
+      "entropy_after": 0.5839,
+      "delta": 0.072
+    }
+  ],
+  "performance_stats": {
+    "avg_survival_rate": 0.1468,
+    "avg_target_rate": 0.1468,
+    "max_survival_rate": 1.0,
+    "max_target_rate": 1.0
+  },
+  "counter_wave_data": {
+    "counter_wave_mode": 0,
+    "n_full_survival_epochs": 2,
+    "n_counter_wave_events": 0,
+    "declare_rate_at_success": 0.1391,
+    "declare_rate_baseline": 0.1205,
+    "full_survival_epochs": [
+      27,
+      243
+    ],
+    "events": []
+  }
+}

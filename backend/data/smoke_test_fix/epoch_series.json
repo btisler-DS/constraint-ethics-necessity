@@ -1,0 +1,42 @@
+[
+  {
+    "epoch": 0,
+    "type_entropy": 1.0881406117649701,
+    "qrc": 0.6839080459770115,
+    "query_rate": 0.2669,
+    "ethical_cost": 0.0,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 1,
+    "type_entropy": 1.0893606147429824,
+    "qrc": 0.7016574585635359,
+    "query_rate": 0.2815,
+    "ethical_cost": 0.0,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 2,
+    "type_entropy": 1.0827560223071335,
+    "qrc": 0.7829457364341085,
+    "query_rate": 0.2515,
+    "ethical_cost": 0.0,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 3,
+    "type_entropy": 1.071963098741782,
+    "qrc": 0.7289156626506024,
+    "query_rate": 0.2456,
+    "ethical_cost": 0.0,
+    "collapse_detected": false
+  },
+  {
+    "epoch": 4,
+    "type_entropy": 1.0948460274988117,
+    "qrc": 0.7487437185929648,
+    "query_rate": 0.2933,
+    "ethical_cost": 0.0,
+    "collapse_detected": false
+  }
+]

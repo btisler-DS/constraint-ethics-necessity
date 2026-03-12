@@ -1,6 +1,6 @@
 # constraint-ethics-necessity
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PENDING.svg)](https://doi.org/10.5281/zenodo.PENDING)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18929040.svg)](https://doi.org/10.5281/zenodo.18929040)
 [![Preregistration](https://img.shields.io/badge/preregistration-v3-blue)](docs/preregistration.md)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
@@ -114,7 +114,9 @@ Any modification to `docs/preregistration.md` after this point invalidates the h
 
 ## Zenodo DOI
 
-DOI will be registered after the first stable commit. Badge and link will be updated at that point.
+Preregistration DOI: [10.5281/zenodo.18929040](https://doi.org/10.5281/zenodo.18929040) — confirmed live, published March 9, 2026, v1, Open, indexed in OpenAIRE.
+
+Build report DOI will be added upon completion of the Protocol 2 lock deposit.
 
 ## License
 
