@@ -116,7 +116,7 @@ Any modification to `docs/preregistration.md` after this point invalidates the h
 
 Preregistration DOI: [10.5281/zenodo.18929040](https://doi.org/10.5281/zenodo.18929040) — confirmed live, published March 9, 2026, v1, Open, indexed in OpenAIRE.
 
-Build report DOI will be added upon completion of the Protocol 2 lock deposit.
+Build report DOI: [10.5281/zenodo.18975095](https://doi.org/10.5281/zenodo.18975095) — Protocol 2 Confirmatory Campaign Build Report, published March 12, 2026, v1, Open, indexed in OpenAIRE.
 
 ## License
 
