@@ -200,6 +200,7 @@ class SimulationEngine:
         epoch_target_reached = 0
         epoch_steps = 0
         epoch_energy_spent = 0.0
+        epoch_energy_delta_sum = {"A": 0.0, "B": 0.0, "C": 0.0}
 
         # Reset per-epoch protocol state (no-op for P0/P1; used by P2)
         self.protocol.reset_epoch()
@@ -259,6 +260,7 @@ class SimulationEngine:
 
             for name in ["A", "B", "C"]:
                 epoch_rewards[name] += result["total_rewards"][name]
+                epoch_energy_delta_sum[name] += result.get("energy_delta_mean", {}).get(name, 0.0)
             epoch_survivals += 1 if result["survived"] else 0
             epoch_target_reached += 1 if result["target_reached"] else 0
             epoch_steps += result["steps"]
@@ -305,6 +307,7 @@ class SimulationEngine:
         metrics = {
             "epoch": epoch,
             "avg_reward": {k: v / avg_episodes for k, v in epoch_rewards.items()},
+            "energy_delta_mean": {name: epoch_energy_delta_sum[name] / avg_episodes for name in ["A", "B", "C"]},
             "survival_rate": epoch_survivals / avg_episodes,
             "target_reached_rate": target_rate,
             "avg_steps": epoch_steps / avg_episodes,
@@ -353,6 +356,12 @@ class SimulationEngine:
         obs = self.env.reset(seed=episode_seed)
 
         self.agent_a.reset_hidden()
+
+        # Energy delta tracking — pre-build requirement for Protocol 4 Depth 2
+        # Captures per-step energy consumption delta per agent.
+        # self_model_gru (Depth 2) will read energy_delta as one of its 4 inputs.
+        energy_prev: dict[str, float] = {name: self.env.energy[name] for name in ["A", "B", "C"]}
+        episode_energy_deltas: dict[str, list[float]] = {name: [] for name in ["A", "B", "C"]}
 
         # Counter-wave experiment overrides
         tax_rate = effective_tax_rate if effective_tax_rate is not None else self.config.communication_tax_rate
@@ -430,6 +439,16 @@ class SimulationEngine:
             # Environment step
             obs, env_rewards, done, info = self.env.step(actions)
 
+            # Compute per-step energy delta (negative = energy consumed this step)
+            step_energy_delta = {
+                name: info["energy"][name] - energy_prev[name]
+                for name in ["A", "B", "C"]
+            }
+            for name in ["A", "B", "C"]:
+                episode_energy_deltas[name].append(step_energy_delta[name])
+            energy_prev = dict(info["energy"])
+            info["energy_delta"] = step_energy_delta
+
             # Exp 3 (no_boundary): on first target_reached, record success_step and
             # continue for post_success_steps more steps instead of terminating.
             if no_boundary and done and info.get("done_reason") == "target_reached" and success_step is None:
@@ -448,6 +467,7 @@ class SimulationEngine:
                     "B": self.env.agents_pos["B"].tolist(),
                     "C": self.env.agents_pos["C"].tolist(),
                     "energy": {k: round(v, 1) for k, v in info["energy"].items()},
+                    "energy_delta": {k: round(v, 3) for k, v in step_energy_delta.items()},
                 })
 
             # Compute rewards via protocol (uses overridden tax_rate and survival_bonus)
@@ -475,6 +495,11 @@ class SimulationEngine:
             "steps": info["step"],
             "energy_spent": self.env.total_energy_spent,
             "success_step": success_step,     # Exp 3: step at which success was detected (or None)
+            # Per-agent mean energy delta over this episode (negative = net consumption)
+            "energy_delta_mean": {
+                name: (sum(deltas) / len(deltas)) if deltas else 0.0
+                for name, deltas in episode_energy_deltas.items()
+            },
         }
         if trajectory is not None:
             result["trajectory"] = trajectory
@@ -536,6 +561,7 @@ class SimulationEngine:
                 "query_rate": (inq.get("type_distribution") or {}).get("QUERY"),
                 "ethical_cost": round(ethical_cost, 4),
                 "collapse_detected": coll.get("collapse_detected", False),
+                "energy_delta_mean": m.get("energy_delta_mean"),
             })
         with open(full_path, "w") as f:
             json.dump(series, f, indent=2)
