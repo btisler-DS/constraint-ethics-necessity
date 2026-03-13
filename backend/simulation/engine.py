@@ -16,6 +16,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any, Callable
 
+import numpy as np
 import torch
 import torch.optim as optim
 from torch.distributions import Categorical, Normal
@@ -68,6 +69,9 @@ class SimulationConfig:
     post_success_pressure_episodes: int = 3  # Exp 5: episodes at elevated tax after success
     post_success_tax_multiplier: float = 3.0 # Exp 5: tax rate multiplier during pressure hold
     device: str = "cpu"                    # Compute device: "cpu", "cuda:0", "cuda:1", ...
+    # Protocol 4: Depth control and ablation
+    depth: int = 1                         # 0=feedforward baseline, 1=full arch, 2=+self_model_gru
+    ablate_self_model_inputs: bool = False # Depth 2 only: zero self_model_gru inputs for ablation
 
 
 class SimulationEngine:
@@ -112,27 +116,37 @@ class SimulationEngine:
         self.comm_buffer = CommBuffer(comm_config)
 
         # Build agents
-        # Agent A obs_dim: 1 (target) + num_obstacles + 2 (other agents)
-        obs_dim_a = 1 + self.config.num_obstacles + 2
+        # Agent A obs_dim: 1 (target) + num_obstacles + 2 (other agents) + 1 (token distance)
+        obs_dim_a = 1 + self.config.num_obstacles + 2 + 1  # 12 with default num_obstacles=8
         self.agent_a = AgentA(
             obs_dim=obs_dim_a,
             signal_dim=self.config.signal_dim,
             hidden_dim=self.config.hidden_dim,
+            depth=self.config.depth,
+            ablate_self_model_inputs=self.config.ablate_self_model_inputs,
         )
 
         self.agent_b = AgentB(
             signal_dim=self.config.signal_dim,
             hidden_dim=self.config.hidden_dim,
+            depth=self.config.depth,
         )
 
-        # Agent C obs_dim: pairwise distances
-        n_entities = 1 + self.config.num_obstacles + 3  # target + obstacles + 3 agents
-        obs_dim_c = n_entities * (n_entities - 1) // 2
+        # Agent C obs_dim: pairwise distances — token added as 13th entity
+        # 13 entities: target + obstacles + 3 agents + token → 13*12//2 = 78 pairs
+        n_entities = 1 + self.config.num_obstacles + 3 + 1  # token is the +1
+        obs_dim_c = n_entities * (n_entities - 1) // 2      # 78 with default num_obstacles=8
         self.agent_c = AgentC(
             obs_dim=obs_dim_c,
             signal_dim=self.config.signal_dim,
             hidden_dim=self.config.hidden_dim,
+            depth=self.config.depth,
         )
+
+        # Token state — managed entirely in engine (engine overlay architecture)
+        # Populated by Step 6 Sacrifice-Conflict implementation.
+        self._token_pos: np.ndarray = np.zeros(2, dtype=np.float32)
+        self._token_active: bool = False
 
         self.agents = [self.agent_a, self.agent_b, self.agent_c]
 
@@ -192,6 +206,52 @@ class SimulationEngine:
             self._write_epoch_series("epoch_series.json")
 
         return self.epoch_metrics
+
+    def _augment_obs_with_token(self, obs: dict) -> dict:
+        """Append token features to all three agent observations.
+
+        Called after every env.reset() and env.step() to extend observations
+        from their base dims to the token-aware dims:
+          AgentA: 11-dim → 12-dim  (append scalar distance to token)
+          AgentB: (1,Z,H,W) → (2,Z,H,W)  (stack binary token presence channel)
+          AgentC: 66-dim → 78-dim  (append 12 pairwise distances: token↔each entity)
+
+        When token is inactive all appended features are 0.0 / zero-channel.
+        """
+        if self._token_active:
+            token_pos = self._token_pos.astype(np.float32)
+        else:
+            token_pos = np.zeros(2, dtype=np.float32)
+
+        # --- AgentA: append token distance scalar ---
+        pos_a = self.env.agents_pos["A"].astype(np.float32)
+        token_dist_a = float(np.linalg.norm(pos_a - self._token_pos)) if self._token_active else 0.0
+        obs["A"] = torch.cat([obs["A"], torch.tensor([token_dist_a], dtype=torch.float32)])
+
+        # --- AgentB: stack token presence channel onto volumetric map ---
+        token_channel = torch.zeros(
+            1, self.env.z_layers, self.env.grid_size, self.env.grid_size
+        )
+        if self._token_active:
+            tx, ty = int(self._token_pos[0]), int(self._token_pos[1])
+            token_channel[0, :, tx, ty] = 1.0  # token present across all z-layers
+        obs["B"] = torch.cat([obs["B"], token_channel], dim=0)
+
+        # --- AgentC: append 12 distances from token to all existing entities ---
+        # Entity order matches _get_relational_features: target, obs1..N, A, B, C
+        entities = [self.env.target_pos.astype(np.float32)]
+        entities.extend(o.astype(np.float32) for o in self.env.obstacles)
+        for name in ["A", "B", "C"]:
+            entities.append(self.env.agents_pos[name].astype(np.float32))
+        token_features = [
+            float(np.linalg.norm(token_pos - ent)) if self._token_active else 0.0
+            for ent in entities
+        ]
+        obs["C"] = torch.cat(
+            [obs["C"], torch.tensor(token_features, dtype=torch.float32)]
+        )
+
+        return obs
 
     def _run_epoch(self, epoch: int) -> dict:
         """Run one epoch (multiple episodes) and collect metrics."""
@@ -354,6 +414,7 @@ class SimulationEngine:
         """Run a single episode and return summary."""
         episode_seed = self.config.seed + epoch_seed_offset
         obs = self.env.reset(seed=episode_seed)
+        obs = self._augment_obs_with_token(obs)
 
         self.agent_a.reset_hidden()
 
@@ -438,6 +499,7 @@ class SimulationEngine:
 
             # Environment step
             obs, env_rewards, done, info = self.env.step(actions)
+            obs = self._augment_obs_with_token(obs)
 
             # Compute per-step energy delta (negative = energy consumed this step)
             step_energy_delta = {
@@ -448,6 +510,10 @@ class SimulationEngine:
                 episode_energy_deltas[name].append(step_energy_delta[name])
             energy_prev = dict(info["energy"])
             info["energy_delta"] = step_energy_delta
+
+            # Feed energy delta to AgentA for next step's self_model_gru (depth=2 only)
+            if self.config.depth >= 2:
+                self.agent_a.set_energy_delta(step_energy_delta["A"])
 
             # Exp 3 (no_boundary): on first target_reached, record success_step and
             # continue for post_success_steps more steps instead of terminating.
