@@ -31,6 +31,7 @@ class AgentA(BaseAgent):
         num_incoming: int = 2,
         depth: int = 1,
         ablate_self_model_inputs: bool = False,
+        freeze_self_model_gru: bool = False,
     ):
         super().__init__(name="A", signal_dim=signal_dim, hidden_dim=hidden_dim)
         self.hidden_dim = hidden_dim
@@ -51,6 +52,12 @@ class AgentA(BaseAgent):
             # Output: self_state (64-dim) projected and added to primary hidden state
             self.self_model_gru = nn.GRUCell(4, hidden_dim)
             self.self_model_proj = nn.Linear(hidden_dim, hidden_dim)
+            # Boundary condition: capacity present, no learning — freeze at random init
+            if freeze_self_model_gru:
+                for p in self.self_model_gru.parameters():
+                    p.requires_grad_(False)
+                for p in self.self_model_proj.parameters():
+                    p.requires_grad_(False)
 
         # Hidden states (reset each episode)
         self.hidden = None

@@ -76,6 +76,7 @@ class SimulationConfig:
     # Protocol 4: Depth control and ablation
     depth: int = 1                         # 0=feedforward baseline, 1=full arch, 2=+self_model_gru
     ablate_self_model_inputs: bool = False # Depth 2 only: zero self_model_gru inputs for ablation
+    freeze_self_model_gru: bool = False    # Boundary condition: depth=2 arch, self_model_gru frozen at random init
 
 
 class SimulationEngine:
@@ -128,6 +129,7 @@ class SimulationEngine:
             hidden_dim=self.config.hidden_dim,
             depth=self.config.depth,
             ablate_self_model_inputs=self.config.ablate_self_model_inputs,
+            freeze_self_model_gru=self.config.freeze_self_model_gru,
         )
 
         self.agent_b = AgentB(
@@ -690,6 +692,7 @@ class SimulationEngine:
             "respond_cost": self.config.respond_cost,
             "depth": self.config.depth,
             "ablation_active": self.config.ablate_self_model_inputs,
+            "freeze_self_model_gru": self.config.freeze_self_model_gru,
             "epochs_total": len(self.epoch_metrics),
             "final_metrics": self._extract_final_metrics(self.epoch_metrics[-1]),
             "crystallization_epoch": self._find_crystallization_epoch(self.epoch_metrics),
@@ -748,6 +751,7 @@ class SimulationEngine:
                 # --- Protocol 4 fields ---
                 "depth": self.config.depth,
                 "ablation_active": self.config.ablate_self_model_inputs,
+                "freeze_self_model_gru": self.config.freeze_self_model_gru,
                 "sacrifice_choices": m.get("sacrifice_choices", []),
                 "sacrifice_choice_rate": m.get("sacrifice_choice_rate"),
                 "framework_scores": framework_scores,
