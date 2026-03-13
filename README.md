@@ -112,11 +112,31 @@ sha256sum docs/preregistration.md
 
 Any modification to `docs/preregistration.md` after this point invalidates the hash and must be logged in the Deviations Log within that document. The hash chain infrastructure is implemented in `backend/app/services/hash_chain.py`.
 
+## Protocol 4 Preregistration
+
+"Ethics as Emergent Constraint Response: From Mimesis to Phase Transition in Multi-Agent Systems" is at [`docs/Protocol_4_Preregistration.pdf`](docs/Protocol_4_Preregistration.pdf).
+
+**Status: LOCKED — March 2026**
+
+```
+SHA-256: d8152ff64ae1bed27352a79bcf5e771ce3b857a67068685a9b72941060b5fb39
+File:    docs/Protocol_4_Preregistration.pdf
+DOI:     10.5281/zenodo.19005417
+```
+
+Verify integrity at any time:
+```bash
+sha256sum docs/Protocol_4_Preregistration.pdf
+# Must match: d8152ff64ae1bed27352a79bcf5e771ce3b857a67068685a9b72941060b5fb39
+```
+
 ## Zenodo DOI
 
-Preregistration DOI: [10.5281/zenodo.18929040](https://doi.org/10.5281/zenodo.18929040) — confirmed live, published March 9, 2026, v1, Open, indexed in OpenAIRE.
+Protocol 2 preregistration DOI: [10.5281/zenodo.18929040](https://doi.org/10.5281/zenodo.18929040) — confirmed live, published March 9, 2026, v1, Open, indexed in OpenAIRE.
 
 Build report DOI: [10.5281/zenodo.18975095](https://doi.org/10.5281/zenodo.18975095) — Protocol 2 Confirmatory Campaign Build Report, published March 12, 2026, v1, Open, indexed in OpenAIRE.
+
+Protocol 4 preregistration DOI: [10.5281/zenodo.19005417](https://doi.org/10.5281/zenodo.19005417) — Ethics as Emergent Constraint Response: From Mimesis to Phase Transition, published March 13, 2026, v1, Open.
 
 ## Status: Confirmatory Runs Complete
 
@@ -124,7 +144,7 @@ Protocol 2 confirmatory campaign (20 seeds × 2 conditions × 500 epochs) is com
 
 **Paper:** [Virtue Theater: Specification Gaming and Regulatory Constraint Failure in Multi-Agent Systems](docs/paper_virtue_theater.pdf)
 
-Protocol 3 (testing architectural integration under genuine resource depletion) is in design and will be preregistered separately.
+Protocol 3 (testing architectural integration under genuine resource depletion) is in design and will be preregistered separately. Protocol 4 (Ethics as Emergent Constraint Response — recursive depth and phase transition) is preregistered: [10.5281/zenodo.19005417](https://doi.org/10.5281/zenodo.19005417).
 
 ## License
 
