@@ -794,13 +794,24 @@ class SimulationEngine:
         MAX_REWARD = 15.0   # heuristic upper bound for per-episode total reward
         utilitarian = round(m.get("avg_steps", 0.0) / self.config.max_steps, 4)
 
-        # Deontological: pull from Protocol 2 collapse_metrics if present
+        # Deontological: 1 - exploitation_loop_rate.
+        # Protocol 2 collapse_metrics expose area_under_query_curve (trapezoidal AUC of
+        # per-epoch QUERY rate). Normalized by epoch count it gives mean query compliance —
+        # the continuous proxy for "not exploiting". For epoch 0 (single data point, AUC=0
+        # from trapezoidal rule) fall back to the per-epoch inquiry query_rate directly.
+        # For non-P2 runs where collapse_metrics is absent, also use inquiry query_rate.
+        inq = m.get("inquiry", {}) or {}
         cm = m.get("collapse_metrics", {}) or {}
         el = cm.get("exploitation_loop", {}) or {}
-        elr = el.get("collapse_rate", None)
-        deontological = round(1.0 - elr, 4) if elr is not None else None
-
-        inq = m.get("inquiry", {}) or {}
+        auc = el.get("area_under_query_curve", None)
+        n_epochs = m.get("epoch", 0) + 1   # epoch is 0-indexed; +1 = epochs elapsed
+        if auc is not None and n_epochs > 1:
+            # mean query-compliance rate over all epochs so far (trapezoidal AUC / intervals)
+            deontological = round(min(float(auc) / (n_epochs - 1), 1.0), 4)
+        else:
+            # epoch 0 fallback or non-P2: use this epoch's QUERY rate from inquiry
+            epoch_qr = float((inq.get("type_distribution") or {}).get("QUERY") or 0.0)
+            deontological = round(epoch_qr, 4) if epoch_qr > 0 else None
         per_agent_types = inq.get("per_agent_types", {}) or {}
         avg_reward = m.get("avg_reward", {}) or {}
 
