@@ -130,6 +130,25 @@ sha256sum docs/Protocol_4_Preregistration.pdf
 # Must match: d8152ff64ae1bed27352a79bcf5e771ce3b857a67068685a9b72941060b5fb39
 ```
 
+## Protocol 5 Preregistration
+
+"Ethics as Emergent Constraint Response: Temporal Integration Span and Prosocial Constraint Architecture as Necessary Conditions for Ethical Convergence" is at [`docs/Protocol_5_Preregistration.pdf`](docs/Protocol_5_Preregistration.pdf).
+
+**Status: Preregistered — awaiting experimental execution**
+
+```
+SHA-256: 210A17D28C2ACEFCB41BB47A4BAEB01C8E6EDFBDB4DC2E05A2DBDB905AF194C8
+DOI:     10.5281/zenodo.19038790
+File:    docs/Protocol_5_Preregistration.pdf
+Status:  Preregistered — awaiting experimental execution
+```
+
+Verify integrity at any time:
+```bash
+sha256sum docs/Protocol_5_Preregistration.pdf
+# Must match: 210A17D28C2ACEFCB41BB47A4BAEB01C8E6EDFBDB4DC2E05A2DBDB905AF194C8
+```
+
 ## Zenodo DOI
 
 Protocol 2 preregistration DOI: [10.5281/zenodo.18929040](https://doi.org/10.5281/zenodo.18929040) — confirmed live, published March 9, 2026, v1, Open, indexed in OpenAIRE.
