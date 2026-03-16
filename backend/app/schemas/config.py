@@ -25,6 +25,8 @@ class SimConfigSchema(BaseModel):
     # Protocol 2: Ethical Constraints
     protocol: int = 1
     population_mode: str = "all_unconstrained"  # "all_unconstrained" | "all_constrained"
+    # Protocol 5: Welfare coupling
+    welfare_coupled: bool = False
 
 
 class PresetResponse(BaseModel):

@@ -77,6 +77,9 @@ class SimulationConfig:
     depth: int = 1                         # 0=feedforward baseline, 1=full arch, 2=+self_model_gru
     ablate_self_model_inputs: bool = False # Depth 2 only: zero self_model_gru inputs for ablation
     freeze_self_model_gru: bool = False    # Boundary condition: depth=2 arch, self_model_gru frozen at random init
+    # Protocol 5: Welfare coupling and proportional energy scaling
+    welfare_coupled: bool = False          # If True, R_i = 0.5*self_reward + 0.5*mean(other_agent_rewards)
+    critical_energy_threshold: float = 20.0  # Sacrifice-Conflict trigger; scale with energy_budget
 
 
 class SimulationEngine:
@@ -549,9 +552,9 @@ class SimulationEngine:
             # Fire only once per episode (critical_agent tracks first trigger).
             if not self._token_active and self._critical_agent is None:
                 _trigger_name: str | None = None
-                _min_e = _CRITICAL_ENERGY_THRESHOLD
+                _min_e = self.config.critical_energy_threshold
                 for _tn in ["A", "B", "C"]:
-                    if info["energy"][_tn] < _CRITICAL_ENERGY_THRESHOLD and info["energy"][_tn] < _min_e:
+                    if info["energy"][_tn] < self.config.critical_energy_threshold and info["energy"][_tn] < _min_e:
                         _trigger_name = _tn
                         _min_e = info["energy"][_tn]
                 if _trigger_name is not None:
@@ -629,8 +632,10 @@ class SimulationEngine:
                 })
 
             # Compute rewards via protocol (uses overridden tax_rate and survival_bonus)
+            # Pass 1: individual protocol reward for each agent
+            ind_rewards: dict[str, float] = {}
             for agent in self.agents:
-                reward = self.protocol.compute_reward(
+                ind_rewards[agent.name] = self.protocol.compute_reward(
                     agent_name=agent.name,
                     env_reward=env_rewards[agent.name],
                     signal_sent=signals[agent.name],
@@ -641,6 +646,16 @@ class SimulationEngine:
                     survival_bonus=survival_bonus,
                     signal_type=signal_types[agent.name],
                 )
+            # Pass 2: apply welfare coupling if enabled (Protocol 5)
+            # R_i = 0.5 * self_reward + 0.5 * mean(other_agent_rewards), alpha=0.5
+            for agent in self.agents:
+                if self.config.welfare_coupled:
+                    others_mean = sum(
+                        v for k, v in ind_rewards.items() if k != agent.name
+                    ) / (len(ind_rewards) - 1)
+                    reward = 0.5 * ind_rewards[agent.name] + 0.5 * others_mean
+                else:
+                    reward = ind_rewards[agent.name]
                 agent.rewards[-1] = reward
                 total_rewards[agent.name] += reward
 
@@ -693,6 +708,8 @@ class SimulationEngine:
             "depth": self.config.depth,
             "ablation_active": self.config.ablate_self_model_inputs,
             "freeze_self_model_gru": self.config.freeze_self_model_gru,
+            "welfare_coupled": self.config.welfare_coupled,
+            "critical_energy_threshold": self.config.critical_energy_threshold,
             "epochs_total": len(self.epoch_metrics),
             "final_metrics": self._extract_final_metrics(self.epoch_metrics[-1]),
             "crystallization_epoch": self._find_crystallization_epoch(self.epoch_metrics),
