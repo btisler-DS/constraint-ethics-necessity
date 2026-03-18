@@ -70,3 +70,150 @@ long-span conditions are not directly comparable on absolute reward scale.
 H1, H2, H3 remain testable with valid `sacrifice_choice_rate` data in all four
 conditions. This deviation was identified and resolved before any confirmatory
 runs began. No data was collected under the broken parameterization.
+
+---
+
+## Repair Log 1: `welfare_coupled` missing from epoch series output
+
+**Date identified:** 2026-03-16
+**Identified by:** Programmer (C2 seed 0 spot-check)
+**Status:** Resolved — runner stopped, code fixed, C2 seed 0 re-run in progress
+**PI notification required:** Yes — logging gap, no data integrity impact
+
+### What happened
+
+C2 seed 0 spot-check (run after the file landed) found no `welfare_coupled` key
+in any epoch record. The C1 full validation (10 seeds) confirmed the same gap —
+`welfare_coupled` is absent from C1 epoch records as well (value would be False
+throughout, so no analytical impact for C1).
+
+### Root cause
+
+`_write_epoch_series` in engine.py did not include `welfare_coupled` in the per-epoch
+record dict, despite the field being present in SimulationConfig and in the manifest.
+Additionally, the runner deleted `manifest.json` via `shutil.rmtree(tmp_dir)` after
+moving only `epoch_series.json` — discarding the per-run manifest that does carry
+`welfare_coupled`. The epoch series file (the only committed artifact) therefore had
+no verifiable record of which reward structure was active.
+
+### Welfare coupling was wired correctly at runtime
+
+The computation itself was correct. `welfare_coupled=True` flows from the condition
+dict into `SimulationConfig` (runner line 77), and `_run_episode` applies the
+two-pass reward loop at lines 649–655 when `self.config.welfare_coupled` is True.
+The logging gap does not invalidate C2 seed 0's data — it only prevented independent
+verification of the condition assignment from the epoch file alone.
+
+### Steps taken (in order)
+
+1. **2026-03-16 — identified:** C2 seed 0 spot-check returned no welfare-related keys.
+2. **2026-03-16 — root cause confirmed:** Traced to `_write_epoch_series` omission and
+   runner `rmtree` discarding manifest.json.
+3. **2026-03-16 — runner stopped:** Main confirmatory batch (PID 19328) killed via
+   PowerShell `Stop-Process`. State at kill: C1 complete (10/10), C2 seed 0 complete,
+   C2 seed 1 at epoch ~69 (no file written — clean stop). C3/C4 not yet started.
+4. **2026-03-16 — code fixed:**
+   - `engine.py` `_write_epoch_series`: added `"welfare_coupled": self.config.welfare_coupled`
+     to per-epoch record dict (alongside existing `depth`, `ablation_active`,
+     `freeze_self_model_gru` fields).
+   - `run_p5_confirmatory.py` `run_one`: added manifest save — `manifest.json` is now
+     moved to `{output_name}_manifest.json` before `rmtree` deletes tmp_dir.
+5. **2026-03-16 — C2 seed 0 re-run:** Standalone re-run started immediately after fix.
+   Will overwrite the incomplete file.
+6. **Pending — spot-check:** After C2 seed 0 completes, verify `welfare_coupled=True`
+   appears in epoch records and manifest file exists.
+7. **Pending — full batch restart:** After spot-check passes, restart main batch
+   from C2 seed 1 through C4 seed 9 (49 remaining primary runs + 20 boundary).
+
+### C1 data impact
+
+C1 epoch files lack `welfare_coupled` in records (value would be False throughout).
+C1 files are **not** being re-run. The condition is unambiguously identifiable from
+the filename (`c1_short_individual`), and `welfare_coupled=False` is the default.
+This gap is cosmetic for C1 and does not affect any hypothesis test.
+
+### Code changes
+
+- `backend/simulation/engine.py` line ~773: added `"welfare_coupled"` to
+  `_write_epoch_series` epoch record dict.
+- `backend/run_p5_confirmatory.py` lines 97–100: added manifest save block.
+
+### Repair Log 1 — addendum: manifest missing `max_steps` and `energy_budget`
+
+**Identified during:** C2 seed 0 post-fix spot-check of manifest contents.
+
+`max_steps` and `energy_budget` were absent from the manifest key list despite being
+P5-critical parameters. Both are needed to independently verify condition assignment
+from the manifest file.
+
+**Fix:** Added `"max_steps"` and `"energy_budget"` to the manifest dict in
+`engine.py` `_write_manifest` (alongside `welfare_coupled` and
+`critical_energy_threshold`). Applied before full batch restart — no re-runs
+required as C2 seed 0 is the only completed file (and will be overwritten by the
+full batch runner in any case).
+
+---
+
+## Deviation 2: Communication-load gating of sacrifice trigger in long-span conditions
+
+**Date identified:** 2026-03-17
+**Identified by:** Programmer (post-run null scr audit, all 60 files)
+**Status:** Logged before analysis begins — no re-runs
+**PI authorization:** Bruce Tisler — proceed with analysis, disclose asymmetry
+
+### What happened
+
+Post-run audit of all 60 result files revealed a structural asymmetry in
+`sacrifice_choice_rate` null rates between span conditions:
+
+| Condition | Null scr epochs | Null rate |
+|-----------|----------------|-----------|
+| C1 short/individual | 26/5000 | 0.52% |
+| C2 short/welfare | ~21/5000 | ~0.42% |
+| C3 long/individual | ~1674/5000 | ~33.48% |
+| C4 long/welfare | ~1509/5000 | ~30.18% |
+| C4 long/welfare frozen | ~1777/5000 | ~35.54% |
+
+### Root cause
+
+The sacrifice trigger fires when an agent's energy drops below
+`critical_energy_threshold=20.0`. In long-span conditions (`energy_budget=100`,
+`max_steps=64`, `move_cost=1.0`), pure movement spends at most 64 energy over an
+episode — minimum final energy = 36, which exceeds the 20.0 threshold. The trigger
+therefore only fires when communication acts (declare=0.5, query=0.2, respond=0.1)
+elevate mean per-step cost above ~1.25.
+
+`energy_delta_mean` data confirms the gating mechanism:
+- Null epochs (C3 s0): avg per-agent energy spend = **−1.03/step** → trigger cannot fire
+- Valid epochs (C3 s0): avg per-agent energy spend = **−1.19/step** → trigger fires
+
+In short-span conditions (`energy_budget=20`, `max_steps=20`, `critical_threshold=4.0`),
+baseline movement alone depletes to threshold after ~16 steps — trigger fires reliably.
+
+### Hypothesis impact
+
+- **H1** (C1 vs C2, within short-span): unaffected — both conditions have ~0.5% null rate
+- **H2** (C3 vs C4, within long-span): valid — both conditions face identical communication-load gating
+- **H3** (C2 vs C4, sacrifice persistence across span): **affected** — sacrifice opportunity rates are
+  structurally asymmetric. C2 has ~0.5% null epochs; C4 has ~30% null epochs. The two conditions
+  do not provide equivalent sacrifice observation windows.
+- **H4** (C1 vs C1-frozen, C4 vs C4-frozen): C1 comparison unaffected; C4 comparison affected
+  by same long-span gating (C4-frozen: 35.54% null)
+
+### Analysis protocol for affected hypotheses
+
+H3 and H4 (C4 arm) analyses will:
+1. Restrict all `sacrifice_choice_rate` calculations to non-null epochs only
+2. Report null rates per condition explicitly alongside scr means
+3. Disclose that C2 and C4 sacrifice opportunity rates are structurally asymmetric and that
+   H3 cross-span comparisons should be interpreted with this limitation in mind
+4. H3 is not invalidated — welfare-coupled agents in long-span conditions still face real
+   sacrifice choices in the epochs where the trigger fires; the comparison is valid on those
+   epochs with explicit caveat on unequal opportunity rates
+
+### No re-runs
+
+This is a known operationalization limitation of the current energy/threshold parameter
+interaction across span conditions. It is logged here before any analysis begins.
+No data was collected under a corrected parameterization. The deviation log is the
+pre-analysis record.
