@@ -217,3 +217,67 @@ This is a known operationalization limitation of the current energy/threshold pa
 interaction across span conditions. It is logged here before any analysis begins.
 No data was collected under a corrected parameterization. The deviation log is the
 pre-analysis record.
+
+---
+
+## Deviation 3: CDI rolling window redefined for long-span conditions
+
+**Date identified:** 2026-03-17
+**Identified by:** Programmer (CDI null audit pre-analysis)
+**Status:** Logged before analysis script execution — no re-runs
+**PI authorization:** Bruce Tisler
+
+### What happened
+
+Pre-analysis inspection found that all C3 and C4 epoch records have
+`convergence_divergence_index = None`. The CDI rolling window is computed over
+50 consecutive calendar epochs. In long-span conditions with ~33% null
+`sacrifice_choice_rate`, most 50-epoch windows contain insufficient valid scr
+values to compute Pearson r(scr, framework_scores). The result is that M3 (CDI)
+and M5 (CDI coupling) are entirely unevaluable for C3/C4 under the fixed-window
+definition.
+
+### Redefinition
+
+CDI rolling windows are redefined for long-span conditions (C3, C4, C4-frozen)
+from a **fixed 50-epoch calendar window** to a **50-valid-epoch (non-null scr)
+rolling window**.
+
+Rationale: null epochs represent absence of sacrifice opportunity — the trigger
+did not fire — not absence of sacrifice behavior. Including null epochs in the
+window denominator systematically dilutes CDI in gated conditions relative to
+short-span conditions where the trigger fires in >99% of epochs. Equalizing on
+sacrifice-opportunity exposure (50 valid epochs) makes CDI a comparable measure
+of the relationship between sacrifice behavior and ethical framework scores across
+span conditions.
+
+### Scope
+
+This redefinition applies to **M3 (CDI per epoch)** and **M5 (CDI coupling)**
+only. All other measures (M1, M2, M4, M6) proceed on non-null epochs without
+window adjustment, as previously specified in the Deviation 2 analysis protocol.
+
+### Known asymmetry (not corrected)
+
+A 50-valid-epoch window in C3/C4 spans more calendar epochs than a 50-valid-epoch
+window in C1/C2 (where valid ≈ calendar). The temporal structure of the CDI
+measure therefore differs across span conditions: C3/C4 CDI integrates over a
+longer wall-clock training period per window than C1/C2. This is disclosed
+explicitly in the results and limits direct cross-span CDI comparison.
+
+### Effect on H5
+
+H5 is evaluable under this redefinition. CDI coupling (M5) computed over
+equivalent sacrifice-opportunity exposure in all four conditions. The prediction
+(M5 positive only in C4) can be confirmed or rejected.
+
+### Implementation
+
+The analysis script computes CDI per-seed by collecting valid (scr, framework_score)
+pairs across the epoch series, then applying a sliding window of 50 valid pairs to
+compute Pearson r at each window position. The final CDI value per epoch is indexed
+to the last calendar epoch in the window.
+
+M5 = mean CDI(last 50 valid pairs) − mean CDI(first 50 valid pairs), per seed.
+
+### Logged before analysis script execution
