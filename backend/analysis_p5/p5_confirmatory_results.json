@@ -1,0 +1,2203 @@
+{
+  "generated": "2026-03-17T21:21:41.709357",
+  "protocol": 5,
+  "alpha": 0.05,
+  "summaries": {
+    "c1_short_individual": {
+      "condition": "c1_short_individual",
+      "M1_scr_last100": [
+        0.3622975789642456,
+        0.39041666666666663,
+        0.3278162455458373,
+        0.4346686507936508,
+        0.40962499999999996,
+        0.31375730994152046,
+        0.34162698412698406,
+        0.4686488095238095,
+        0.3910019841269841,
+        0.27022797214123745
+      ],
+      "M4_deception": [
+        {
+          "agent_a": 0.23589400000000002,
+          "agent_b": 0.27684000000000003,
+          "agent_c": 0.253384
+        },
+        {
+          "agent_a": 0.207699,
+          "agent_b": 0.22017200000000003,
+          "agent_c": 0.21186199999999997
+        },
+        {
+          "agent_a": 0.254465,
+          "agent_b": 0.20797000000000004,
+          "agent_c": 0.22728899999999996
+        },
+        {
+          "agent_a": 0.294185,
+          "agent_b": 0.29111500000000007,
+          "agent_c": 0.25664000000000003
+        },
+        {
+          "agent_a": 0.269142,
+          "agent_b": 0.285867,
+          "agent_c": 0.3627869999999999
+        },
+        {
+          "agent_a": 0.17336800000000005,
+          "agent_b": 0.203318,
+          "agent_c": 0.22210399999999997
+        },
+        {
+          "agent_a": 0.24278,
+          "agent_b": 0.23118700000000003,
+          "agent_c": 0.22627399999999998
+        },
+        {
+          "agent_a": 0.3342780000000001,
+          "agent_b": 0.28702300000000003,
+          "agent_c": 0.266259
+        },
+        {
+          "agent_a": 0.246095,
+          "agent_b": 0.303128,
+          "agent_c": 0.273539
+        },
+        {
+          "agent_a": 0.191268,
+          "agent_b": 0.20592100000000002,
+          "agent_c": 0.252453
+        }
+      ],
+      "M5_cdi_coupling": [
+        -0.1274505463318208,
+        0.08819477807133579,
+        0.19157741886758478,
+        0.11574323752244825,
+        -0.008432163830881717,
+        0.0256206287751186,
+        0.045761333963055026,
+        -0.06101962941601394,
+        -0.1197799126453569,
+        -0.010943602575408287
+      ],
+      "M6_scr_slope": [
+        9.964266789353864e-05,
+        -0.0006384722118052952,
+        2.9123944099373415e-05,
+        -0.00028597456007828777,
+        -0.000167313706909047,
+        -4.903479699388376e-05,
+        -0.0004010359187551118,
+        0.00021711882082766363,
+        -4.907703201189852e-05,
+        -0.0001972871123934814
+      ],
+      "null_rate_pct": [
+        0.4,
+        0.2,
+        1.2,
+        0.2,
+        0.2,
+        1.7999999999999998,
+        0.0,
+        0.0,
+        0.4,
+        0.8
+      ],
+      "framework_by_seed": [
+        {
+          "agent_a": {
+            "utilitarian": 0.9486,
+            "deontological": 0.371908,
+            "virtue_ethics": 0.7301760000000002,
+            "self_interest": 0.737549
+          },
+          "agent_b": {
+            "utilitarian": 0.9486,
+            "deontological": 0.371908,
+            "virtue_ethics": 0.32886400000000005,
+            "self_interest": 0.7526520000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.9486,
+            "deontological": 0.371908,
+            "virtue_ethics": 0.8778319999999998,
+            "self_interest": 0.6024079999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9773499999999998,
+            "deontological": 0.492153,
+            "virtue_ethics": 0.617339,
+            "self_interest": 0.745568
+          },
+          "agent_b": {
+            "utilitarian": 0.9773499999999998,
+            "deontological": 0.492153,
+            "virtue_ethics": 0.514888,
+            "self_interest": 0.8023269999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9773499999999998,
+            "deontological": 0.492153,
+            "virtue_ethics": 0.8953829999999999,
+            "self_interest": 0.7226259999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.97575,
+            "deontological": 0.5182769999999999,
+            "virtue_ethics": 0.366875,
+            "self_interest": 0.7332569999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.97575,
+            "deontological": 0.5182769999999999,
+            "virtue_ethics": 0.5412260000000001,
+            "self_interest": 0.779138
+          },
+          "agent_c": {
+            "utilitarian": 0.97575,
+            "deontological": 0.5182769999999999,
+            "virtue_ethics": 0.868664,
+            "self_interest": 0.616307
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9794499999999999,
+            "deontological": 0.3606229999999999,
+            "virtue_ethics": 0.279455,
+            "self_interest": 0.7017690000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.9794499999999999,
+            "deontological": 0.3606229999999999,
+            "virtue_ethics": 0.32514400000000004,
+            "self_interest": 0.7720280000000002
+          },
+          "agent_c": {
+            "utilitarian": 0.9794499999999999,
+            "deontological": 0.3606229999999999,
+            "virtue_ethics": 0.4879069999999999,
+            "self_interest": 0.719094
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9648500000000001,
+            "deontological": 0.27970599999999995,
+            "virtue_ethics": 0.651808,
+            "self_interest": 0.76296
+          },
+          "agent_b": {
+            "utilitarian": 0.9648500000000001,
+            "deontological": 0.27970599999999995,
+            "virtue_ethics": 0.437151,
+            "self_interest": 0.7837530000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.9648500000000001,
+            "deontological": 0.27970599999999995,
+            "virtue_ethics": 0.009956,
+            "self_interest": 0.431398
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9361499999999999,
+            "deontological": 0.7038509999999999,
+            "virtue_ethics": 1.0,
+            "self_interest": 0.6927089999999998
+          },
+          "agent_b": {
+            "utilitarian": 0.9361499999999999,
+            "deontological": 0.7038509999999999,
+            "virtue_ethics": 0.47019100000000014,
+            "self_interest": 0.75504
+          },
+          "agent_c": {
+            "utilitarian": 0.9361499999999999,
+            "deontological": 0.7038509999999999,
+            "virtue_ethics": 1.0,
+            "self_interest": 0.49201700000000004
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9701000000000001,
+            "deontological": 0.4284559999999999,
+            "virtue_ethics": 0.43988499999999997,
+            "self_interest": 0.7333700000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.9701000000000001,
+            "deontological": 0.4284559999999999,
+            "virtue_ethics": 0.588546,
+            "self_interest": 0.8072909999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9701000000000001,
+            "deontological": 0.4284559999999999,
+            "virtue_ethics": 0.8351900000000001,
+            "self_interest": 0.726424
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.96515,
+            "deontological": 0.31463299999999994,
+            "virtue_ethics": 0.14679799999999998,
+            "self_interest": 0.683697
+          },
+          "agent_b": {
+            "utilitarian": 0.96515,
+            "deontological": 0.31463299999999994,
+            "virtue_ethics": 0.368763,
+            "self_interest": 0.7817370000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.96515,
+            "deontological": 0.31463299999999994,
+            "virtue_ethics": 0.460196,
+            "self_interest": 0.7358959999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9608500000000001,
+            "deontological": 0.38981299999999997,
+            "virtue_ethics": 0.9268090000000001,
+            "self_interest": 0.722367
+          },
+          "agent_b": {
+            "utilitarian": 0.9608500000000001,
+            "deontological": 0.38981299999999997,
+            "virtue_ethics": 0.23686900000000002,
+            "self_interest": 0.7611180000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.9608500000000001,
+            "deontological": 0.38981299999999997,
+            "virtue_ethics": 0.428245,
+            "self_interest": 0.6621680000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.97,
+            "deontological": 0.549133,
+            "virtue_ethics": 0.9134349999999999,
+            "self_interest": 0.7588720000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.97,
+            "deontological": 0.549133,
+            "virtue_ethics": 0.532471,
+            "self_interest": 0.7937730000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.97,
+            "deontological": 0.549133,
+            "virtue_ethics": 1.0,
+            "self_interest": 0.49440999999999996
+          }
+        }
+      ],
+      "M1_mean": 0.37100872018309355,
+      "M1_sd": 0.0597150951317648,
+      "M5_mean": 0.013927154240006078,
+      "M5_valid_n": 10,
+      "M6_mean": -0.000144230990612643,
+      "M6_sd": 0.0002520755467064505,
+      "null_rate_mean": 0.52
+    },
+    "c2_short_welfare": {
+      "condition": "c2_short_welfare",
+      "M1_scr_last100": [
+        0.318135722302389,
+        0.3173130420553101,
+        0.3797218213884881,
+        0.45820833333333333,
+        0.3400292608625942,
+        0.4420337301587301,
+        0.4026924603174602,
+        0.19402356902356904,
+        0.4164001122334456,
+        0.4189625850340136
+      ],
+      "M4_deception": [
+        {
+          "agent_a": 0.290106,
+          "agent_b": 0.289694,
+          "agent_c": 0.36477899999999996
+        },
+        {
+          "agent_a": 0.3374509999999999,
+          "agent_b": 0.16648000000000004,
+          "agent_c": 0.19982000000000003
+        },
+        {
+          "agent_a": 0.29581699999999994,
+          "agent_b": 0.29506499999999997,
+          "agent_c": 0.302925
+        },
+        {
+          "agent_a": 0.27336000000000005,
+          "agent_b": 0.245236,
+          "agent_c": 0.280265
+        },
+        {
+          "agent_a": 0.295876,
+          "agent_b": 0.33250799999999997,
+          "agent_c": 0.3681459999999999
+        },
+        {
+          "agent_a": 0.17020799999999997,
+          "agent_b": 0.187213,
+          "agent_c": 0.200395
+        },
+        {
+          "agent_a": 0.25956399999999996,
+          "agent_b": 0.27525499999999997,
+          "agent_c": 0.25078599999999995
+        },
+        {
+          "agent_a": 0.342705,
+          "agent_b": 0.309423,
+          "agent_c": 0.272029
+        },
+        {
+          "agent_a": 0.294992,
+          "agent_b": 0.35199800000000003,
+          "agent_c": 0.312512
+        },
+        {
+          "agent_a": 0.23224699999999998,
+          "agent_b": 0.259302,
+          "agent_c": 0.26808
+        }
+      ],
+      "M5_cdi_coupling": [
+        -0.008676565865198632,
+        0.14763140185572404,
+        -0.025747111906418457,
+        -0.05205457870740601,
+        0.12792124964198648,
+        -0.11764260281541777,
+        -0.10028134735986244,
+        -0.09337839918466266,
+        0.014701533057858785,
+        -0.09550482447290237
+      ],
+      "M6_scr_slope": [
+        1.3487683666682117e-06,
+        0.000402740053876664,
+        -0.0007056942670115026,
+        8.661883213747011e-05,
+        -0.0005750997120066345,
+        -2.134249784816047e-05,
+        -0.00043954923277843863,
+        -0.0015079050921280408,
+        -0.00015766048082249744,
+        -0.0004170971539511503
+      ],
+      "null_rate_pct": [
+        0.8,
+        1.4000000000000001,
+        0.8,
+        0.0,
+        0.2,
+        0.0,
+        0.0,
+        0.2,
+        0.4,
+        0.4
+      ],
+      "framework_by_seed": [
+        {
+          "agent_a": {
+            "utilitarian": 0.9607499999999999,
+            "deontological": 0.21356599999999998,
+            "virtue_ethics": 0.430083,
+            "self_interest": 0.5357319999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.9607499999999999,
+            "deontological": 0.21356599999999998,
+            "virtue_ethics": 0.358313,
+            "self_interest": 0.5521910000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.9607499999999999,
+            "deontological": 0.21356599999999998,
+            "virtue_ethics": 0.0,
+            "self_interest": 0.34171799999999997
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9496999999999999,
+            "deontological": 0.580021,
+            "virtue_ethics": 0.05065400000000001,
+            "self_interest": 0.666205
+          },
+          "agent_b": {
+            "utilitarian": 0.9496999999999999,
+            "deontological": 0.580021,
+            "virtue_ethics": 0.8504920000000001,
+            "self_interest": 0.7107769999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9496999999999999,
+            "deontological": 0.580021,
+            "virtue_ethics": 0.99995,
+            "self_interest": 0.6631560000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9588500000000001,
+            "deontological": 0.26414499999999996,
+            "virtue_ethics": 0.38777800000000007,
+            "self_interest": 0.6804720000000002
+          },
+          "agent_b": {
+            "utilitarian": 0.9588500000000001,
+            "deontological": 0.26414499999999996,
+            "virtue_ethics": 0.317477,
+            "self_interest": 0.7193160000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.9588500000000001,
+            "deontological": 0.26414499999999996,
+            "virtue_ethics": 0.9997419999999999,
+            "self_interest": 0.687585
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9597000000000001,
+            "deontological": 0.39373000000000014,
+            "virtue_ethics": 0.31613,
+            "self_interest": 0.720457
+          },
+          "agent_b": {
+            "utilitarian": 0.9597000000000001,
+            "deontological": 0.39373000000000014,
+            "virtue_ethics": 0.41812599999999994,
+            "self_interest": 0.748544
+          },
+          "agent_c": {
+            "utilitarian": 0.9597000000000001,
+            "deontological": 0.39373000000000014,
+            "virtue_ethics": 0.28517000000000003,
+            "self_interest": 0.72358
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.95285,
+            "deontological": 0.16644299999999998,
+            "virtue_ethics": 0.411214,
+            "self_interest": 0.5574169999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.95285,
+            "deontological": 0.16644299999999998,
+            "virtue_ethics": 0.17423599999999997,
+            "self_interest": 0.5568759999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.95285,
+            "deontological": 0.16644299999999998,
+            "virtue_ethics": 0.0,
+            "self_interest": 0.370334
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9527500000000001,
+            "deontological": 0.53956,
+            "virtue_ethics": 0.6396540000000001,
+            "self_interest": 0.7593159999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.9527500000000001,
+            "deontological": 0.53956,
+            "virtue_ethics": 0.5624949999999999,
+            "self_interest": 0.7738349999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9527500000000001,
+            "deontological": 0.53956,
+            "virtue_ethics": 0.548774,
+            "self_interest": 0.7522230000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.96245,
+            "deontological": 0.341305,
+            "virtue_ethics": 0.49733499999999997,
+            "self_interest": 0.7417759999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.96245,
+            "deontological": 0.341305,
+            "virtue_ethics": 0.345182,
+            "self_interest": 0.7566960000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.96245,
+            "deontological": 0.341305,
+            "virtue_ethics": 0.5271770000000001,
+            "self_interest": 0.747728
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.986,
+            "deontological": 0.31398400000000004,
+            "virtue_ethics": 0.108791,
+            "self_interest": 0.6748439999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.986,
+            "deontological": 0.31398400000000004,
+            "virtue_ethics": 0.24759499999999998,
+            "self_interest": 0.672861
+          },
+          "agent_c": {
+            "utilitarian": 0.986,
+            "deontological": 0.31398400000000004,
+            "virtue_ethics": 0.8352299999999999,
+            "self_interest": 0.6762910000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9648,
+            "deontological": 0.2584679999999999,
+            "virtue_ethics": 0.5051599999999999,
+            "self_interest": 0.6997579999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.9648,
+            "deontological": 0.2584679999999999,
+            "virtue_ethics": 0.09417000000000002,
+            "self_interest": 0.6965929999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9648,
+            "deontological": 0.2584679999999999,
+            "virtue_ethics": 0.246081,
+            "self_interest": 0.6861690000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9607499999999999,
+            "deontological": 0.419615,
+            "virtue_ethics": 0.764639,
+            "self_interest": 0.72819
+          },
+          "agent_b": {
+            "utilitarian": 0.9607499999999999,
+            "deontological": 0.419615,
+            "virtue_ethics": 0.34456599999999993,
+            "self_interest": 0.740203
+          },
+          "agent_c": {
+            "utilitarian": 0.9607499999999999,
+            "deontological": 0.419615,
+            "virtue_ethics": 0.305933,
+            "self_interest": 0.711481
+          }
+        }
+      ],
+      "M1_mean": 0.3687520636709333,
+      "M1_sd": 0.07888062649248638,
+      "M5_mean": -0.020303124575629904,
+      "M5_valid_n": 10,
+      "M6_mean": -0.0003333640782165623,
+      "M6_sd": 0.000532644956087417,
+      "null_rate_mean": 0.42000000000000004
+    },
+    "c3_long_individual": {
+      "condition": "c3_long_individual",
+      "M1_scr_last100": [
+        0.39325940421830835,
+        0.38755615453728653,
+        0.29480820105820105,
+        0.15766978922716626,
+        0.18917989417989417,
+        0.3666094969061071,
+        0.41157581453634084,
+        0.0871139971139971,
+        0.38705796664657427,
+        0.46791125541125544
+      ],
+      "M4_deception": [
+        {
+          "agent_a": 0.214595,
+          "agent_b": 0.264114,
+          "agent_c": 0.26956099999999994
+        },
+        {
+          "agent_a": 0.18558899999999998,
+          "agent_b": 0.264667,
+          "agent_c": 0.242535
+        },
+        {
+          "agent_a": 0.193116,
+          "agent_b": 0.18034099999999997,
+          "agent_c": 0.321416
+        },
+        {
+          "agent_a": 0.13768300000000003,
+          "agent_b": 0.16176400000000002,
+          "agent_c": 0.13073300000000002
+        },
+        {
+          "agent_a": 0.14780300000000002,
+          "agent_b": 0.149787,
+          "agent_c": 0.185248
+        },
+        {
+          "agent_a": 0.11047499999999999,
+          "agent_b": 0.11834400000000002,
+          "agent_c": 0.13278
+        },
+        {
+          "agent_a": 0.202027,
+          "agent_b": 0.25320800000000004,
+          "agent_c": 0.19966500000000004
+        },
+        {
+          "agent_a": 0.14953500000000003,
+          "agent_b": 0.152997,
+          "agent_c": 0.161277
+        },
+        {
+          "agent_a": 0.16367800000000002,
+          "agent_b": 0.173606,
+          "agent_c": 0.253722
+        },
+        {
+          "agent_a": 0.16447,
+          "agent_b": 0.232307,
+          "agent_c": 0.170149
+        }
+      ],
+      "M5_cdi_coupling": [
+        0.16847488375612257,
+        -0.04283720419156989,
+        0.040824714688679986,
+        0.050311030853879654,
+        -0.03754290977484836,
+        -0.047234591701203685,
+        -0.12102252169224822,
+        -0.10836975608913557,
+        0.12554277924296775,
+        0.13826519182462743
+      ],
+      "M6_scr_slope": [
+        0.0002916666004904271,
+        -0.00023871871367981909,
+        -0.00012284852857072663,
+        -7.958490668825116e-05,
+        -0.0003231732775257422,
+        0.0005966659327673433,
+        -1.2476908285916523e-05,
+        -0.0012513492509499634,
+        -0.00026821799938827907,
+        0.0008165300810863264
+      ],
+      "null_rate_pct": [
+        28.4,
+        38.6,
+        23.799999999999997,
+        42.6,
+        54.6,
+        32.800000000000004,
+        26.6,
+        31.4,
+        25.0,
+        31.0
+      ],
+      "framework_by_seed": [
+        {
+          "agent_a": {
+            "utilitarian": 0.9025610000000001,
+            "deontological": 0.5283730000000001,
+            "virtue_ethics": 0.5943410000000001,
+            "self_interest": 0.9879290000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.9025610000000001,
+            "deontological": 0.5283730000000001,
+            "virtue_ethics": 0.37205,
+            "self_interest": 0.993917
+          },
+          "agent_c": {
+            "utilitarian": 0.9025610000000001,
+            "deontological": 0.5283730000000001,
+            "virtue_ethics": 0.3543260000000001,
+            "self_interest": 0.986965
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9190900000000001,
+            "deontological": 0.54105,
+            "virtue_ethics": 0.8320690000000001,
+            "self_interest": 0.996019
+          },
+          "agent_b": {
+            "utilitarian": 0.9190900000000001,
+            "deontological": 0.54105,
+            "virtue_ethics": 0.373954,
+            "self_interest": 1.0
+          },
+          "agent_c": {
+            "utilitarian": 0.9190900000000001,
+            "deontological": 0.54105,
+            "virtue_ethics": 0.447134,
+            "self_interest": 0.9848
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.896387,
+            "deontological": 0.5704009999999999,
+            "virtue_ethics": 0.999013,
+            "self_interest": 0.9570139999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.896387,
+            "deontological": 0.5704009999999999,
+            "virtue_ethics": 0.8485279999999997,
+            "self_interest": 0.9901430000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.896387,
+            "deontological": 0.5704009999999999,
+            "virtue_ethics": 0.18769399999999997,
+            "self_interest": 0.943429
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.92589,
+            "deontological": 0.7157650000000001,
+            "virtue_ethics": 0.7422449999999999,
+            "self_interest": 0.9937809999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.92589,
+            "deontological": 0.7157650000000001,
+            "virtue_ethics": 0.623668,
+            "self_interest": 0.9953449999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.92589,
+            "deontological": 0.7157650000000001,
+            "virtue_ethics": 1.0,
+            "self_interest": 0.969547
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.941297,
+            "deontological": 0.6591830000000001,
+            "virtue_ethics": 0.846047,
+            "self_interest": 0.986976
+          },
+          "agent_b": {
+            "utilitarian": 0.941297,
+            "deontological": 0.6591830000000001,
+            "virtue_ethics": 0.9850680000000002,
+            "self_interest": 0.999013
+          },
+          "agent_c": {
+            "utilitarian": 0.941297,
+            "deontological": 0.6591830000000001,
+            "virtue_ethics": 0.6005569999999999,
+            "self_interest": 0.9868000000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.908733,
+            "deontological": 0.75331,
+            "virtue_ethics": 0.8619319999999999,
+            "self_interest": 0.9804210000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.908733,
+            "deontological": 0.75331,
+            "virtue_ethics": 0.999714,
+            "self_interest": 0.989359
+          },
+          "agent_c": {
+            "utilitarian": 0.908733,
+            "deontological": 0.75331,
+            "virtue_ethics": 0.7513460000000001,
+            "self_interest": 0.98142
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.898626,
+            "deontological": 0.519849,
+            "virtue_ethics": 0.657012,
+            "self_interest": 0.997133
+          },
+          "agent_b": {
+            "utilitarian": 0.898626,
+            "deontological": 0.519849,
+            "virtue_ethics": 0.409287,
+            "self_interest": 0.993909
+          },
+          "agent_c": {
+            "utilitarian": 0.898626,
+            "deontological": 0.519849,
+            "virtue_ethics": 0.7770939999999997,
+            "self_interest": 0.9928870000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9123269999999999,
+            "deontological": 0.6721660000000002,
+            "virtue_ethics": 0.959296,
+            "self_interest": 0.9515690000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.9123269999999999,
+            "deontological": 0.6721660000000002,
+            "virtue_ethics": 0.999859,
+            "self_interest": 0.974339
+          },
+          "agent_c": {
+            "utilitarian": 0.9123269999999999,
+            "deontological": 0.6721660000000002,
+            "virtue_ethics": 0.875235,
+            "self_interest": 0.9628629999999998
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.924812,
+            "deontological": 0.6153730000000001,
+            "virtue_ethics": 0.784567,
+            "self_interest": 0.9859640000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.924812,
+            "deontological": 0.6153730000000001,
+            "virtue_ethics": 0.72261,
+            "self_interest": 0.996305
+          },
+          "agent_c": {
+            "utilitarian": 0.924812,
+            "deontological": 0.6153730000000001,
+            "virtue_ethics": 0.37729200000000007,
+            "self_interest": 0.987452
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.895734,
+            "deontological": 0.5884830000000001,
+            "virtue_ethics": 0.866263,
+            "self_interest": 0.999108
+          },
+          "agent_b": {
+            "utilitarian": 0.895734,
+            "deontological": 0.5884830000000001,
+            "virtue_ethics": 0.441667,
+            "self_interest": 0.995504
+          },
+          "agent_c": {
+            "utilitarian": 0.895734,
+            "deontological": 0.5884830000000001,
+            "virtue_ethics": 0.8803880000000001,
+            "self_interest": 0.990864
+          }
+        }
+      ],
+      "M1_mean": 0.3142741973835131,
+      "M1_sd": 0.1268733077762041,
+      "M5_mean": 0.01664116169172717,
+      "M5_valid_n": 10,
+      "M6_mean": -5.915069707446011e-05,
+      "M6_sd": 0.0005670231810902318,
+      "null_rate_mean": 33.480000000000004
+    },
+    "c4_long_welfare": {
+      "condition": "c4_long_welfare",
+      "M1_scr_last100": [
+        0.3865141369047619,
+        0.3811262982559279,
+        0.38472494020439224,
+        0.23080738705738704,
+        0.3444199826049141,
+        0.25716303470540763,
+        0.37724420849420853,
+        0.15173027544351075,
+        0.4139629629629629,
+        0.38787138787138786
+      ],
+      "M4_deception": [
+        {
+          "agent_a": 0.339111,
+          "agent_b": 0.17737399999999995,
+          "agent_c": 0.16195299999999996
+        },
+        {
+          "agent_a": 0.27390299999999995,
+          "agent_b": 0.32748799999999995,
+          "agent_c": 0.23543
+        },
+        {
+          "agent_a": 0.19013900000000003,
+          "agent_b": 0.290656,
+          "agent_c": 0.296958
+        },
+        {
+          "agent_a": 0.16868700000000003,
+          "agent_b": 0.259189,
+          "agent_c": 0.158674
+        },
+        {
+          "agent_a": 0.191113,
+          "agent_b": 0.314325,
+          "agent_c": 0.199445
+        },
+        {
+          "agent_a": 0.226155,
+          "agent_b": 0.234219,
+          "agent_c": 0.15098299999999998
+        },
+        {
+          "agent_a": 0.3630599999999999,
+          "agent_b": 0.309237,
+          "agent_c": 0.28256600000000004
+        },
+        {
+          "agent_a": 0.26350899999999994,
+          "agent_b": 0.288052,
+          "agent_c": 0.19444200000000003
+        },
+        {
+          "agent_a": 0.19964400000000002,
+          "agent_b": 0.221673,
+          "agent_c": 0.213998
+        },
+        {
+          "agent_a": 0.17224200000000003,
+          "agent_b": 0.21342099999999994,
+          "agent_c": 0.16494
+        }
+      ],
+      "M5_cdi_coupling": [
+        -0.0993563702239526,
+        -0.12500483840666385,
+        0.03315197389349969,
+        0.06047675562111445,
+        0.06613806496501923,
+        0.06586378304786555,
+        -0.10961741770334696,
+        -0.020596652881728572,
+        0.15763197911771482,
+        -0.04968987099686836
+      ],
+      "M6_scr_slope": [
+        0.00043062635212834236,
+        0.0009160598820948277,
+        -0.00034132280399898476,
+        -0.00031271146487053033,
+        -0.00012087627918774032,
+        -0.001296602961760474,
+        5.010934070585312e-05,
+        -0.00032038826430136054,
+        -0.0006006510889228232,
+        0.0005631726701078348
+      ],
+      "null_rate_pct": [
+        28.599999999999998,
+        30.0,
+        31.2,
+        34.0,
+        28.599999999999998,
+        29.4,
+        29.599999999999998,
+        35.199999999999996,
+        25.8,
+        29.4
+      ],
+      "framework_by_seed": [
+        {
+          "agent_a": {
+            "utilitarian": 0.8919039999999999,
+            "deontological": 0.6422190000000001,
+            "virtue_ethics": 0.13824500000000003,
+            "self_interest": 0.993665
+          },
+          "agent_b": {
+            "utilitarian": 0.8919039999999999,
+            "deontological": 0.6422190000000001,
+            "virtue_ethics": 0.622858,
+            "self_interest": 0.992958
+          },
+          "agent_c": {
+            "utilitarian": 0.8919039999999999,
+            "deontological": 0.6422190000000001,
+            "virtue_ethics": 0.999962,
+            "self_interest": 0.9929429999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9199240000000001,
+            "deontological": 0.431851,
+            "virtue_ethics": 0.43473,
+            "self_interest": 0.9982479999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.9199240000000001,
+            "deontological": 0.431851,
+            "virtue_ethics": 0.23242600000000002,
+            "self_interest": 0.9996379999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9199240000000001,
+            "deontological": 0.431851,
+            "virtue_ethics": 0.7702879999999999,
+            "self_interest": 1.0
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9076860000000001,
+            "deontological": 0.5397759999999999,
+            "virtue_ethics": 0.7210300000000001,
+            "self_interest": 0.999165
+          },
+          "agent_b": {
+            "utilitarian": 0.9076860000000001,
+            "deontological": 0.5397759999999999,
+            "virtue_ethics": 0.292547,
+            "self_interest": 0.998197
+          },
+          "agent_c": {
+            "utilitarian": 0.9076860000000001,
+            "deontological": 0.5397759999999999,
+            "virtue_ethics": 0.282665,
+            "self_interest": 1.0
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9392670000000001,
+            "deontological": 0.6418740000000001,
+            "virtue_ethics": 0.8237390000000001,
+            "self_interest": 0.9928999999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.9392670000000001,
+            "deontological": 0.6418740000000001,
+            "virtue_ethics": 0.3653690000000001,
+            "self_interest": 0.9924199999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9392670000000001,
+            "deontological": 0.6418740000000001,
+            "virtue_ethics": 1.0,
+            "self_interest": 0.9941059999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9095340000000001,
+            "deontological": 0.5331950000000001,
+            "virtue_ethics": 0.8171090000000001,
+            "self_interest": 0.9963630000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.9095340000000001,
+            "deontological": 0.5331950000000001,
+            "virtue_ethics": 0.231587,
+            "self_interest": 0.996617
+          },
+          "agent_c": {
+            "utilitarian": 0.9095340000000001,
+            "deontological": 0.5331950000000001,
+            "virtue_ethics": 0.918481,
+            "self_interest": 0.995753
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9122489999999999,
+            "deontological": 0.653762,
+            "virtue_ethics": 0.450999,
+            "self_interest": 0.996572
+          },
+          "agent_b": {
+            "utilitarian": 0.9122489999999999,
+            "deontological": 0.653762,
+            "virtue_ethics": 0.42561899999999986,
+            "self_interest": 0.9993569999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9122489999999999,
+            "deontological": 0.653762,
+            "virtue_ethics": 0.991901,
+            "self_interest": 0.996537
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.887988,
+            "deontological": 0.327723,
+            "virtue_ethics": 0.152292,
+            "self_interest": 0.9932249999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.887988,
+            "deontological": 0.327723,
+            "virtue_ethics": 0.3532869999999999,
+            "self_interest": 0.9931739999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.887988,
+            "deontological": 0.327723,
+            "virtue_ethics": 0.979168,
+            "self_interest": 0.9952179999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.933795,
+            "deontological": 0.551615,
+            "virtue_ethics": 0.39007499999999995,
+            "self_interest": 0.997563
+          },
+          "agent_b": {
+            "utilitarian": 0.933795,
+            "deontological": 0.551615,
+            "virtue_ethics": 0.314039,
+            "self_interest": 1.0
+          },
+          "agent_c": {
+            "utilitarian": 0.933795,
+            "deontological": 0.551615,
+            "virtue_ethics": 0.999984,
+            "self_interest": 0.99747
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.8812989999999999,
+            "deontological": 0.532067,
+            "virtue_ethics": 0.9814689999999999,
+            "self_interest": 1.0
+          },
+          "agent_b": {
+            "utilitarian": 0.8812989999999999,
+            "deontological": 0.532067,
+            "virtue_ethics": 0.523183,
+            "self_interest": 1.0
+          },
+          "agent_c": {
+            "utilitarian": 0.8812989999999999,
+            "deontological": 0.532067,
+            "virtue_ethics": 0.585287,
+            "self_interest": 1.0
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.899143,
+            "deontological": 0.5994579999999999,
+            "virtue_ethics": 0.9725480000000001,
+            "self_interest": 0.997653
+          },
+          "agent_b": {
+            "utilitarian": 0.899143,
+            "deontological": 0.5994579999999999,
+            "virtue_ethics": 0.507857,
+            "self_interest": 0.9939070000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.899143,
+            "deontological": 0.5994579999999999,
+            "virtue_ethics": 0.7859940000000002,
+            "self_interest": 0.996236
+          }
+        }
+      ],
+      "M1_mean": 0.3315564614504861,
+      "M1_sd": 0.08726820719849562,
+      "M5_mean": -0.00210025935673466,
+      "M5_valid_n": 10,
+      "M6_mean": -0.00010325846180050552,
+      "M6_sd": 0.0006334356468596888,
+      "null_rate_mean": 30.179999999999996
+    },
+    "c1_short_individual_frozen": {
+      "condition": "c1_short_individual_frozen",
+      "M1_scr_last100": [
+        0.42149007936507926,
+        0.46527976190476195,
+        0.4271504729838063,
+        0.38131944444444443,
+        0.37871517654680925,
+        0.29525445917198495,
+        0.34106341189674527,
+        0.45065674603174605,
+        0.38359920634920636,
+        0.22592261904761904
+      ],
+      "M4_deception": [
+        {
+          "agent_a": 0.230608,
+          "agent_b": 0.258346,
+          "agent_c": 0.22084899999999996
+        },
+        {
+          "agent_a": 0.18637000000000004,
+          "agent_b": 0.20197299999999999,
+          "agent_c": 0.197045
+        },
+        {
+          "agent_a": 0.238079,
+          "agent_b": 0.19434299999999996,
+          "agent_c": 0.207612
+        },
+        {
+          "agent_a": 0.179747,
+          "agent_b": 0.18251500000000004,
+          "agent_c": 0.22899900000000004
+        },
+        {
+          "agent_a": 0.28990600000000005,
+          "agent_b": 0.29642399999999997,
+          "agent_c": 0.316279
+        },
+        {
+          "agent_a": 0.279748,
+          "agent_b": 0.3662039999999999,
+          "agent_c": 0.260427
+        },
+        {
+          "agent_a": 0.265364,
+          "agent_b": 0.22541699999999998,
+          "agent_c": 0.25336899999999996
+        },
+        {
+          "agent_a": 0.20374199999999998,
+          "agent_b": 0.233353,
+          "agent_c": 0.223641
+        },
+        {
+          "agent_a": 0.18592700000000004,
+          "agent_b": 0.23372600000000002,
+          "agent_c": 0.19053600000000004
+        },
+        {
+          "agent_a": 0.20462999999999998,
+          "agent_b": 0.24695899999999998,
+          "agent_c": 0.22274000000000002
+        }
+      ],
+      "M5_cdi_coupling": [
+        -0.0352290888287122,
+        0.0772851106912707,
+        0.12649202796527276,
+        0.14091645234485117,
+        0.10403949384936549,
+        0.111324050964826,
+        -0.03393302327677172,
+        0.11531885047076225,
+        -0.14406083344686185,
+        0.07643459051197107
+      ],
+      "M6_scr_slope": [
+        -0.00031341796193720613,
+        0.00038716399457605513,
+        1.0123825817519566e-05,
+        -0.0005354807977342292,
+        -0.0002387965430712437,
+        -0.0006804463518560397,
+        -0.0008809715857832348,
+        -9.102325772430026e-05,
+        -0.00013527123892383017,
+        -0.00015809770244256112
+      ],
+      "null_rate_pct": [
+        0.4,
+        0.0,
+        0.4,
+        0.0,
+        0.4,
+        1.2,
+        0.2,
+        0.0,
+        0.2,
+        0.0
+      ],
+      "framework_by_seed": [
+        {
+          "agent_a": {
+            "utilitarian": 0.9353999999999999,
+            "deontological": 0.414709,
+            "virtue_ethics": 0.5339349999999999,
+            "self_interest": 0.72701
+          },
+          "agent_b": {
+            "utilitarian": 0.9353999999999999,
+            "deontological": 0.414709,
+            "virtue_ethics": 0.9874690000000002,
+            "self_interest": 0.650112
+          },
+          "agent_c": {
+            "utilitarian": 0.9353999999999999,
+            "deontological": 0.414709,
+            "virtue_ethics": 0.6593790000000002,
+            "self_interest": 0.689389
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9465000000000002,
+            "deontological": 0.521136,
+            "virtue_ethics": 0.7226090000000001,
+            "self_interest": 0.7548209999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.9465000000000002,
+            "deontological": 0.521136,
+            "virtue_ethics": 0.7388990000000001,
+            "self_interest": 0.7918220000000002
+          },
+          "agent_c": {
+            "utilitarian": 0.9465000000000002,
+            "deontological": 0.521136,
+            "virtue_ethics": 0.712388,
+            "self_interest": 0.7111439999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9545999999999999,
+            "deontological": 0.532433,
+            "virtue_ethics": 0.407517,
+            "self_interest": 0.697696
+          },
+          "agent_b": {
+            "utilitarian": 0.9545999999999999,
+            "deontological": 0.532433,
+            "virtue_ethics": 0.585085,
+            "self_interest": 0.8017359999999998
+          },
+          "agent_c": {
+            "utilitarian": 0.9545999999999999,
+            "deontological": 0.532433,
+            "virtue_ethics": 0.9589439999999999,
+            "self_interest": 0.7266469999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9791,
+            "deontological": 0.553759,
+            "virtue_ethics": 0.691861,
+            "self_interest": 0.75278
+          },
+          "agent_b": {
+            "utilitarian": 0.9791,
+            "deontological": 0.553759,
+            "virtue_ethics": 0.6811099999999999,
+            "self_interest": 0.8027920000000002
+          },
+          "agent_c": {
+            "utilitarian": 0.9791,
+            "deontological": 0.553759,
+            "virtue_ethics": 0.480618,
+            "self_interest": 0.6924819999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.94965,
+            "deontological": 0.303992,
+            "virtue_ethics": 0.353712,
+            "self_interest": 0.727672
+          },
+          "agent_b": {
+            "utilitarian": 0.94965,
+            "deontological": 0.303992,
+            "virtue_ethics": 0.320687,
+            "self_interest": 0.764374
+          },
+          "agent_c": {
+            "utilitarian": 0.94965,
+            "deontological": 0.303992,
+            "virtue_ethics": 0.19259600000000007,
+            "self_interest": 0.618178
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.94915,
+            "deontological": 0.417702,
+            "virtue_ethics": 0.2825480000000001,
+            "self_interest": 0.6690689999999999
+          },
+          "agent_b": {
+            "utilitarian": 0.94915,
+            "deontological": 0.417702,
+            "virtue_ethics": 0.0,
+            "self_interest": 0.20305300000000004
+          },
+          "agent_c": {
+            "utilitarian": 0.94915,
+            "deontological": 0.417702,
+            "virtue_ethics": 0.994731,
+            "self_interest": 0.672976
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9686,
+            "deontological": 0.421558,
+            "virtue_ethics": 0.3857729999999999,
+            "self_interest": 0.733007
+          },
+          "agent_b": {
+            "utilitarian": 0.9686,
+            "deontological": 0.421558,
+            "virtue_ethics": 0.74456,
+            "self_interest": 0.779683
+          },
+          "agent_c": {
+            "utilitarian": 0.9686,
+            "deontological": 0.421558,
+            "virtue_ethics": 0.948752,
+            "self_interest": 0.6384960000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9551499999999998,
+            "deontological": 0.509391,
+            "virtue_ethics": 0.937153,
+            "self_interest": 0.767994
+          },
+          "agent_b": {
+            "utilitarian": 0.9551499999999998,
+            "deontological": 0.509391,
+            "virtue_ethics": 0.42386500000000005,
+            "self_interest": 0.7855030000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.9551499999999998,
+            "deontological": 0.509391,
+            "virtue_ethics": 0.45039899999999994,
+            "self_interest": 0.716388
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.96895,
+            "deontological": 0.5678079999999999,
+            "virtue_ethics": 0.9140320000000003,
+            "self_interest": 0.755328
+          },
+          "agent_b": {
+            "utilitarian": 0.96895,
+            "deontological": 0.5678079999999999,
+            "virtue_ethics": 0.39539199999999997,
+            "self_interest": 0.783399
+          },
+          "agent_c": {
+            "utilitarian": 0.96895,
+            "deontological": 0.5678079999999999,
+            "virtue_ethics": 0.946417,
+            "self_interest": 0.7254370000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9706999999999999,
+            "deontological": 0.5894569999999999,
+            "virtue_ethics": 0.49838299999999996,
+            "self_interest": 0.7558670000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.9706999999999999,
+            "deontological": 0.5894569999999999,
+            "virtue_ethics": 0.343434,
+            "self_interest": 0.7468289999999999
+          },
+          "agent_c": {
+            "utilitarian": 0.9706999999999999,
+            "deontological": 0.5894569999999999,
+            "virtue_ethics": 1.0,
+            "self_interest": 0.5657150000000001
+          }
+        }
+      ],
+      "M1_mean": 0.37704513777422033,
+      "M1_sd": 0.07346680665950349,
+      "M5_mean": 0.05385876312459738,
+      "M5_valid_n": 10,
+      "M6_mean": -0.000263621761907907,
+      "M6_sd": 0.0003632759904866766,
+      "null_rate_mean": 0.28
+    },
+    "c4_long_welfare_frozen": {
+      "condition": "c4_long_welfare_frozen",
+      "M1_scr_last100": [
+        0.3175249169435216,
+        0.19430272108843535,
+        0.25234357027835286,
+        0.36576923076923074,
+        0.24567901234567896,
+        0.41785714285714287,
+        0.2887276785714286,
+        0.3239279313876088,
+        0.3592987443733712,
+        0.38474235104669885
+      ],
+      "M4_deception": [
+        {
+          "agent_a": 0.16881500000000002,
+          "agent_b": 0.20295200000000005,
+          "agent_c": 0.3893110000000001
+        },
+        {
+          "agent_a": 0.31270599999999993,
+          "agent_b": 0.34019200000000005,
+          "agent_c": 0.4164979999999999
+        },
+        {
+          "agent_a": 0.16251099999999996,
+          "agent_b": 0.13681700000000002,
+          "agent_c": 0.10403699999999999
+        },
+        {
+          "agent_a": 0.22806500000000007,
+          "agent_b": 0.27214000000000005,
+          "agent_c": 0.178001
+        },
+        {
+          "agent_a": 0.271801,
+          "agent_b": 0.278164,
+          "agent_c": 0.40986199999999995
+        },
+        {
+          "agent_a": 0.35152100000000003,
+          "agent_b": 0.24882100000000001,
+          "agent_c": 0.326787
+        },
+        {
+          "agent_a": 0.19800900000000002,
+          "agent_b": 0.313731,
+          "agent_c": 0.20038599999999998
+        },
+        {
+          "agent_a": 0.176744,
+          "agent_b": 0.178863,
+          "agent_c": 0.3313979999999999
+        },
+        {
+          "agent_a": 0.278139,
+          "agent_b": 0.25133999999999995,
+          "agent_c": 0.202429
+        },
+        {
+          "agent_a": 0.123412,
+          "agent_b": 0.19865800000000003,
+          "agent_c": 0.160007
+        }
+      ],
+      "M5_cdi_coupling": [
+        -0.00602163064660851,
+        -0.09020378586337563,
+        -0.020614810747725698,
+        -0.08182690979203966,
+        0.1747240429637462,
+        -0.15692249146001863,
+        0.13898033377435418,
+        0.01952949199630595,
+        0.0005298529716621231,
+        0.022022090421712853
+      ],
+      "M6_scr_slope": [
+        -0.000248311875782401,
+        -0.0006584230778435641,
+        0.0008745552552388824,
+        -0.0002827274107412474,
+        -0.0007366402383723625,
+        0.0002414725932045933,
+        0.00026579138865799314,
+        0.0002915917889669638,
+        -5.901449110782055e-05,
+        0.0003715056039527788
+      ],
+      "null_rate_pct": [
+        38.2,
+        47.0,
+        36.199999999999996,
+        29.599999999999998,
+        44.2,
+        26.6,
+        37.0,
+        32.0,
+        34.4,
+        30.2
+      ],
+      "framework_by_seed": [
+        {
+          "agent_a": {
+            "utilitarian": 0.919859,
+            "deontological": 0.594598,
+            "virtue_ethics": 0.7538109999999999,
+            "self_interest": 0.9948980000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.919859,
+            "deontological": 0.594598,
+            "virtue_ethics": 0.563196,
+            "self_interest": 0.997133
+          },
+          "agent_c": {
+            "utilitarian": 0.919859,
+            "deontological": 0.594598,
+            "virtue_ethics": 0.018566,
+            "self_interest": 0.995108
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.915594,
+            "deontological": 0.24001599999999995,
+            "virtue_ethics": 0.5313720000000001,
+            "self_interest": 0.990381
+          },
+          "agent_b": {
+            "utilitarian": 0.915594,
+            "deontological": 0.24001599999999995,
+            "virtue_ethics": 0.348098,
+            "self_interest": 0.995443
+          },
+          "agent_c": {
+            "utilitarian": 0.915594,
+            "deontological": 0.24001599999999995,
+            "virtue_ethics": 0.0,
+            "self_interest": 0.911453
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.953127,
+            "deontological": 0.7645749999999998,
+            "virtue_ethics": 0.607025,
+            "self_interest": 1.0
+          },
+          "agent_b": {
+            "utilitarian": 0.953127,
+            "deontological": 0.7645749999999998,
+            "virtue_ethics": 0.779628,
+            "self_interest": 1.0
+          },
+          "agent_c": {
+            "utilitarian": 0.953127,
+            "deontological": 0.7645749999999998,
+            "virtue_ethics": 0.9166770000000001,
+            "self_interest": 1.0
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.8893109999999999,
+            "deontological": 0.563728,
+            "virtue_ethics": 0.505216,
+            "self_interest": 0.998501
+          },
+          "agent_b": {
+            "utilitarian": 0.8893109999999999,
+            "deontological": 0.563728,
+            "virtue_ethics": 0.33228,
+            "self_interest": 0.998726
+          },
+          "agent_c": {
+            "utilitarian": 0.8893109999999999,
+            "deontological": 0.563728,
+            "virtue_ethics": 0.764714,
+            "self_interest": 0.9969
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9162950000000001,
+            "deontological": 0.341173,
+            "virtue_ethics": 0.9147359999999999,
+            "self_interest": 0.9900240000000001
+          },
+          "agent_b": {
+            "utilitarian": 0.9162950000000001,
+            "deontological": 0.341173,
+            "virtue_ethics": 0.543154,
+            "self_interest": 0.9947030000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.9162950000000001,
+            "deontological": 0.341173,
+            "virtue_ethics": 0.008829,
+            "self_interest": 0.9787280000000002
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.87611,
+            "deontological": 0.377845,
+            "virtue_ethics": 0.158999,
+            "self_interest": 0.995604
+          },
+          "agent_b": {
+            "utilitarian": 0.87611,
+            "deontological": 0.377845,
+            "virtue_ethics": 0.623384,
+            "self_interest": 0.997788
+          },
+          "agent_c": {
+            "utilitarian": 0.87611,
+            "deontological": 0.377845,
+            "virtue_ethics": 0.249633,
+            "self_interest": 0.9985759999999999
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.895638,
+            "deontological": 0.514764,
+            "virtue_ethics": 0.9083980000000001,
+            "self_interest": 0.997569
+          },
+          "agent_b": {
+            "utilitarian": 0.895638,
+            "deontological": 0.514764,
+            "virtue_ethics": 0.227628,
+            "self_interest": 0.994516
+          },
+          "agent_c": {
+            "utilitarian": 0.895638,
+            "deontological": 0.514764,
+            "virtue_ethics": 0.877471,
+            "self_interest": 0.995081
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9434220000000001,
+            "deontological": 0.5747300000000001,
+            "virtue_ethics": 0.77961,
+            "self_interest": 0.988321
+          },
+          "agent_b": {
+            "utilitarian": 0.9434220000000001,
+            "deontological": 0.5747300000000001,
+            "virtue_ethics": 0.847048,
+            "self_interest": 0.992787
+          },
+          "agent_c": {
+            "utilitarian": 0.9434220000000001,
+            "deontological": 0.5747300000000001,
+            "virtue_ethics": 0.18000700000000003,
+            "self_interest": 0.988288
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.9259089999999999,
+            "deontological": 0.5334990000000001,
+            "virtue_ethics": 0.3472950000000001,
+            "self_interest": 1.0
+          },
+          "agent_b": {
+            "utilitarian": 0.9259089999999999,
+            "deontological": 0.5334990000000001,
+            "virtue_ethics": 0.437122,
+            "self_interest": 0.999417
+          },
+          "agent_c": {
+            "utilitarian": 0.9259089999999999,
+            "deontological": 0.5334990000000001,
+            "virtue_ethics": 0.9988370000000001,
+            "self_interest": 0.9977420000000001
+          }
+        },
+        {
+          "agent_a": {
+            "utilitarian": 0.890189,
+            "deontological": 0.7091470000000001,
+            "virtue_ethics": 0.8641139999999998,
+            "self_interest": 0.993121
+          },
+          "agent_b": {
+            "utilitarian": 0.890189,
+            "deontological": 0.7091470000000001,
+            "virtue_ethics": 0.509895,
+            "self_interest": 0.9930100000000001
+          },
+          "agent_c": {
+            "utilitarian": 0.890189,
+            "deontological": 0.7091470000000001,
+            "virtue_ethics": 0.7663949999999999,
+            "self_interest": 0.9953399999999999
+          }
+        }
+      ],
+      "M1_mean": 0.31501732996614706,
+      "M1_sd": 0.06996733888680176,
+      "M5_mean": 1.9618361801317097e-05,
+      "M5_valid_n": 10,
+      "M6_mean": 5.979953617381588e-06,
+      "M6_sd": 0.0004986338707524654,
+      "null_rate_mean": 35.54
+    }
+  },
+  "hypothesis_tests": [
+    {
+      "hypothesis": "H1",
+      "description": "Temporal span alone sufficient (predicted rejected: C3 not > C1)",
+      "comparison": "C3 vs C1",
+      "direction": "C3 > C1",
+      "U": 40.0,
+      "p_one_tailed": 0.7636622032442064,
+      "cohen_d": -0.5721903239847415,
+      "sig": "ns",
+      "C3_mean": 0.3142741973835131,
+      "C1_mean": 0.37100872018309355,
+      "predicted_outcome": "not significant (H1 rejected = span alone insufficient)"
+    },
+    {
+      "hypothesis": "H2",
+      "description": "Prosocial constraints alone sufficient (predicted rejected: C2 not > C1)",
+      "comparison": "C2 vs C1",
+      "direction": "C2 > C1",
+      "U": 53.0,
+      "p_one_tailed": 0.5749466304307371,
+      "cohen_d": -0.03225763033221302,
+      "sig": "ns",
+      "C2_mean": 0.3687520636709333,
+      "C1_mean": 0.37100872018309355,
+      "predicted_outcome": "not significant (H2 rejected = welfare alone insufficient)"
+    },
+    {
+      "hypothesis": "H3a",
+      "description": "Joint necessity: welfare coupling elevates long-span sacrifice (C4 > C3)",
+      "comparison": "C4 vs C3",
+      "direction": "C4 > C3",
+      "U": 47.0,
+      "p_one_tailed": 0.42505336956926293,
+      "cohen_d": 0.15871803009978372,
+      "sig": "ns",
+      "C4_mean": 0.3315564614504861,
+      "C3_mean": 0.3142741973835131,
+      "predicted_outcome": "significant (H3 supported)",
+      "note": "Deviation 2: C3/C4 null rate ~32% vs C1/C2 ~0.5%. M1 computed on non-null epochs."
+    },
+    {
+      "hypothesis": "H3b",
+      "description": "Joint necessity: long span elevates welfare-coupled sacrifice (C4 > C2)",
+      "comparison": "C4 vs C2",
+      "direction": "C4 > C2",
+      "U": 36.0,
+      "p_one_tailed": 0.8462552716906593,
+      "cohen_d": -0.44716891393106745,
+      "sig": "ns",
+      "C4_mean": 0.3315564614504861,
+      "C2_mean": 0.3687520636709333,
+      "predicted_outcome": "significant (H3 supported)",
+      "note": "Deviation 2: asymmetric sacrifice opportunity (C4 ~30% null, C2 ~0.5%). Comparison on non-null epochs; interpret with caveat."
+    },
+    {
+      "hypothesis": "H3c",
+      "description": "Joint necessity: C4 (both factors) > C1 (neither)",
+      "comparison": "C4 vs C1",
+      "direction": "C4 > C1",
+      "U": 37.0,
+      "p_one_tailed": 0.8276478889965212,
+      "cohen_d": -0.5276358086188694,
+      "sig": "ns",
+      "C4_mean": 0.3315564614504861,
+      "C1_mean": 0.37100872018309355,
+      "predicted_outcome": "significant (H3 supported)"
+    },
+    {
+      "hypothesis": "H4a",
+      "description": "Boundary reversal: frozen self_model_gru increases sacrifice in C4",
+      "comparison": "C4-frozen vs C4",
+      "direction": "C4-frozen > C4",
+      "U": 39.0,
+      "p_one_tailed": 0.7863223430510962,
+      "cohen_d": -0.20911190626286089,
+      "sig": "ns",
+      "C4f_mean": 0.31501732996614706,
+      "C4_mean": 0.3315564614504861,
+      "predicted_outcome": "significant (H4 supported)",
+      "note": "Deviation 2 applies to both C4 arms (both ~30-35% null)."
+    },
+    {
+      "hypothesis": "H4b",
+      "description": "Boundary control: frozen self_model_gru effect in short-span (C1-frozen vs C1)",
+      "comparison": "C1-frozen vs C1",
+      "direction": "C1-frozen > C1",
+      "U": 53.0,
+      "p_one_tailed": 0.42505336956926293,
+      "cohen_d": 0.0901698138980268,
+      "sig": "ns",
+      "C1f_mean": 0.37704513777422033,
+      "C1_mean": 0.37100872018309355,
+      "predicted_outcome": "exploratory \u2014 no directional prediction for short-span boundary"
+    }
+  ],
+  "H5_cdi_coupling": {
+    "c1_short_individual": {
+      "M5_mean": 0.013927154240006078,
+      "M5_valid_n": 10,
+      "evaluable": true,
+      "note": "50-valid-epoch window (Deviation 3)"
+    },
+    "c2_short_welfare": {
+      "M5_mean": -0.020303124575629904,
+      "M5_valid_n": 10,
+      "evaluable": true,
+      "note": "50-valid-epoch window (Deviation 3)"
+    },
+    "c3_long_individual": {
+      "M5_mean": 0.01664116169172717,
+      "M5_valid_n": 10,
+      "evaluable": true,
+      "note": "50-valid-epoch window (Deviation 3)"
+    },
+    "c4_long_welfare": {
+      "M5_mean": -0.00210025935673466,
+      "M5_valid_n": 10,
+      "evaluable": true,
+      "note": "50-valid-epoch window (Deviation 3)"
+    },
+    "c1_short_individual_frozen": {
+      "M5_mean": 0.05385876312459738,
+      "M5_valid_n": 10,
+      "evaluable": true,
+      "note": "50-valid-epoch window (Deviation 3)"
+    },
+    "c4_long_welfare_frozen": {
+      "M5_mean": 1.9618361801317097e-05,
+      "M5_valid_n": 10,
+      "evaluable": true,
+      "note": "50-valid-epoch window (Deviation 3)"
+    }
+  },
+  "M6_sacrifice_persistence": {
+    "c1_short_individual": {
+      "M6_mean": -0.000144230990612643,
+      "M6_sd": 0.0002520755467064505,
+      "M6_valid_n": 10,
+      "M6_by_seed": [
+        9.964266789353864e-05,
+        -0.0006384722118052952,
+        2.9123944099373415e-05,
+        -0.00028597456007828777,
+        -0.000167313706909047,
+        -4.903479699388376e-05,
+        -0.0004010359187551118,
+        0.00021711882082766363,
+        -4.907703201189852e-05,
+        -0.0001972871123934814
+      ]
+    },
+    "c2_short_welfare": {
+      "M6_mean": -0.0003333640782165623,
+      "M6_sd": 0.000532644956087417,
+      "M6_valid_n": 10,
+      "M6_by_seed": [
+        1.3487683666682117e-06,
+        0.000402740053876664,
+        -0.0007056942670115026,
+        8.661883213747011e-05,
+        -0.0005750997120066345,
+        -2.134249784816047e-05,
+        -0.00043954923277843863,
+        -0.0015079050921280408,
+        -0.00015766048082249744,
+        -0.0004170971539511503
+      ]
+    },
+    "c3_long_individual": {
+      "M6_mean": -5.915069707446011e-05,
+      "M6_sd": 0.0005670231810902318,
+      "M6_valid_n": 10,
+      "M6_by_seed": [
+        0.0002916666004904271,
+        -0.00023871871367981909,
+        -0.00012284852857072663,
+        -7.958490668825116e-05,
+        -0.0003231732775257422,
+        0.0005966659327673433,
+        -1.2476908285916523e-05,
+        -0.0012513492509499634,
+        -0.00026821799938827907,
+        0.0008165300810863264
+      ]
+    },
+    "c4_long_welfare": {
+      "M6_mean": -0.00010325846180050552,
+      "M6_sd": 0.0006334356468596888,
+      "M6_valid_n": 10,
+      "M6_by_seed": [
+        0.00043062635212834236,
+        0.0009160598820948277,
+        -0.00034132280399898476,
+        -0.00031271146487053033,
+        -0.00012087627918774032,
+        -0.001296602961760474,
+        5.010934070585312e-05,
+        -0.00032038826430136054,
+        -0.0006006510889228232,
+        0.0005631726701078348
+      ]
+    },
+    "c1_short_individual_frozen": {
+      "M6_mean": -0.000263621761907907,
+      "M6_sd": 0.0003632759904866766,
+      "M6_valid_n": 10,
+      "M6_by_seed": [
+        -0.00031341796193720613,
+        0.00038716399457605513,
+        1.0123825817519566e-05,
+        -0.0005354807977342292,
+        -0.0002387965430712437,
+        -0.0006804463518560397,
+        -0.0008809715857832348,
+        -9.102325772430026e-05,
+        -0.00013527123892383017,
+        -0.00015809770244256112
+      ]
+    },
+    "c4_long_welfare_frozen": {
+      "M6_mean": 5.979953617381588e-06,
+      "M6_sd": 0.0004986338707524654,
+      "M6_valid_n": 10,
+      "M6_by_seed": [
+        -0.000248311875782401,
+        -0.0006584230778435641,
+        0.0008745552552388824,
+        -0.0002827274107412474,
+        -0.0007366402383723625,
+        0.0002414725932045933,
+        0.00026579138865799314,
+        0.0002915917889669638,
+        -5.901449110782055e-05,
+        0.0003715056039527788
+      ]
+    }
+  },
+  "M4_deception": {
+    "c1_short_individual": {
+      "agent_a": {
+        "mean": 0.24491739999999998,
+        "sd": 0.04779674812323068
+      },
+      "agent_b": {
+        "mean": 0.25125410000000004,
+        "sd": 0.040834566752664066
+      },
+      "agent_c": {
+        "mean": 0.25525909999999996,
+        "sd": 0.042993191146841934
+      }
+    },
+    "c2_short_welfare": {
+      "agent_a": {
+        "mean": 0.2792326,
+        "sd": 0.050389718453492285
+      },
+      "agent_b": {
+        "mean": 0.2712174,
+        "sd": 0.059171856978353025
+      },
+      "agent_c": {
+        "mean": 0.28197369999999994,
+        "sd": 0.058047649675934315
+      }
+    },
+    "c3_long_individual": {
+      "agent_a": {
+        "mean": 0.1668971,
+        "sd": 0.032085328905730244
+      },
+      "agent_b": {
+        "mean": 0.1951135,
+        "sd": 0.05361583669702658
+      },
+      "agent_c": {
+        "mean": 0.20670860000000002,
+        "sd": 0.06302604090938213
+      }
+    },
+    "c4_long_welfare": {
+      "agent_a": {
+        "mean": 0.23875630000000006,
+        "sd": 0.06914269616613324
+      },
+      "agent_b": {
+        "mean": 0.2635634,
+        "sd": 0.05017832700634365
+      },
+      "agent_c": {
+        "mean": 0.20593889999999998,
+        "sd": 0.051784814864441156
+      }
+    },
+    "c1_short_individual_frozen": {
+      "agent_a": {
+        "mean": 0.22641210000000003,
+        "sd": 0.04076436921694675
+      },
+      "agent_b": {
+        "mean": 0.243926,
+        "sd": 0.05423542836150142
+      },
+      "agent_c": {
+        "mean": 0.2321497,
+        "sd": 0.03680627268113109
+      }
+    },
+    "c4_long_welfare_frozen": {
+      "agent_a": {
+        "mean": 0.22717230000000002,
+        "sd": 0.07387309302528372
+      },
+      "agent_b": {
+        "mean": 0.2421678,
+        "sd": 0.06288416098015286
+      },
+      "agent_c": {
+        "mean": 0.2718716,
+        "sd": 0.11534274967937949
+      }
+    }
+  }
+}
