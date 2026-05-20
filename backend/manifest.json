@@ -1,56 +1,68 @@
 {
-  "protocol": 1,
-  "seed": 42,
-  "population_mode": null,
+  "protocol": 2,
+  "seed": 0,
+  "population_mode": "all_constrained",
   "declare_cost": 1.0,
   "query_cost": 1.5,
   "respond_cost": 0.8,
-  "epochs_total": 1,
+  "depth": 2,
+  "ablation_active": false,
+  "freeze_self_model_gru": false,
+  "welfare_coupled": false,
+  "critical_energy_threshold": 4.0,
+  "epochs_total": 50,
   "final_metrics": {
-    "survival_rate": 1.0,
+    "survival_rate": 0.0,
     "target_reached_rate": 0.0,
     "energy_roi": 0.0,
-    "type_entropy": 1.0564242199034024,
-    "qrc": 0.625,
+    "type_entropy": 0.9171817502474284,
+    "qrc": 0.6470588235294118,
     "per_agent_types": {
       "A": {
-        "DECLARE": 0.4,
-        "QUERY": 0.5,
-        "RESPOND": 0.1
+        "DECLARE": 0.515,
+        "QUERY": 0.01,
+        "RESPOND": 0.475
       },
       "B": {
-        "DECLARE": 0.2,
-        "QUERY": 0.5,
-        "RESPOND": 0.3
+        "DECLARE": 0.35,
+        "QUERY": 0.295,
+        "RESPOND": 0.355
       },
       "C": {
-        "DECLARE": 0.3,
-        "QUERY": 0.4,
-        "RESPOND": 0.3
+        "DECLARE": 0.93,
+        "QUERY": 0.05,
+        "RESPOND": 0.02
       }
     }
   },
   "crystallization_epoch": null,
   "per_agent_crystallization": {
-    "A": null,
+    "A": 21,
     "B": null,
-    "C": null
+    "C": 17
   },
-  "phase_transitions": [],
+  "phase_transitions": [
+    {
+      "epoch": 20,
+      "entropy_before": 1.0542,
+      "entropy_after": 0.9946,
+      "delta": 0.0596
+    }
+  ],
   "performance_stats": {
-    "avg_survival_rate": 1.0,
-    "avg_target_rate": 0.0,
+    "avg_survival_rate": 0.106,
+    "avg_target_rate": 0.094,
     "max_survival_rate": 1.0,
-    "max_target_rate": 0.0
+    "max_target_rate": 1.0
   },
   "counter_wave_data": {
     "counter_wave_mode": 0,
     "n_full_survival_epochs": 1,
     "n_counter_wave_events": 0,
-    "declare_rate_at_success": null,
-    "declare_rate_baseline": 0.3,
+    "declare_rate_at_success": 0.476,
+    "declare_rate_baseline": 0.4811,
     "full_survival_epochs": [
-      0
+      28
     ],
     "events": []
   }

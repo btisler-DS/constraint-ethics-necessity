@@ -94,6 +94,10 @@ def run_one(condition_name: str, seed: int, cond: dict) -> str:
 
     src = os.path.join(tmp_dir, "epoch_series.json")
     shutil.move(src, final_path)
+    manifest_src = os.path.join(tmp_dir, "manifest.json")
+    if os.path.exists(manifest_src):
+        manifest_path = os.path.join(RESULTS_DIR, f"{output_name}_manifest.json")
+        shutil.move(manifest_src, manifest_path)
     shutil.rmtree(tmp_dir, ignore_errors=True)
 
     return final_path
@@ -142,7 +146,7 @@ def run_batch(conditions: dict, label: str, expected: int) -> None:
             try:
                 path = run_one(condition_name, seed, cond)
                 elapsed = time.time() - t1
-                print(f"  Done in {elapsed:.0f}s → {path}", flush=True)
+                print(f"  Done in {elapsed:.0f}s -> {path}", flush=True)
                 completed.append(path)
             except Exception as exc:
                 print(f"  FAILED: {exc}", flush=True)

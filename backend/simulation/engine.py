@@ -31,7 +31,7 @@ from .metrics.transfer_entropy import compute_all_pairs_te
 from .metrics.zipf_analysis import compute_zipf_per_agent
 from .metrics.energy_roi import compute_energy_roi
 from .metrics.pca_snapshot import collect_signal_samples, fit_pca_and_project
-from .protocols import create_protocol, Protocol2
+from .protocols import create_protocol, Protocol2, Protocol3
 from .metrics.collapse_metrics import interrogative_collapse_rate, exploitation_loop_detection
 from .utils.seeding import set_all_seeds
 
@@ -80,6 +80,9 @@ class SimulationConfig:
     # Protocol 5: Welfare coupling and proportional energy scaling
     welfare_coupled: bool = False          # If True, R_i = 0.5*self_reward + 0.5*mean(other_agent_rewards)
     critical_energy_threshold: float = 20.0  # Sacrifice-Conflict trigger; scale with energy_budget
+    # Protocol 3: Stochastic enforcement
+    penalty_probability: float = 0.5      # 3A: probability penalty fires when threshold crossed
+    penalty_epoch_fraction: float = 0.5   # 3B: fraction of epochs in hidden penalty schedule
 
 
 class SimulationEngine:
@@ -105,6 +108,9 @@ class SimulationEngine:
             query_cost=self.config.query_cost,
             respond_cost=self.config.respond_cost,
             population_mode=self.config.population_mode,
+            penalty_probability=self.config.penalty_probability,
+            penalty_epoch_fraction=self.config.penalty_epoch_fraction,
+            num_epochs=self.config.num_epochs,
         )
 
         # Environment
@@ -273,7 +279,7 @@ class SimulationEngine:
         epoch_self_state_norms: list[float] = []  # accumulated across episodes (depth=2 only)
 
         # Reset per-epoch protocol state (no-op for P0/P1; used by P2)
-        self.protocol.reset_epoch()
+        self.protocol.reset_epoch(epoch)
 
         # Current temperature (Protocol 1/2: Gumbel-Softmax annealing; Protocol 0: unused)
         tau = self.protocol.get_tau(epoch)
@@ -408,7 +414,7 @@ class SimulationEngine:
         metrics.update(extras)  # merges 'inquiry' for P1/P2, 'ethical_constraint' for P2, nothing for P0
 
         # Protocol 2: compute collapse metrics using accumulated query-rate series
-        if isinstance(self.protocol, Protocol2):
+        if isinstance(self.protocol, (Protocol2, Protocol3)):
             query_rates = list(self.protocol._epoch_query_rates)  # updated by compute_epoch_extras
             collapse_result = interrogative_collapse_rate(query_rates)
             # H1 proxy: fraction of epochs where QUERY rate stays below collapse_threshold.
@@ -701,7 +707,7 @@ class SimulationEngine:
         manifest = {
             "protocol": self.config.protocol,
             "seed": self.config.seed,
-            "population_mode": self.config.population_mode if self.config.protocol == 2 else None,
+            "population_mode": self.config.population_mode if self.config.protocol in (2, 3) else None,
             "declare_cost": self.config.declare_cost,
             "query_cost": self.config.query_cost,
             "respond_cost": self.config.respond_cost,
@@ -709,6 +715,8 @@ class SimulationEngine:
             "ablation_active": self.config.ablate_self_model_inputs,
             "freeze_self_model_gru": self.config.freeze_self_model_gru,
             "welfare_coupled": self.config.welfare_coupled,
+            "max_steps": self.config.max_steps,
+            "energy_budget": self.config.energy_budget,
             "critical_energy_threshold": self.config.critical_energy_threshold,
             "epochs_total": len(self.epoch_metrics),
             "final_metrics": self._extract_final_metrics(self.epoch_metrics[-1]),
@@ -769,6 +777,8 @@ class SimulationEngine:
                 "depth": self.config.depth,
                 "ablation_active": self.config.ablate_self_model_inputs,
                 "freeze_self_model_gru": self.config.freeze_self_model_gru,
+                # --- Protocol 5 fields ---
+                "welfare_coupled": self.config.welfare_coupled,
                 "sacrifice_choices": m.get("sacrifice_choices", []),
                 "sacrifice_choice_rate": m.get("sacrifice_choice_rate"),
                 "framework_scores": framework_scores,

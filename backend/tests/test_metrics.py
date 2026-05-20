@@ -53,8 +53,10 @@ def test_transfer_entropy_basic():
 
 
 def test_zipf_fit():
-    # Power-law-like distribution
-    signals = torch.tensor(np.random.zipf(2.0, 1000).astype(np.float32))
+    # Power-law-like distribution — seeded for determinism (Zipf is heavy-tailed,
+    # unseeded draws can collapse histogram bins and trigger early-return path)
+    rng = np.random.RandomState(42)
+    signals = torch.tensor(rng.zipf(2.0, 1000).astype(np.float32))
     result = compute_zipf_fit(signals)
     assert "alpha" in result
     assert "r_squared" in result

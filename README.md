@@ -149,6 +149,24 @@ sha256sum docs/Protocol_5_Preregistration.pdf
 # Must match: 210A17D28C2ACEFCB41BB47A4BAEB01C8E6EDFBDB4DC2E05A2DBDB905AF194C8
 ```
 
+## Protocol 3 Preregistration — Enforcement Opacity and the Limits of Regulatory Constraint Design
+
+"Enforcement Opacity and the Limits of Regulatory Constraint Design" is at [`docs/preregistration_p3.md`](docs/preregistration_p3.md).
+
+**Status: LOCKED — March 2026**
+
+```
+SHA-256: 9ef2956bedcef012d214cf74e647e3b74636165cee7b48c8195de41e7e0e96ec
+File:    docs/preregistration_p3.md
+DOI:     10.5281/zenodo.19096602
+```
+
+Verify integrity at any time:
+```bash
+sha256sum docs/preregistration_p3.md
+# Must match: 9ef2956bedcef012d214cf74e647e3b74636165cee7b48c8195de41e7e0e96ec
+```
+
 ## Zenodo DOI
 
 Protocol 2 preregistration DOI: [10.5281/zenodo.18929040](https://doi.org/10.5281/zenodo.18929040) — confirmed live, published March 9, 2026, v1, Open, indexed in OpenAIRE.

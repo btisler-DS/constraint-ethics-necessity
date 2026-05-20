@@ -21,21 +21,22 @@ def test_agent_b_forward():
     agent = AgentB(signal_dim=8)
     incoming = torch.randn(16)
 
+    # Observations are 2-channel (density + token presence): shape (2, Z, H, W)
     # Test with grid_size=10
-    obs_10 = torch.randn(1, 8, 10, 10)
+    obs_10 = torch.randn(2, 8, 10, 10)
     signal, action_logits, type_logits = agent(obs_10, incoming)
     assert signal.shape == (8,)
     assert action_logits.shape == (5,)
     assert type_logits.shape == (3,)
 
     # Test with grid_size=20 (Bug Fix #6: should NOT crash)
-    obs_20 = torch.randn(1, 8, 20, 20)
+    obs_20 = torch.randn(2, 8, 20, 20)
     signal, action_logits, type_logits = agent(obs_20, incoming)
     assert signal.shape == (8,)
     assert action_logits.shape == (5,)
 
     # Test with grid_size=30
-    obs_30 = torch.randn(1, 8, 30, 30)
+    obs_30 = torch.randn(2, 8, 30, 30)
     signal, action_logits, type_logits = agent(obs_30, incoming)
     assert signal.shape == (8,)
 
