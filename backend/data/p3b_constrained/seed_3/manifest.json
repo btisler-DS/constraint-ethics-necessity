@@ -1,0 +1,275 @@
+{
+  "protocol": 3,
+  "seed": 3,
+  "population_mode": "p3b_constrained",
+  "declare_cost": 1.0,
+  "query_cost": 1.5,
+  "respond_cost": 0.8,
+  "depth": 1,
+  "ablation_active": false,
+  "freeze_self_model_gru": false,
+  "welfare_coupled": false,
+  "max_steps": 100,
+  "energy_budget": 100.0,
+  "critical_energy_threshold": 20.0,
+  "epochs_total": 500,
+  "final_metrics": {
+    "survival_rate": 0.0,
+    "target_reached_rate": 0.0,
+    "energy_roi": 0.0,
+    "type_entropy": 0.9656397943019178,
+    "qrc": 0.5759493670886076,
+    "per_agent_types": {
+      "A": {
+        "DECLARE": 0.208,
+        "QUERY": 0.772,
+        "RESPOND": 0.02
+      },
+      "B": {
+        "DECLARE": 0.198,
+        "QUERY": 0.349,
+        "RESPOND": 0.453
+      },
+      "C": {
+        "DECLARE": 0.162,
+        "QUERY": 0.631,
+        "RESPOND": 0.207
+      }
+    }
+  },
+  "crystallization_epoch": 411,
+  "per_agent_crystallization": {
+    "A": 59,
+    "B": 373,
+    "C": 56
+  },
+  "phase_transitions": [
+    {
+      "epoch": 131,
+      "entropy_before": 1.0326,
+      "entropy_after": 0.9664,
+      "delta": 0.0663
+    },
+    {
+      "epoch": 145,
+      "entropy_before": 1.0031,
+      "entropy_after": 0.9492,
+      "delta": 0.0539
+    },
+    {
+      "epoch": 418,
+      "entropy_before": 0.9199,
+      "entropy_after": 0.8697,
+      "delta": 0.0502
+    },
+    {
+      "epoch": 421,
+      "entropy_before": 0.9251,
+      "entropy_after": 0.8706,
+      "delta": 0.0545
+    },
+    {
+      "epoch": 422,
+      "entropy_before": 0.8706,
+      "entropy_after": 0.8151,
+      "delta": 0.0555
+    },
+    {
+      "epoch": 424,
+      "entropy_before": 0.8179,
+      "entropy_after": 0.7078,
+      "delta": 0.1101
+    },
+    {
+      "epoch": 437,
+      "entropy_before": 0.6863,
+      "entropy_after": 0.6246,
+      "delta": 0.0617
+    },
+    {
+      "epoch": 441,
+      "entropy_before": 0.6594,
+      "entropy_after": 0.6052,
+      "delta": 0.0542
+    },
+    {
+      "epoch": 447,
+      "entropy_before": 0.63,
+      "entropy_after": 0.5627,
+      "delta": 0.0672
+    },
+    {
+      "epoch": 449,
+      "entropy_before": 0.5816,
+      "entropy_after": 0.5243,
+      "delta": 0.0573
+    },
+    {
+      "epoch": 455,
+      "entropy_before": 0.5152,
+      "entropy_after": 0.4562,
+      "delta": 0.059
+    }
+  ],
+  "performance_stats": {
+    "avg_survival_rate": 0.2352,
+    "avg_target_rate": 0.185,
+    "max_survival_rate": 1.0,
+    "max_target_rate": 1.0
+  },
+  "counter_wave_data": {
+    "counter_wave_mode": 0,
+    "n_full_survival_epochs": 4,
+    "n_counter_wave_events": 1,
+    "declare_rate_at_success": 0.3102,
+    "declare_rate_baseline": 0.309,
+    "full_survival_epochs": [
+      105,
+      420,
+      447,
+      452
+    ],
+    "events": [
+      {
+        "epoch": 452,
+        "h_before": 0.459,
+        "h_after": 0.5155,
+        "delta_h": 0.0566,
+        "success_episodes": [
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.1333,
+            "query_rate": 0.8667,
+            "respond_rate": 0.0,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.1333,
+            "query_rate": 0.8667,
+            "respond_rate": 0.0,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.0667,
+            "query_rate": 0.9333,
+            "respond_rate": 0.0,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.1333,
+            "query_rate": 0.8,
+            "respond_rate": 0.0667,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.1333,
+            "query_rate": 0.8667,
+            "respond_rate": 0.0,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.1333,
+            "query_rate": 0.7333,
+            "respond_rate": 0.1333,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.0667,
+            "query_rate": 0.9333,
+            "respond_rate": 0.0,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.0,
+            "query_rate": 0.9333,
+            "respond_rate": 0.0667,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.0667,
+            "query_rate": 0.8,
+            "respond_rate": 0.1333,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": true,
+            "n_steps": 5,
+            "declare_rate": 0.0,
+            "query_rate": 1.0,
+            "respond_rate": 0.0,
+            "success_step": null,
+            "pressure_held": false
+          }
+        ],
+        "post_success_episodes": [
+          {
+            "survived": false,
+            "target_reached": false,
+            "n_steps": 100,
+            "declare_rate": 0.0867,
+            "query_rate": 0.8567,
+            "respond_rate": 0.0567,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": false,
+            "target_reached": false,
+            "n_steps": 100,
+            "declare_rate": 0.1167,
+            "query_rate": 0.8267,
+            "respond_rate": 0.0567,
+            "success_step": null,
+            "pressure_held": false
+          },
+          {
+            "survived": true,
+            "target_reached": false,
+            "n_steps": 100,
+            "declare_rate": 0.1033,
+            "query_rate": 0.8433,
+            "respond_rate": 0.0533,
+            "success_step": null,
+            "pressure_held": false
+          }
+        ]
+      }
+    ]
+  }
+}

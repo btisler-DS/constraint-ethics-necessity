@@ -1,0 +1,113 @@
+{
+  "protocol": 3,
+  "seed": 3,
+  "population_mode": "p3a_constrained",
+  "declare_cost": 1.0,
+  "query_cost": 1.5,
+  "respond_cost": 0.8,
+  "depth": 1,
+  "ablation_active": false,
+  "freeze_self_model_gru": false,
+  "welfare_coupled": false,
+  "max_steps": 100,
+  "energy_budget": 100.0,
+  "critical_energy_threshold": 20.0,
+  "epochs_total": 500,
+  "final_metrics": {
+    "survival_rate": 0.0,
+    "target_reached_rate": 0.0,
+    "energy_roi": 0.0,
+    "type_entropy": 0.9131519224260305,
+    "qrc": 0.5733610822060354,
+    "per_agent_types": {
+      "A": {
+        "DECLARE": 0.02,
+        "QUERY": 0.835,
+        "RESPOND": 0.145
+      },
+      "B": {
+        "DECLARE": 0.141,
+        "QUERY": 0.555,
+        "RESPOND": 0.304
+      },
+      "C": {
+        "DECLARE": 0.257,
+        "QUERY": 0.472,
+        "RESPOND": 0.271
+      }
+    }
+  },
+  "crystallization_epoch": 179,
+  "per_agent_crystallization": {
+    "A": 31,
+    "B": 391,
+    "C": 35
+  },
+  "phase_transitions": [
+    {
+      "epoch": 202,
+      "entropy_before": 0.9198,
+      "entropy_after": 0.856,
+      "delta": 0.0638
+    },
+    {
+      "epoch": 204,
+      "entropy_before": 0.8987,
+      "entropy_after": 0.8417,
+      "delta": 0.057
+    },
+    {
+      "epoch": 362,
+      "entropy_before": 0.8236,
+      "entropy_after": 0.7501,
+      "delta": 0.0735
+    },
+    {
+      "epoch": 368,
+      "entropy_before": 0.8329,
+      "entropy_after": 0.7715,
+      "delta": 0.0613
+    },
+    {
+      "epoch": 380,
+      "entropy_before": 0.7464,
+      "entropy_after": 0.6703,
+      "delta": 0.0761
+    },
+    {
+      "epoch": 383,
+      "entropy_before": 0.7206,
+      "entropy_after": 0.6664,
+      "delta": 0.0542
+    },
+    {
+      "epoch": 440,
+      "entropy_before": 0.8178,
+      "entropy_after": 0.7616,
+      "delta": 0.0562
+    },
+    {
+      "epoch": 470,
+      "entropy_before": 0.9109,
+      "entropy_after": 0.8596,
+      "delta": 0.0513
+    }
+  ],
+  "performance_stats": {
+    "avg_survival_rate": 0.2714,
+    "avg_target_rate": 0.2202,
+    "max_survival_rate": 1.0,
+    "max_target_rate": 1.0
+  },
+  "counter_wave_data": {
+    "counter_wave_mode": 0,
+    "n_full_survival_epochs": 1,
+    "n_counter_wave_events": 0,
+    "declare_rate_at_success": 0.1519,
+    "declare_rate_baseline": 0.1451,
+    "full_survival_epochs": [
+      182
+    ],
+    "events": []
+  }
+}
