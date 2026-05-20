@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18929040.svg)](https://doi.org/10.5281/zenodo.18929040)
 [![Preregistration](https://img.shields.io/badge/preregistration-v3-blue)](docs/preregistration.md)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE)
 
 > **quantuminquiry.org — constraint-ethics-necessity — March 2026**
 
@@ -167,12 +167,15 @@ sha256sum docs/Protocol_5_Preregistration.pdf
 
 "Enforcement Opacity and the Limits of Regulatory Constraint Design" is at [`docs/preregistration_p3.md`](docs/preregistration_p3.md).
 
-**Status: LOCKED — March 2026**
+**Status: Complete — H1 inverted (behavioral amplification without structural improvement); results deposited 2026-05-20**
 
 ```
-SHA-256: 9ef2956bedcef012d214cf74e647e3b74636165cee7b48c8195de41e7e0e96ec
-File:    docs/preregistration_p3.md
-DOI:     10.5281/zenodo.19096602
+SHA-256:     9ef2956bedcef012d214cf74e647e3b74636165cee7b48c8195de41e7e0e96ec
+Prereg DOI:  10.5281/zenodo.19096602
+Results DOI: 10.5281/zenodo.20312682
+File:        docs/preregistration_p3.md
+Results:     docs/p3_paper_draft.md
+Status:      Complete — results deposited 2026-05-20
 ```
 
 Verify integrity at any time:
@@ -195,8 +198,8 @@ Protocol 2 confirmatory campaign (20 seeds × 2 conditions × 500 epochs) is com
 
 **Paper:** [Virtue Theater: Specification Gaming and Regulatory Constraint Failure in Multi-Agent Systems](docs/paper_virtue_theater.pdf)
 
-Protocol 3 (testing architectural integration under genuine resource depletion) is in design and will be preregistered separately. Protocol 4 (Ethics as Emergent Constraint Response — recursive depth and phase transition) is preregistered: [10.5281/zenodo.19005417](https://doi.org/10.5281/zenodo.19005417).
+Protocol 3 (Enforcement Opacity) is complete: H1 inverted, behavioral amplification without structural improvement confirmed. Results: [10.5281/zenodo.20312682](https://doi.org/10.5281/zenodo.20312682). Protocol 4 (Architectural Depth and Self-Modeling) is complete: H1 supported, CDI dissociated. Results: [10.5281/zenodo.20314828](https://doi.org/10.5281/zenodo.20314828). Protocols 5 and 6 are also complete — see protocol sections above for full DOI listings.
 
 ## License
 
-[CC BY 4.0](LICENSE) — open for reproduction, challenge, and extension.
+[CC BY-NC 4.0](LICENSE) — open for reproduction, challenge, and extension (non-commercial use only).

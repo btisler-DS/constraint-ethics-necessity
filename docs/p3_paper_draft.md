@@ -682,10 +682,12 @@ The immediate next steps are trajectory analysis and penalty-alignment correlati
 existing Protocol 3 data, to characterize the temporal dynamics of query inflation and
 its relationship to realized enforcement events. These analyses will inform the
 mechanistic interpretation and may narrow the set of live explanations before the next
-experimental stage. Broader synthesis across Protocols 2 through 5 — including the null
-results from architectural complexity (Protocol 4) and welfare coupling (Protocol 5) — is
-reserved for a program-level paper that can integrate findings across enforcement regimes,
-architectural manipulations, and reward structures.
+experimental stage. Broader synthesis across Protocols 2 through 6 — including the mixed
+results from architectural complexity (Protocol 4; H1 supported, CDI dissociated; Tisler,
+2026c), the complete null from welfare coupling (Protocol 5), and the mechanistic-only
+confirmation from emergent constraint fields (Protocol 6) — is reserved for a
+program-level paper that can integrate findings across enforcement regimes, architectural
+manipulations, and reward structures.
 
 ---
 
@@ -695,6 +697,10 @@ Tisler, B. (2026a). *Protocol 2 Confirmatory Campaign Build Report — constrain
 
 Tisler, B. (2026b). *Protocol 3 preregistration: Enforcement opacity and the limits of
 regulatory constraint design*. Zenodo. https://doi.org/10.5281/zenodo.19096602
+
+Tisler, B. (2026c). *Architectural depth increased sacrifice-like behavior without
+ethical-framework alignment: Protocol 4 results*. Quantum Inquiry. Zenodo.
+https://doi.org/10.5281/zenodo.20314828
 
 ---
 
