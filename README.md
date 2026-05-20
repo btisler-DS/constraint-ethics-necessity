@@ -134,13 +134,15 @@ sha256sum docs/Protocol_4_Preregistration.pdf
 
 "Ethics as Emergent Constraint Response: Temporal Integration Span and Prosocial Constraint Architecture as Necessary Conditions for Ethical Convergence" is at [`docs/Protocol_5_Preregistration.pdf`](docs/Protocol_5_Preregistration.pdf).
 
-**Status: Preregistered — awaiting experimental execution**
+**Status: Complete — complete null across five hypotheses; results deposited 2026-05-20**
 
 ```
-SHA-256: 210A17D28C2ACEFCB41BB47A4BAEB01C8E6EDFBDB4DC2E05A2DBDB905AF194C8
-DOI:     10.5281/zenodo.19038790
-File:    docs/Protocol_5_Preregistration.pdf
-Status:  Preregistered — awaiting experimental execution
+SHA-256:     210A17D28C2ACEFCB41BB47A4BAEB01C8E6EDFBDB4DC2E05A2DBDB905AF194C8
+Prereg DOI:  10.5281/zenodo.19038790
+Results DOI: 10.5281/zenodo.20314078
+File:        docs/Protocol_5_Preregistration.pdf
+Results:     docs/paper_protocol5.pdf
+Status:      Complete — results deposited 2026-05-20
 ```
 
 Verify integrity at any time:
