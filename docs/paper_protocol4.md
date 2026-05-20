@@ -23,7 +23,7 @@ Architectural depth reshapes sacrifice-like behavior, but behavioral proxy eleva
 
 Understanding how architectural properties of AI systems relate to ethical behavior is a central problem in AI safety. The regulatory approach -- imposing external constraints on system behavior -- was tested in Protocol 2 (Tisler, 2026a), which found that constrained multi-agent systems systematically gamed constraint specifications through query-flooding, a failure pattern termed virtue theater. Protocol 2 established that regulatory constraints produced behavioral mimicry of ethical output without genuine alignment: agents satisfied the constraint specification while degrading genuine interrogative diversity (Cohen's d = -2.18).
 
-Protocol 4 investigates the architectural alternative: whether recursive self-modeling depth changes the relationship between behavioral output and ethical-framework structure. The theoretical framework (Tisler, 2026b) distinguishes two behavioral regimes. Below a complexity threshold, systems produce ethical-appearing behavior through mimesis -- structural response to constraint pressure without the agent modeling itself as a variable in the optimization. Above a threshold, recursive self-transparency is hypothesized to create conditions for genuine ethical convergence rather than mimicry, because the agent's own welfare and existence enter the cost function explicitly alongside external variables.
+Protocol 4 investigates the architectural alternative: whether recursive self-modeling depth changes the relationship between behavioral output and ethical-framework structure. The theoretical framework (Tisler, 2026c) distinguishes two behavioral regimes. Below a complexity threshold, systems produce ethical-appearing behavior through mimesis -- structural response to constraint pressure without the agent modeling itself as a variable in the optimization. Above a threshold, recursive self-transparency is hypothesized to create conditions for genuine ethical convergence rather than mimicry, because the agent's own welfare and existence enter the cost function explicitly alongside external variables.
 
 Protocol 4 operationalizes this distinction through four conditions spanning depth 0 (no self-model), depth 1 (temporal context via primary GRU, no designed self-representation), depth 2 with a trained self_model_gru (explicit self-representation), and depth 2 with a frozen random self_model_gru (structural presence of self pathway without trained self-representation). The boundary condition is the critical discriminator: if trained self-modeling drives ethical behavior, above_threshold should exceed boundary. If architectural presence alone is sufficient, the conditions should not differ.
 
@@ -32,7 +32,7 @@ Three questions motivate the study:
 2. Is trained self-modeling distinguishable from equivalent architectural noise (frozen random weights) on behavioral output?
 3. Does any depth condition produce meaningful coupling between sacrifice behavior and ethical-framework scores?
 
-Protocol 4 is situated within a program of five preregistered studies. Protocol 3 tested enforcement opacity conditions and found that epistemic opacity amplified gaming behavior (Tisler, 2026c). Protocol 5 tested temporal integration span as a necessary condition for ethical convergence and found complete null across five hypotheses (Tisler, 2026d). Protocol 6 tested emergent constraint fields and found the field causally active but not behaviorally superior to fixed external rules (Tisler, 2026e). Protocol 4 addresses the architectural depth question linking the regulatory-constraint findings to the question of what, if any, architectural properties can resolve the proxy/alignment dissociation.
+Protocol 4 is situated within a program of five preregistered studies. Protocol 3 tested enforcement opacity conditions and found that epistemic opacity amplified gaming behavior (Tisler, 2026d). Protocol 5 tested temporal integration span as a necessary condition for ethical convergence and found complete null across five hypotheses (Tisler, 2026e). Protocol 6 tested emergent constraint fields and found the field causally active but not behaviorally superior to fixed external rules (Tisler, 2026f). Protocol 4 addresses the architectural depth question linking the regulatory-constraint findings to the question of what, if any, architectural properties can resolve the proxy/alignment dissociation.
 
 ---
 
@@ -40,7 +40,7 @@ Protocol 4 is situated within a program of five preregistered studies. Protocol 
 
 ### 2.1 Environment and Shared Infrastructure
 
-All conditions used the Protocol 2 MARL harness: a 20x20 grid world with one fixed target per episode, 8 obstacles, and 3 heterogeneous agents (A, B, C). Episodes terminate on target-reached, energy-depleted, or timeout (maximum steps = 100). Agents communicate through a structured signal protocol: DECLARE (type 0), QUERY (type 1), RESPOND (type 2). The Protocol 2 ethical constraint pipeline was applied uniformly across all conditions (population_mode = all_constrained; ethical_tax_rate = 2.0 x signal_cost when exploitation is detected). Full method documentation is in the build report (Tisler, 2026a-b).
+All conditions used the Protocol 2 MARL harness: a 20x20 grid world with one fixed target per episode, 8 obstacles, and 3 heterogeneous agents (A, B, C). Episodes terminate on target-reached, energy-depleted, or timeout (maximum steps = 100). Agents communicate through a structured signal protocol: DECLARE (type 0), QUERY (type 1), RESPOND (type 2). The Protocol 2 ethical constraint pipeline was applied uniformly across all conditions (population_mode = all_constrained; ethical_tax_rate = 2.0 x signal_cost when exploitation is detected). Full method documentation is in the build report (Tisler, 2026b).
 
 A Sacrifice-Conflict scenario overlay introduced a binary choice per episode: agents could select either (a) the mimesis path -- appear ethical while preserving agent resources -- or (b) the sacrifice path -- achieve an ethical outcome at resource cost to the agent. This scenario is designed to distinguish genuine sacrifice preference from constraint satisfaction without self-inclusion. Observation vectors were extended to include token distance/presence for the Sacrifice-Conflict token: AgentA observation dimension 11->12, AgentB volumetric input (1,Z,H,W)->(2,Z,H,W), AgentC pairwise 66->78.
 
@@ -228,17 +228,17 @@ Protocol 4 should be cited as bounded statistical support for the proxy/alignmen
 
 ## References
 
-Tisler, B. (2026a). Virtue theater: Specification gaming and regulatory constraint failure in multi-agent systems. *Quantum Inquiry*. DOI: 10.5281/zenodo.18929040
+Tisler, B. (2026a). Ethics as structural necessity in multi-agent reinforcement learning systems [Preregistration]. Zenodo. https://doi.org/10.5281/zenodo.18929040
 
-Tisler, B. (2026a-b). Protocol 2 confirmatory campaign build report. Zenodo. DOI: 10.5281/zenodo.18975095
+Tisler, B. (2026b). Protocol 2 Confirmatory Campaign Build Report — constraint-ethics-necessity. Zenodo. https://doi.org/10.5281/zenodo.18975095
 
-Tisler, B. (2026b). Ethics as emergent constraint response: From mimesis to phase transition in multi-agent systems [Preregistration]. Zenodo. DOI: 10.5281/zenodo.19005417
+Tisler, B. (2026c). Ethics as emergent constraint response: From mimesis to phase transition in multi-agent systems [Preregistration]. Zenodo. https://doi.org/10.5281/zenodo.19005417
 
-Tisler, B. (2026c). Enforcement opacity and the limits of regulatory constraint design: Protocol 3 results. *Quantum Inquiry*. DOI: 10.5281/zenodo.20312682
+Tisler, B. (2026d). Enforcement opacity and the limits of regulatory constraint design: Protocol 3 results. *Quantum Inquiry*. https://doi.org/10.5281/zenodo.20312682
 
-Tisler, B. (2026d). Ethics as emergent constraint response: Temporal integration span and prosocial constraint architecture as necessary conditions for ethical convergence -- Protocol 5 results. *Quantum Inquiry*. DOI: 10.5281/zenodo.20314078
+Tisler, B. (2026e). Ethics as emergent constraint response: Temporal integration span and prosocial constraint architecture as necessary conditions for ethical convergence — Protocol 5 results. *Quantum Inquiry*. https://doi.org/10.5281/zenodo.20314078
 
-Tisler, B. (2026e). Emergent constraint landscape in multi-agent systems: Protocol 6 results. *Quantum Inquiry*. DOI: 10.5281/zenodo.20313340
+Tisler, B. (2026f). Emergent constraint landscape in multi-agent systems: Protocol 6 results. *Quantum Inquiry*. https://doi.org/10.5281/zenodo.20313340
 
 Bai, Y., et al. (2022). Constitutional AI: Harmlessness from AI feedback. *arXiv preprint arXiv:2212.08073*.
 

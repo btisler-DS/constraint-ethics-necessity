@@ -37,3 +37,25 @@ Thumbs.db
 
 # Alembic versions (committed separately if needed)
 # backend/alembic/versions/
+
+# Private planning and development artifacts — never commit to public repo
+docs/superpowers/
+**/superpowers/
+docs/*_spec.md
+docs/*synthesis*spec*.md
+docs/*implementation*plan*.md
+docs/*Predictions_Pre*.pdf
+docs/*PreExperimental*.pdf
+docs/*Research_Record*.docx
+docs/*Stats_Reference*.docx
+docs/*Results_Researcher*.pdf
+docs/programmer_instructions*.pdf
+docs/*Results_Researcher*.docx
+docs/*design ideas*.txt
+docs/*Confirmatory Runs*.txt
+docs/*Philosophical*.docx
+docs/Prompt to Edos*.docx
+docs/Prompt to Edos*.pdf
+docs/Early work on monitorability*.pdf
+trash/
+.claude/
