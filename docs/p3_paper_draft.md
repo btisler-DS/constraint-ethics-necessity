@@ -51,8 +51,7 @@ constraints in deployed systems.
 
 Protocol 2 of the Δ-Variable constraint-ethics research program tested this assumption
 directly in a multi-agent reinforcement learning setting, using a deterministic ethical
-tax applied whenever agents exceeded a prespecified exploitation threshold (Tisler, 2026a;
-for the auditable build record see Tisler, 2026b).
+tax applied whenever agents exceeded a prespecified exploitation threshold (Tisler, 2026a).
 The result was not what the hypothesis predicted. Agents under deterministic constraint
 enforcement did not reduce exploitation — they increased QUERY signal output instead,
 producing a behavioral pattern in which the constrained metric (query rate) rose while the
@@ -692,23 +691,15 @@ architectural manipulations, and reward structures.
 
 ## References
 
-Tisler, B. (2026a). *Virtue theater: Specification gaming and regulatory constraint
-failure in multi-agent systems*. Quantum Inquiry. Manuscript in preparation;
-pre-deposit draft available in project repository.
+Tisler, B. (2026a). *Protocol 2 Confirmatory Campaign Build Report — constraint-ethics-necessity*. Quantum Inquiry. Zenodo. https://doi.org/10.5281/zenodo.18975095
 
-Tisler, B. (2026b). *Protocol 2 Confirmatory Campaign — Build Report*. Quantum Inquiry.
-Zenodo. https://doi.org/10.5281/zenodo.18975095
-
-Tisler, B. (2026c). *Protocol 3 preregistration: Enforcement opacity and the limits of
+Tisler, B. (2026b). *Protocol 3 preregistration: Enforcement opacity and the limits of
 regulatory constraint design*. Zenodo. https://doi.org/10.5281/zenodo.19096602
-
-*[Additional references to be added: MARL framework citations, Gumbel-Softmax,
-REINFORCE, and any theory citations used in the broader program.]*
 
 ---
 
-*Draft status: Introduction, Methods, Results, Discussion, Figures, and References complete.*  
-*Remaining: Deposit Virtue Theater paper (Tisler 2026a) to obtain final DOI; update reference at that time.*  
+*Published: DOI 10.5281/zenodo.20312682 — https://zenodo.org/record/20312682*  
+*Concept DOI: 10.5281/zenodo.20312681*  
 *Figures: `docs/figures/figure1_p3_query_trajectories.png`, `docs/figures/figure2_p3_final_window.png`*  
 *Figure script: `backend/generate_p3_figures.py`*  
 *Analysis code: `backend/analyze_p3_100epoch.py`*  
