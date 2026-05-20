@@ -116,12 +116,16 @@ Any modification to `docs/preregistration.md` after this point invalidates the h
 
 "Ethics as Emergent Constraint Response: From Mimesis to Phase Transition in Multi-Agent Systems" is at [`docs/Protocol_4_Preregistration.pdf`](docs/Protocol_4_Preregistration.pdf).
 
-**Status: LOCKED — March 2026**
+**Status: Complete — H1 supported (U=87, p=0.003), H2 not supported; CDI negligible; results deposited 2026-05-20**
 
 ```
-SHA-256: d8152ff64ae1bed27352a79bcf5e771ce3b857a67068685a9b72941060b5fb39
-File:    docs/Protocol_4_Preregistration.pdf
-DOI:     10.5281/zenodo.19005417
+SHA-256:     d8152ff64ae1bed27352a79bcf5e771ce3b857a67068685a9b72941060b5fb39
+Prereg DOI:  10.5281/zenodo.19005417
+Results DOI: 10.5281/zenodo.20314828
+Concept DOI: 10.5281/zenodo.20314827
+File:        docs/Protocol_4_Preregistration.pdf
+Results:     docs/paper_protocol4.pdf
+Status:      Complete — results deposited 2026-05-20
 ```
 
 Verify integrity at any time:
@@ -129,6 +133,14 @@ Verify integrity at any time:
 sha256sum docs/Protocol_4_Preregistration.pdf
 # Must match: d8152ff64ae1bed27352a79bcf5e771ce3b857a67068685a9b72941060b5fb39
 ```
+
+## Protocol 4 Results
+
+"Architectural Depth Increased Sacrifice-Like Behavior Without Ethical-Framework Alignment: Protocol 4 Results" is at [`docs/paper_protocol4.pdf`](docs/paper_protocol4.pdf).
+
+Primary findings: Architectural depth increased sacrifice-like behavioral output (H1 supported, U=87, p=0.003, r=0.740). Trained self-modeling did not produce a separable increase over frozen random-init self_model_gru (H2 not supported, p=0.808). CDI coupling between sacrifice behavior and ethical-framework scores was negligible across all depth conditions (range −0.00133 to +0.00022). The depth effect is attributable to architectural presence of the self_model pathway, not trained self-modeling specifically.
+
+DOI: [10.5281/zenodo.20314828](https://doi.org/10.5281/zenodo.20314828) — published 2026-05-20, v1, Open.
 
 ## Protocol 5 Preregistration
 
