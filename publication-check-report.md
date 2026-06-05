@@ -42,6 +42,6 @@ _No issues detected at the per-record level._
 ## Method notes
 
 - DOI resolution: HTTP HEAD against `https://doi.org/{doi}` with redirect following; the final URL is the resolved landing page.
-- Zenodo record lookup: GET `https://zenodo.org/api/records/{recid}`. HTTP 410 indicates a withdrawn record. The registry must mark such records with `zenodo_status: "withdrawn"` and `external_citation_status: "do_not_cite"`.
+- Zenodo record lookup: GET `https://zenodo.org/api/records/{recid}`. HTTP 410 indicates a withdrawn record. The registry must mark such records with `zenodo_formal_status: "withdrawn"` and `external_citation_status: "do_not_cite"`.
 - Title comparison: token-set Jaccard ≥ 0.4 on lowercased, stop-word-filtered tokens. Coarse by design — flags substantive renames, tolerates punctuation drift.
 - Schema validation runs even with `--no-network` and covers field presence, vocabulary, and a few internal consistency rules (e.g. `do_not_cite` records cannot also be `repo_canonical: true`).

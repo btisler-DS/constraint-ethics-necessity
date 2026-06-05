@@ -9,6 +9,70 @@ re-verify that registry against Zenodo at any time.
 
 ---
 
+## 2026-06-05 — Protocol 6 canonical resolved; schema refinement
+
+**Verification date:** 2026-06-05.
+
+### Protocol 6 — current canonical citation selected (Version 2)
+
+The previous entry (below) left Protocol 6 canonical status flagged as
+`undetermined` because the README did not nominate a current DOI.
+Bruce has now resolved this:
+
+- **Current canonical citation (Version 2):** `10.5281/zenodo.20313340`,
+  published 2026-05-20. Contains `Protocol6_Results_Paper.pdf` and
+  `Protocol6_Confirmatory_Artifacts.zip`. Registry entry
+  `p6-results-may20` updated to `repo_canonical: true`,
+  `external_citation_status: "cite_this"`,
+  `version_status: "current_version"`.
+- **Historical (Version 1):** `10.5281/zenodo.19485185`, published
+  2026-04-09. Retained on Zenodo. Registry entry `p6-results-apr09`
+  updated to `repo_canonical: false`,
+  `external_citation_status: "historical"`,
+  `version_status: "previous_version"`.
+
+Unlike the Protocol 4 and Protocol 5 April-9 / May-20 pairs, **Zenodo
+DOES formally treat the Protocol 6 pair as Version 1 / Version 2 of a
+single concept record.** Both records carry `conceptrecid: 19485184`
+(concept DOI `10.5281/zenodo.19485184`); the API marks `19485185` as
+`is_last:false` and `20313340` as `is_last:true`. That justifies setting
+`version_status` to `previous_version` and `current_version` on this
+pair, and populating the `replaces_doi` / `replaced_by_doi` fields
+between them.
+
+The README now has a `## Protocol 6 Results — Emergent Constraint
+Fields` section for parity with Protocols 3, 4, and 5, citing the
+Version 2 DOI as canonical and labeling the April-9 DOI as the
+Historical Version 1 record.
+
+### Schema refinement (bump to `1.1.0`)
+
+To accommodate the version_status distinction cleanly, two schema
+changes landed in the same commit:
+
+1. **Field rename:** `zenodo_status` → `zenodo_formal_status`, for
+   precision about what the field measures.
+2. **New field:** `version_status` (allowed: `current_version`,
+   `previous_version`, `only_version`). Captures Zenodo-formal
+   versioning explicitly so it cannot be confused with the editorial
+   `external_citation_status` field.
+
+Every record now carries both fields. Only the Protocol 6 pair uses
+`current_version` / `previous_version`; the rest of the registry uses
+`only_version`. The Protocol 4 and Protocol 5 April-9 records remain
+`only_version` (their concept records contain only one version each),
+which preserves the distinction between Bruce's editorial "historical"
+classification and Zenodo's "previous version" classification.
+
+The checker script (`scripts/check_publications.js`) was updated to
+validate the new vocabulary and to flag the inconsistency
+`version_status: previous_version` paired with
+`external_citation_status: cite_this`.
+
+`publication-check-report.md` was regenerated — all 20 records pass.
+
+---
+
 ## 2026-06-05 — Withdrawn DOI, Protocol 2/3 attribution, Protocol 4/5/6 review
 
 **Verification date:** 2026-06-05 (via Zenodo records API).

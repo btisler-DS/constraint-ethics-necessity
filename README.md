@@ -184,6 +184,25 @@ sha256sum docs/preregistration_p3.md
 # Must match: 9ef2956bedcef012d214cf74e647e3b74636165cee7b48c8195de41e7e0e96ec
 ```
 
+## Protocol 6 Results — Emergent Constraint Fields
+
+"Emergent Constraint Fields Are Causally Active But Do Not Outperform Fixed External Rules: A Preregistered Null on Passive Emergence as a Governance Strategy" is deposited on Zenodo (the paper PDF and confirmatory artifacts are not duplicated in the repo; see the Zenodo record for the full deposit).
+
+Primary finding: emergent constraint fields are causally active but do not outperform fixed external rules — passive emergence is not a viable governance strategy on its own.
+
+```
+Current canonical DOI (Version 2):  10.5281/zenodo.20313340
+  Published 2026-05-20. Contains Protocol6_Results_Paper.pdf and
+  Protocol6_Confirmatory_Artifacts.zip.
+
+Historical Version 1 DOI:           10.5281/zenodo.19485185
+  Published 2026-04-09. Retained for traceability.
+
+Zenodo concept DOI (always latest): 10.5281/zenodo.19485184
+```
+
+Both versions sit on the same Zenodo concept record, so this pair is a Zenodo-formal Version 1 / Version 2 relationship — different from the Protocol 4 and Protocol 5 April-9 / May-20 pairs, which are on independent concept records.
+
 ## Zenodo DOI
 
 Protocol 2 preregistration DOI: [10.5281/zenodo.18929040](https://doi.org/10.5281/zenodo.18929040) — confirmed live, published March 9, 2026, v1, Open, indexed in OpenAIRE.
@@ -198,17 +217,18 @@ Protocol 2 confirmatory campaign (20 seeds × 2 conditions × 500 epochs) is com
 
 **Paper:** [Virtue Theater: Specification Gaming and Regulatory Constraint Failure in Multi-Agent Systems](docs/paper_virtue_theater.pdf) — DOI: [10.5281/zenodo.19485645](https://doi.org/10.5281/zenodo.19485645), published 2026-04-09.
 
-Protocol 3 (Enforcement Opacity) is complete: H1 inverted, behavioral amplification without structural improvement confirmed. Results: [10.5281/zenodo.20312682](https://doi.org/10.5281/zenodo.20312682). Protocol 4 (Architectural Depth and Self-Modeling) is complete: H1 supported, CDI dissociated. Results: [10.5281/zenodo.20314828](https://doi.org/10.5281/zenodo.20314828). Protocol 5 is complete: complete null across five hypotheses. Results: [10.5281/zenodo.20314078](https://doi.org/10.5281/zenodo.20314078). Protocol 6 is complete — see the [publication registry](publications.json) (`p6-results-*`) while the canonical Protocol 6 results DOI is being finalized.
+Protocol 3 (Enforcement Opacity) is complete: H1 inverted, behavioral amplification without structural improvement confirmed. Results: [10.5281/zenodo.20312682](https://doi.org/10.5281/zenodo.20312682). Protocol 4 (Architectural Depth and Self-Modeling) is complete: H1 supported, CDI dissociated. Results: [10.5281/zenodo.20314828](https://doi.org/10.5281/zenodo.20314828). Protocol 5 is complete: complete null across five hypotheses. Results: [10.5281/zenodo.20314078](https://doi.org/10.5281/zenodo.20314078). Protocol 6 (Emergent Constraint Fields) is complete: passive emergence does not outperform fixed external rules. Results (Version 2): [10.5281/zenodo.20313340](https://doi.org/10.5281/zenodo.20313340).
 
 ## Publication Registry
 
 The canonical, machine-readable list of all project publications is in
 [`publications.json`](publications.json). It records, for each paper:
-DOI, Zenodo URL, document type, publication date, and three independent
-status fields — `zenodo_status`, `repo_canonical`, and
-`external_citation_status` — so that "withdrawn on Zenodo," "currently
-cited by this README," and "preferred for new external citations" never
-collapse into a single ambiguous label.
+DOI, Zenodo URL, document type, publication date, and four independent
+status fields — `zenodo_formal_status`, `version_status`,
+`repo_canonical`, and `external_citation_status` — so that "withdrawn
+on Zenodo," "Zenodo-formal Version 1 vs Version 2," "currently cited by
+this README," and "preferred for new external citations" never collapse
+into a single ambiguous label.
 
 To re-verify every DOI against doi.org and the Zenodo records API:
 
@@ -221,15 +241,28 @@ The most recent verification output is at
 correction history is at
 [`PUBLICATION_CORRECTIONS.md`](PUBLICATION_CORRECTIONS.md).
 
-**Note on earlier records.** Some Protocol 4, 5, and 6 results were also
-deposited as earlier April-9 Zenodo records that remain publicly
-resolvable. Zenodo does NOT mark those records as superseded — they sit
-on independent concept records — so the registry classifies them as
-`historical` rather than `superseded`. The current external-facing
-citation for each protocol is the one with
-`external_citation_status: "cite_this"` in `publications.json`. If you
-encounter an older DOI that still resolves, treat the registry as
-authoritative.
+**Note on earlier records.** Protocols 4, 5, and 6 each have an
+earlier April-9 results record that remains publicly resolvable on
+Zenodo. The relationship to the current record differs between
+protocols:
+
+- **Protocol 6** — the April-9 record (`10.5281/zenodo.19485185`) and
+  the May-20 record (`10.5281/zenodo.20313340`) share a single Zenodo
+  concept record (`10.5281/zenodo.19485184`). Zenodo marks them as
+  Version 1 and Version 2 of the same concept. The registry reflects
+  this with `version_status: "previous_version"` and
+  `version_status: "current_version"` respectively.
+- **Protocols 4 and 5** — the April-9 and May-20 records sit on
+  independent Zenodo concept records, so Zenodo does NOT formally link
+  them as versions of each other. The registry marks both as
+  `version_status: "only_version"`, and the editorial decision to
+  prefer the May-20 record for external citation is captured by
+  `external_citation_status: "cite_this"` vs `"historical"`.
+
+The current external-facing citation for each protocol is whichever
+record carries `external_citation_status: "cite_this"` in
+`publications.json`. If you encounter an older DOI that still resolves,
+treat the registry as authoritative.
 
 ## License
 

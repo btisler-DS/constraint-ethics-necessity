@@ -22,7 +22,8 @@ const ALLOWED_DOC_TYPES = new Set([
   'preregistration', 'results_paper', 'white_paper', 'framework_paper',
   'proof', 'working_paper', 'build_report', 'withdrawn_record',
 ]);
-const ALLOWED_ZENODO = new Set(['active', 'withdrawn']);
+const ALLOWED_ZENODO_FORMAL = new Set(['active', 'withdrawn']);
+const ALLOWED_VERSION_STATUS = new Set(['current_version', 'previous_version', 'only_version']);
 const ALLOWED_REPO_CANONICAL = new Set([true, false, null]);
 const ALLOWED_EXT_CITATION = new Set(['cite_this', 'historical', 'do_not_cite', 'undetermined']);
 
@@ -56,8 +57,8 @@ function validateSchema(pub, i) {
   const errs = [];
   const required = [
     'internal_id', 'title', 'short_title', 'document_type', 'doi',
-    'zenodo_url', 'zenodo_status', 'repo_canonical', 'external_citation_status',
-    'publication_date', 'last_verified_date',
+    'zenodo_url', 'zenodo_formal_status', 'version_status', 'repo_canonical',
+    'external_citation_status', 'publication_date', 'last_verified_date',
   ];
   for (const k of required) {
     if (!(k in pub)) errs.push(`missing field "${k}"`);
@@ -65,8 +66,11 @@ function validateSchema(pub, i) {
   if (pub.document_type && !ALLOWED_DOC_TYPES.has(pub.document_type)) {
     errs.push(`document_type "${pub.document_type}" not in vocabulary`);
   }
-  if (pub.zenodo_status && !ALLOWED_ZENODO.has(pub.zenodo_status)) {
-    errs.push(`zenodo_status "${pub.zenodo_status}" invalid`);
+  if (pub.zenodo_formal_status && !ALLOWED_ZENODO_FORMAL.has(pub.zenodo_formal_status)) {
+    errs.push(`zenodo_formal_status "${pub.zenodo_formal_status}" invalid`);
+  }
+  if (pub.version_status && !ALLOWED_VERSION_STATUS.has(pub.version_status)) {
+    errs.push(`version_status "${pub.version_status}" invalid`);
   }
   if (!ALLOWED_REPO_CANONICAL.has(pub.repo_canonical)) {
     errs.push(`repo_canonical "${pub.repo_canonical}" invalid (must be true/false/null)`);
@@ -77,8 +81,11 @@ function validateSchema(pub, i) {
   if (pub.external_citation_status === 'do_not_cite' && pub.repo_canonical === true) {
     errs.push(`internal inconsistency: do_not_cite but repo_canonical=true`);
   }
-  if (pub.zenodo_status === 'withdrawn' && pub.external_citation_status === 'cite_this') {
+  if (pub.zenodo_formal_status === 'withdrawn' && pub.external_citation_status === 'cite_this') {
     errs.push(`internal inconsistency: zenodo withdrawn but external_citation_status=cite_this`);
+  }
+  if (pub.version_status === 'previous_version' && pub.external_citation_status === 'cite_this') {
+    errs.push(`internal inconsistency: previous_version should not be cite_this (use historical)`);
   }
   if (!recIdFromDoi(pub.doi)) {
     errs.push(`DOI "${pub.doi}" does not match zenodo.NNN pattern`);
@@ -102,7 +109,8 @@ async function checkOne(pub) {
     internal_id: pub.internal_id,
     doi: pub.doi,
     registry_title: pub.title,
-    registry_zenodo_status: pub.zenodo_status,
+    registry_zenodo_formal_status: pub.zenodo_formal_status,
+    registry_version_status: pub.version_status,
     registry_external_citation: pub.external_citation_status,
     doi_resolve_status: null,
     doi_final_url: null,
@@ -160,10 +168,10 @@ async function checkOne(pub) {
   }
 
   // 4. Cross-check withdrawal claim
-  if (result.world_says_withdrawn === true && pub.zenodo_status !== 'withdrawn') {
-    result.issues.push(`Zenodo says withdrawn but registry has zenodo_status="${pub.zenodo_status}"`);
+  if (result.world_says_withdrawn === true && pub.zenodo_formal_status !== 'withdrawn') {
+    result.issues.push(`Zenodo says withdrawn but registry has zenodo_formal_status="${pub.zenodo_formal_status}"`);
   }
-  if (result.world_says_withdrawn === false && pub.zenodo_status === 'withdrawn') {
+  if (result.world_says_withdrawn === false && pub.zenodo_formal_status === 'withdrawn') {
     result.issues.push(`Registry says withdrawn but Zenodo returns 200`);
   }
 
@@ -217,7 +225,7 @@ function renderReport(registry, schemaIssues, results) {
 
   md += `\n## Method notes\n\n`;
   md += `- DOI resolution: HTTP HEAD against \`https://doi.org/{doi}\` with redirect following; the final URL is the resolved landing page.\n`;
-  md += `- Zenodo record lookup: GET \`https://zenodo.org/api/records/{recid}\`. HTTP 410 indicates a withdrawn record. The registry must mark such records with \`zenodo_status: "withdrawn"\` and \`external_citation_status: "do_not_cite"\`.\n`;
+  md += `- Zenodo record lookup: GET \`https://zenodo.org/api/records/{recid}\`. HTTP 410 indicates a withdrawn record. The registry must mark such records with \`zenodo_formal_status: "withdrawn"\` and \`external_citation_status: "do_not_cite"\`.\n`;
   md += `- Title comparison: token-set Jaccard ≥ 0.4 on lowercased, stop-word-filtered tokens. Coarse by design — flags substantive renames, tolerates punctuation drift.\n`;
   md += `- Schema validation runs even with \`--no-network\` and covers field presence, vocabulary, and a few internal consistency rules (e.g. \`do_not_cite\` records cannot also be \`repo_canonical: true\`).\n`;
   return md;
