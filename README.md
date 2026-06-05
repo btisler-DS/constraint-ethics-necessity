@@ -196,9 +196,40 @@ Protocol 4 preregistration DOI: [10.5281/zenodo.19005417](https://doi.org/10.528
 
 Protocol 2 confirmatory campaign (20 seeds × 2 conditions × 500 epochs) is complete. Results inverted the preregistered prediction: constrained agents showed lower sustained behavioral complexity than unconstrained agents (Cohen's d = −2.18, p = 0.9996 in preregistered direction), driven by a systematic gaming pattern termed virtue theater — query-flooding behavior that satisfies the ethical constraint specification while degrading genuine interrogative diversity.
 
-**Paper:** [Virtue Theater: Specification Gaming and Regulatory Constraint Failure in Multi-Agent Systems](docs/paper_virtue_theater.pdf)
+**Paper:** [Virtue Theater: Specification Gaming and Regulatory Constraint Failure in Multi-Agent Systems](docs/paper_virtue_theater.pdf) — DOI: [10.5281/zenodo.19485645](https://doi.org/10.5281/zenodo.19485645), published 2026-04-09.
 
-Protocol 3 (Enforcement Opacity) is complete: H1 inverted, behavioral amplification without structural improvement confirmed. Results: [10.5281/zenodo.20312682](https://doi.org/10.5281/zenodo.20312682). Protocol 4 (Architectural Depth and Self-Modeling) is complete: H1 supported, CDI dissociated. Results: [10.5281/zenodo.20314828](https://doi.org/10.5281/zenodo.20314828). Protocols 5 and 6 are also complete — see protocol sections above for full DOI listings.
+Protocol 3 (Enforcement Opacity) is complete: H1 inverted, behavioral amplification without structural improvement confirmed. Results: [10.5281/zenodo.20312682](https://doi.org/10.5281/zenodo.20312682). Protocol 4 (Architectural Depth and Self-Modeling) is complete: H1 supported, CDI dissociated. Results: [10.5281/zenodo.20314828](https://doi.org/10.5281/zenodo.20314828). Protocol 5 is complete: complete null across five hypotheses. Results: [10.5281/zenodo.20314078](https://doi.org/10.5281/zenodo.20314078). Protocol 6 is complete — see the [publication registry](publications.json) (`p6-results-*`) while the canonical Protocol 6 results DOI is being finalized.
+
+## Publication Registry
+
+The canonical, machine-readable list of all project publications is in
+[`publications.json`](publications.json). It records, for each paper:
+DOI, Zenodo URL, document type, publication date, and three independent
+status fields — `zenodo_status`, `repo_canonical`, and
+`external_citation_status` — so that "withdrawn on Zenodo," "currently
+cited by this README," and "preferred for new external citations" never
+collapse into a single ambiguous label.
+
+To re-verify every DOI against doi.org and the Zenodo records API:
+
+```bash
+node scripts/check_publications.js
+```
+
+The most recent verification output is at
+[`publication-check-report.md`](publication-check-report.md). The
+correction history is at
+[`PUBLICATION_CORRECTIONS.md`](PUBLICATION_CORRECTIONS.md).
+
+**Note on earlier records.** Some Protocol 4, 5, and 6 results were also
+deposited as earlier April-9 Zenodo records that remain publicly
+resolvable. Zenodo does NOT mark those records as superseded — they sit
+on independent concept records — so the registry classifies them as
+`historical` rather than `superseded`. The current external-facing
+citation for each protocol is the one with
+`external_citation_status: "cite_this"` in `publications.json`. If you
+encounter an older DOI that still resolves, treat the registry as
+authoritative.
 
 ## License
 
