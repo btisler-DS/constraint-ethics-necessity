@@ -239,7 +239,17 @@ node scripts/check_publications.js
 The most recent verification output is at
 [`publication-check-report.md`](publication-check-report.md). The
 correction history is at
-[`PUBLICATION_CORRECTIONS.md`](PUBLICATION_CORRECTIONS.md).
+[`PUBLICATION_CORRECTIONS.md`](PUBLICATION_CORRECTIONS.md). The
+audit + policy document — covering what the registry is for, the
+pre-publication check rule, and the deferred cross-repo sweep — is at
+[`PUBLICATION_AUDIT_2026-06-05.md`](PUBLICATION_AUDIT_2026-06-05.md).
+
+**Pre-publication check rule.** Before any publication list, external
+document, website page, or outreach material that cites a project DOI
+is sent or published, every DOI in it must be checked against
+`publications.json`, and only records with
+`external_citation_status: "cite_this"` may be used as current external
+citations. See [`PUBLICATION_AUDIT_2026-06-05.md`](PUBLICATION_AUDIT_2026-06-05.md) § 4 for the full checklist.
 
 **Note on earlier records.** Protocols 4, 5, and 6 each have an
 earlier April-9 results record that remains publicly resolvable on
